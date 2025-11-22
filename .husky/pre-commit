@@ -1,0 +1,5 @@
+# Run lint-staged for code quality
+npx lint-staged
+
+# Run typecheck to catch TypeScript errors
+npm run typecheck

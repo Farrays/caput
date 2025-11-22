@@ -41,47 +41,46 @@ const SEO: React.FC = () => {
   const currentUrl = `${baseUrl}/${locale}${pagePath ? `/${pagePath}` : ''}`;
 
   // Metadata mapping per page
-  // NOTE: OG images need to be created (see /docs/OG_IMAGES_NEEDED.md)
   const metaData = {
     home: {
       titleKey: 'pageTitle',
       descKey: 'metaDescription',
-      image: `${baseUrl}/images/og-home.jpg`, // TODO: Create this image (1200x630px)
+      image: `${baseUrl}/images/og-home.jpg`,
     },
     classes: {
       titleKey: 'danceClassesHub_title',
       descKey: 'danceClassesHub_description',
-      image: `${baseUrl}/images/og-classes-hub.jpg`, // TODO: Create this image (1200x630px)
+      image: `${baseUrl}/images/og-classes-hub.jpg`,
     },
     danza: {
       titleKey: 'danzaBarcelona_title',
       descKey: 'danzaBarcelona_description',
-      image: `${baseUrl}/images/og-classes.jpg`, // TEMPORAL: Usar og-classes.jpg hasta crear og-danza-barcelona.jpg (1200x630px)
+      image: `${baseUrl}/images/og-danza-barcelona.jpg`,
     },
     salsaBachata: {
       titleKey: 'salsaBachataBarcelona_title',
       descKey: 'salsaBachataBarcelona_description',
-      image: `${baseUrl}/images/og-classes.jpg`, // TEMPORAL: Usar og-classes.jpg hasta crear og-salsa-bachata-barcelona.jpg (1200x630px)
+      image: `${baseUrl}/images/og-salsa-bachata-barcelona.jpg`,
     },
     danzasUrbanas: {
       titleKey: 'danzasUrbanas_title',
       descKey: 'danzasUrbanas_description',
-      image: `${baseUrl}/images/og-classes.jpg`, // TEMPORAL: Usar og-classes.jpg hasta crear og-danzas-urbanas-barcelona.jpg (1200x630px)
+      image: `${baseUrl}/images/og-danzas-urbanas-barcelona.jpg`,
     },
     dancehall: {
       titleKey: 'dancehallPageTitle',
       descKey: 'dancehallMetaDescription',
-      image: `${baseUrl}/images/og-dancehall.jpg`, // TODO: Create this image (1200x630px)
+      image: `${baseUrl}/images/og-dancehall.jpg`,
     },
     prepFisica: {
       titleKey: 'prepFisica_title',
       descKey: 'prepFisica_description',
-      image: `${baseUrl}/images/og-classes.jpg`, // TEMPORAL: Usar og-classes.jpg hasta crear og-prep-fisica.jpg (1200x630px)
+      image: `${baseUrl}/images/og-prep-fisica.jpg`,
     },
     clasesParticulares: {
       titleKey: 'particularesPage_title',
       descKey: 'particularesPage_description',
-      image: `${baseUrl}/images/og-classes.jpg`, // TEMPORAL: Usar og-classes.jpg hasta crear og-clases-particulares.jpg (1200x630px)
+      image: `${baseUrl}/images/og-clases-particulares.jpg`,
     },
   };
 

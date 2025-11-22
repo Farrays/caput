@@ -1,12 +1,17 @@
-import { describe, it, expect } from 'vitest';
-import { render } from '../../test/test-utils';
+import { describe, it, expect, vi } from 'vitest';
+import { render } from '../../../../test/test-utils';
 import DanceIdentificationSection from '../DanceIdentificationSection';
 
 describe('DanceIdentificationSection', () => {
   const mockProps = {
-    painPointsKeys: ['pain1', 'pain2'],
-    aspirationsKeys: ['asp1', 'asp2'],
-    objectionsKeys: ['obj1', 'obj2'],
+    t: vi.fn((key: string) => key),
+    keys: {
+      identifyTitle: 'identifyTitle',
+      painPoint1: 'painPoint1',
+      painPoint2: 'painPoint2',
+      aspiration1: 'aspiration1',
+      aspiration2: 'aspiration2',
+    },
   };
 
   it('renders section', () => {
@@ -16,6 +21,6 @@ describe('DanceIdentificationSection', () => {
 
   it('has proper structure', () => {
     const { container } = render(<DanceIdentificationSection {...mockProps} />);
-    expect(container.querySelector('section, div')).toBeInTheDocument();
+    expect(container.querySelector('section')).toBeInTheDocument();
   });
 });

@@ -5,6 +5,7 @@ import { useI18n } from '../hooks/useI18n';
 import Breadcrumb from './shared/Breadcrumb';
 import AnimateOnScroll from './AnimateOnScroll';
 import Icon from './Icon';
+import { SITE_URL, CONTACT_EMAIL, EXTERNAL_RESOURCES } from '../constants/config';
 
 // Rate limiting constants
 const RATE_LIMIT_KEY = 'farrays-contact-form-rate-limit';
@@ -19,7 +20,7 @@ interface RateLimitData {
 
 const ContactPage: React.FC = () => {
   const { t, locale } = useI18n();
-  const baseUrl = 'https://www.farrayscenter.com';
+  const baseUrl = SITE_URL;
 
   const [formData, setFormData] = useState({
     name: '',
@@ -349,10 +350,10 @@ const ContactPage: React.FC = () => {
                           {t('contact_email_title')}
                         </h4>
                         <a
-                          href="mailto:info@farrayscenter.com"
+                          href={`mailto:${CONTACT_EMAIL}`}
                           className="text-neutral/90 hover:text-primary-accent transition-colors"
                         >
-                          info@farrayscenter.com
+                          {CONTACT_EMAIL}
                         </a>
                       </div>
                     </div>
@@ -527,8 +528,8 @@ const ContactPage: React.FC = () => {
                               +34 622 247 085
                             </a>{' '}
                             or email{' '}
-                            <a href="mailto:info@farrayscenter.com" className="underline">
-                              info@farrayscenter.com
+                            <a href={`mailto:${CONTACT_EMAIL}`} className="underline">
+                              {CONTACT_EMAIL}
                             </a>
                           </p>
                         </div>
@@ -555,7 +556,7 @@ const ContactPage: React.FC = () => {
                 <AnimateOnScroll delay={300} className="h-full">
                   <div className="overflow-hidden rounded-2xl border-2 border-primary-dark/50 shadow-lg h-full">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.7083603486235!2d2.148014315104171!3d41.38042057926481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49882fa7aaaa9%3A0x47a79ab582164caf!2sFarray%E2%80%99s+International+Dance+Center+-+Escuela+de+Salsa+Cubana%2C+Bailes+Sociales+y+Danza!5e1!3m2!1ses!2ses!4v1504633190526"
+                      src={EXTERNAL_RESOURCES.googleMapsEmbed}
                       className="w-full h-full border-0"
                       allowFullScreen={true}
                       loading="lazy"

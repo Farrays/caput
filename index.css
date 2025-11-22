@@ -41,6 +41,11 @@
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #c82260, 0 0 30px #c82260, 0 0 40px #c82260, 0 0 55px #c82260, 0 0 75px #c82260;
   }
 
+  /* Texture overlay pattern */
+  .texture-stardust {
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  }
+
   /* Accessibility: Focus-visible styles for keyboard navigation */
   *:focus {
     outline: none;

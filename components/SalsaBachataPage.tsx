@@ -187,7 +187,7 @@ const SalsaBachataPage: React.FC = () => {
           {/* Background */}
           <div className="absolute inset-0 bg-black">
             <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/30 via-black to-black"></div>
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+            <div className="absolute inset-0 texture-stardust opacity-20"></div>
           </div>
           <div className="relative z-20 container mx-auto px-6">
             {/* Breadcrumb with Microdata */}
@@ -551,7 +551,7 @@ const SalsaBachataPage: React.FC = () => {
           {/* Background with stars */}
           <div className="absolute inset-0 bg-black">
             <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/30 via-black to-black"></div>
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+            <div className="absolute inset-0 texture-stardust opacity-20"></div>
           </div>
           <div className="relative z-20 container mx-auto px-6 text-center">
             <AnimateOnScroll>

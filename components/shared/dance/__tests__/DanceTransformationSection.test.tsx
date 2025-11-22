@@ -1,16 +1,18 @@
-import { describe, it, expect } from 'vitest';
-import { render } from '../../test/test-utils';
+import { describe, it, expect, vi } from 'vitest';
+import { render } from '../../../../test/test-utils';
 import DanceTransformationSection from '../DanceTransformationSection';
 
 describe('DanceTransformationSection', () => {
   const mockProps = {
-    beforeStatesKeys: ['before1', 'before2'],
-    afterStatesKeys: ['after1', 'after2'],
-    emotionalTriggersKeys: ['trigger1', 'trigger2'],
+    t: vi.fn((key: string) => key),
+    transformTitleKey: 'transformTitleKey',
+    transformCTAKey: 'transformCTAKey',
+    transformPrefix: 'testTransform',
+    whyChoosePrefix: 'testWhyChoose',
   };
 
   it('renders section', () => {
-    const { container} = render(<DanceTransformationSection {...mockProps} />);
+    const { container } = render(<DanceTransformationSection {...mockProps} />);
     expect(container.firstChild).toBeInTheDocument();
   });
 

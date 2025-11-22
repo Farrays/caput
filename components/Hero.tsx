@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-black" aria-hidden="true">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/30 via-black to-black"></div>
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+        <div className="absolute inset-0 texture-stardust opacity-20"></div>
       </div>
 
       <div className="relative z-10 text-center text-neutral px-4">

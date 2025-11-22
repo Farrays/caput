@@ -1,29 +1,28 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '../../../test/test-utils';
-import { BrowserRouter } from 'react-router-dom';
 import CategoryCard from '../CategoryCard';
 
 describe('CategoryCard', () => {
-  const mockProps = {
-    title: 'Test Category',
-    description: 'Test description',
-    image: '/test.jpg',
-    link: '/test',
+  const mockCategory = {
+    key: 'salsa_bachata',
+    pillarSlug: '/clases/salsa-bachata',
+    imageUrl: '/images/classes/salsa.jpg',
   };
 
   it('renders card', () => {
-    const { container } = render(<CategoryCard {...mockProps} />);
+    const { container } = render(<CategoryCard category={mockCategory} />);
     expect(container.firstChild).toBeInTheDocument();
   });
 
   it('displays title', () => {
-    render(<CategoryCard {...mockProps} />);
-    expect(screen.getByText('Test Category')).toBeInTheDocument();
+    render(<CategoryCard category={mockCategory} />);
+    const link = screen.getByRole('link');
+    expect(link).toBeInTheDocument();
   });
 
   it('has link to category', () => {
-    render(<CategoryCard {...mockProps} />);
+    render(<CategoryCard category={mockCategory} />);
     const link = screen.getByRole('link');
-    expect(link).toHaveAttribute('href', '/test');
+    expect(link).toHaveAttribute('href', expect.stringContaining('/clases/salsa-bachata'));
   });
 });

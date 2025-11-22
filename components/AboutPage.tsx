@@ -5,6 +5,7 @@ import { useI18n } from '../hooks/useI18n';
 import Breadcrumb from './shared/Breadcrumb';
 import AnimateOnScroll from './AnimateOnScroll';
 import Icon, { type IconName } from './Icon';
+import { SITE_URL, SCHEMA_CONTEXT } from '../constants/config';
 
 // Value pillars for "Why Farray's" section
 interface ValuePillar {
@@ -55,11 +56,11 @@ const valuePillars: ValuePillar[] = [
 
 const AboutPage: React.FC = () => {
   const { t, locale } = useI18n();
-  const baseUrl = 'https://www.farrayscenter.com';
+  const baseUrl = SITE_URL;
 
   // Schema Markup - BreadcrumbList
   const breadcrumbSchema = {
-    '@context': 'https://schema.org',
+    '@context': SCHEMA_CONTEXT,
     '@type': 'BreadcrumbList',
     itemListElement: [
       {
@@ -122,7 +123,7 @@ const AboutPage: React.FC = () => {
         >
           <div className="absolute inset-0 bg-black">
             <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/30 via-black to-black"></div>
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+            <div className="absolute inset-0 texture-stardust opacity-20"></div>
           </div>
           <div className="relative z-20 container mx-auto px-6">
             {/* Breadcrumb with Microdata */}
@@ -407,7 +408,7 @@ const AboutPage: React.FC = () => {
         <section className="relative py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-black">
             <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/30 via-black to-black"></div>
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+            <div className="absolute inset-0 texture-stardust opacity-20"></div>
           </div>
           <div className="relative z-20 container mx-auto px-6 text-center">
             <AnimateOnScroll>

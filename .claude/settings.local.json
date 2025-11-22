@@ -74,7 +74,15 @@
       "Bash(node scripts/generate-og-images.mjs)",
       "Bash(node:*)",
       "Bash(git reset:*)",
-      "Bash(.gitignore)"
+      "Bash(.gitignore)",
+      "Bash(del:*)",
+      "Bash(npx husky init)",
+      "Bash(for f in public/images/og-*.jpg)",
+      "Bash(node generate-bulk-translations.cjs:*)",
+      "Bash(if [ -f coverage/coverage-summary.json ])",
+      "Bash(then cat coverage/coverage-summary.json)",
+      "Bash(else echo \"No coverage report found. Running tests...\")",
+      "Bash(npx playwright:*)"
     ],
     "deny": [],
     "ask": []
