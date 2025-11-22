@@ -111,7 +111,6 @@ async function createOGPlaceholder(filename, title, subtitle, bgColor = BRAND_CO
     `;
 
     // Convert SVG to JPG using sharp
-    // eslint-disable-next-line no-undef
     await sharp(Buffer.from(svg))
       .jpeg({ quality: 85, progressive: true })
       .toFile(outputPath);

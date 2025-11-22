@@ -40,14 +40,15 @@ export const TWERK_TESTIMONIALS: Testimonial[] = [
       en: 'The Twerk classes are amazing! I have gained confidence and strength. The best academy in Barcelona.',
       es: 'Las clases de Twerk son increíbles! He ganado confianza y fuerza. La mejor academia de Barcelona.',
       ca: 'Les classes de Twerk són increïbles! He guanyat confiança i força. La millor acadèmia de Barcelona.',
-      fr: 'Les cours de Twerk sont incroyables! J\'ai gagné en confiance et en force. La meilleure académie de Barcelone.',
+      fr: "Les cours de Twerk sont incroyables! J'ai gagné en confiance et en force. La meilleure académie de Barcelone.",
     },
   },
 ];
 
 // Course schema configuration
 export const TWERK_COURSE_CONFIG = {
-  teaches: 'Twerking Dance, bootydance, técnica de disociación corporal, movimientos de caderas y glúteos',
+  teaches:
+    'Twerking Dance, bootydance, técnica de disociación corporal, movimientos de caderas y glúteos',
   prerequisites: 'Ninguno',
   lessons: '5 clases semanales',
   duration: 'PT1H',

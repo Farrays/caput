@@ -8,7 +8,10 @@ interface TestimonialsSectionProps {
   testimonials: Testimonial[];
 }
 
-const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ titleKey = 'testimonialsTitle', testimonials }) => {
+const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
+  titleKey = 'testimonialsTitle',
+  testimonials,
+}) => {
   const { t, locale } = useI18n();
 
   return (

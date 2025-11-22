@@ -51,8 +51,8 @@ const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
       className={`transition-all duration-700 ease-out ${className} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       style={{
         ...style,
-        ...(delay > 0 && { '--animate-delay': `${delay}ms` } as React.CSSProperties),
-        transitionDelay: delay > 0 ? 'var(--animate-delay, 0ms)' : undefined
+        ...(delay > 0 && ({ '--animate-delay': `${delay}ms` } as React.CSSProperties)),
+        transitionDelay: delay > 0 ? 'var(--animate-delay, 0ms)' : undefined,
       }}
     >
       {children}

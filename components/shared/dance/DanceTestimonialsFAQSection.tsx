@@ -187,9 +187,7 @@ const DanceTestimonialsFAQSection: React.FC<DanceTestimonialsFAQSectionProps> = 
               <p className="text-xl text-neutral/90">{t(keys.whyToday1)}</p>
               <p className="text-xl text-neutral/90">{t(keys.whyToday2)}</p>
               <p className="text-xl text-neutral/90">{t(keys.whyToday3)}</p>
-              <p className="text-2xl font-bold holographic-text mt-8">
-                {t(keys.whyTodayClosing1)}
-              </p>
+              <p className="text-2xl font-bold holographic-text mt-8">{t(keys.whyTodayClosing1)}</p>
               <p className="text-lg text-neutral/90 italic">{t(keys.whyTodayClosing2)}</p>
             </div>
           </AnimateOnScroll>
@@ -210,9 +208,7 @@ const DanceTestimonialsFAQSection: React.FC<DanceTestimonialsFAQSectionProps> = 
                 {t(keys.finalCTATitle)}
               </h2>
               <p className="text-2xl font-bold mb-6 holographic-text">{t(keys.finalCTASubtitle)}</p>
-              <p className="text-xl text-neutral/90 mb-8 leading-relaxed">
-                {t(keys.finalCTADesc)}
-              </p>
+              <p className="text-xl text-neutral/90 mb-8 leading-relaxed">{t(keys.finalCTADesc)}</p>
               <p className="text-lg text-neutral/90 mb-10 italic">{t(keys.finalCTAFunny)}</p>
 
               {/* CTA Buttons */}

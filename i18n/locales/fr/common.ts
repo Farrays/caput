@@ -1123,7 +1123,7 @@ export const common = {
   hipHopIdentifySolution: `Si quieres salir de la rutina, sentirte mejor contigo mismo/a, conocer gente nueva y ponerte en forma mientras te diviertes, la cultura Hip Hop es para ti.`,
   hipHopIdentifyClosing: `Déjate llevar por el groove y la actitud del Hip Hop.`,
   hipHopNeedEnrollTitle: `Necesitas apuntarte a clases de Hip Hop en una academia de baile`,
-  hipHopNeedEnrollP1: `Si te has sentido identificado/a con alguna de estas situaciones, las clases de Hip Hop en Barcelone de Farray\'s Center son exactamente lo que necesitas.`,
+  hipHopNeedEnrollP1: `Si te has sentido identificado/a con alguna de estas situaciones, las clases de Hip Hop en Barcelone de Farray's Center son exactamente lo que necesitas.`,
   hipHopNeedEnrollP2: `No importa tu nivel, edad o experiencia previa. Aquí encontrarás un espacio seguro para aprender, crecer y conectar con la auténtica cultura del Hip Hop urbano.`,
   hipHopTransformTitle: `Imagina tu antes y después`,
   hipHopTransform1Title: `Vuelves a tener energía y motivación`,

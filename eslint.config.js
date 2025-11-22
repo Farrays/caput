@@ -31,6 +31,15 @@ const nodeGlobals = {
   process: 'readonly',
   console: 'readonly',
   global: 'writable',
+  Buffer: 'readonly',
+  require: 'readonly',
+  module: 'readonly',
+  __dirname: 'readonly',
+  __filename: 'readonly',
+  setTimeout: 'readonly',
+  clearTimeout: 'readonly',
+  setInterval: 'readonly',
+  clearInterval: 'readonly',
 };
 
 export default [
@@ -81,7 +90,7 @@ export default [
     },
   },
   {
-    files: ['**/*.js', '**/*.mjs', '**/*.cjs', 'test/**/*.ts'],
+    files: ['**/*.js', '**/*.mjs', '**/*.cjs', 'test/**/*.ts', '**/__tests__/**/*.ts'],
     languageOptions: {
       sourceType: 'module',
       globals: nodeGlobals,

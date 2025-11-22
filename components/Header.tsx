@@ -67,19 +67,25 @@ const Header: React.FC = () => {
     return path + query + hash;
   }, [location.pathname, location.search, location.hash]);
 
-  const handleLanguageChange = useCallback((lang: Locale) => {
-    const currentPath = getCurrentPath();
-    const newPath = `/${lang}${currentPath === '/' ? '' : currentPath}`;
-    navigate(newPath);
-    setIsLangDropdownOpen(false);
-  }, [getCurrentPath, navigate]);
+  const handleLanguageChange = useCallback(
+    (lang: Locale) => {
+      const currentPath = getCurrentPath();
+      const newPath = `/${lang}${currentPath === '/' ? '' : currentPath}`;
+      navigate(newPath);
+      setIsLangDropdownOpen(false);
+    },
+    [getCurrentPath, navigate]
+  );
 
-  const languageNames: Record<Locale, string> = useMemo(() => ({
-    es: 'Español',
-    ca: 'Català',
-    en: 'English',
-    fr: 'Français',
-  }), []);
+  const languageNames: Record<Locale, string> = useMemo(
+    () => ({
+      es: 'Español',
+      ca: 'Català',
+      en: 'English',
+      fr: 'Français',
+    }),
+    []
+  );
 
   const handleEnrollClick = useCallback(() => {
     if (location.pathname !== `/${locale}`) {
@@ -87,23 +93,29 @@ const Header: React.FC = () => {
     }
   }, [location.pathname, locale]);
 
-  const menuStructure = useMemo(() => ({
-    home: { path: `/${locale}`, textKey: 'navHome' },
-    classes: {
-      path: `/${locale}/clases/baile-barcelona`,
-      textKey: 'navClasses',
-      submenu: [
-        { path: `/${locale}/clases/danza-barcelona`, textKey: 'navDanza' },
-        {
-          path: `/${locale}/clases/danzas-urbanas-barcelona`,
-          textKey: 'navDanzasUrbanas',
-          submenu: [{ path: `/${locale}/clases/dancehall-barcelona`, textKey: 'navDancehall' }],
-        },
-        { path: `/${locale}/clases/salsa-bachata-barcelona`, textKey: 'navSalsaBachata' },
-        { path: `/${locale}/clases/entrenamiento-bailarines-barcelona`, textKey: 'navPrepFisica' },
-      ],
-    },
-  }), [locale]);
+  const menuStructure = useMemo(
+    () => ({
+      home: { path: `/${locale}`, textKey: 'navHome' },
+      classes: {
+        path: `/${locale}/clases/baile-barcelona`,
+        textKey: 'navClasses',
+        submenu: [
+          { path: `/${locale}/clases/danza-barcelona`, textKey: 'navDanza' },
+          {
+            path: `/${locale}/clases/danzas-urbanas-barcelona`,
+            textKey: 'navDanzasUrbanas',
+            submenu: [{ path: `/${locale}/clases/dancehall-barcelona`, textKey: 'navDancehall' }],
+          },
+          { path: `/${locale}/clases/salsa-bachata-barcelona`, textKey: 'navSalsaBachata' },
+          {
+            path: `/${locale}/clases/entrenamiento-bailarines-barcelona`,
+            textKey: 'navPrepFisica',
+          },
+        ],
+      },
+    }),
+    [locale]
+  );
 
   return (
     <>

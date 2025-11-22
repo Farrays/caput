@@ -1,4 +1,5 @@
 import sharp from 'sharp';
+// eslint-disable-next-line no-unused-vars
 import { readdir, access } from 'fs/promises';
 import { join } from 'path';
 
