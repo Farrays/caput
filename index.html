@@ -15,7 +15,6 @@
       The values above are fallbacks for development only.
     -->
 
-
     <!-- Performance optimization: Resource Hints -->
     <!-- DNS prefetch for external domains -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -36,6 +35,11 @@
     <link rel="preload" href="/index.css" as="style">
     <link rel="stylesheet" href="/index.css">
 
+    <!-- Preload critical hero images for faster LCP -->
+    <!-- Note: These are page-specific and should ideally be injected by prerender.mjs per route -->
+    <!-- For now, preloading the home page hero as it's the most visited -->
+    <link rel="preload" as="image" href="/images/hero-home-dance-school.webp" type="image/webp" media="(min-width: 1024px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/images/hero-home-mobile.webp" type="image/webp" media="(max-width: 1023px)" fetchpriority="high">
 
     <!-- Prefetch next likely navigation -->
     <link rel="prefetch" href="/clases" as="document">
