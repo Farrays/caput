@@ -25,7 +25,8 @@ export const particularesPage = {
   particularesPage_premium_feature5: 'Posibilidad de classs online',
   particularesPage_premium_feature6: 'Posibilidad de classs a domicilio',
   particularesPage_packs_title: 'Nuestros Packs de Clases Particulares',
-  particularesPage_packs_subtitle: 'Elige el pack que mejor se adapte a tus necesidades. Todos incluyen validez de 12 meses.',
+  particularesPage_packs_subtitle:
+    'Elige el pack que mejor se adapte a tus necesidades. Todos incluyen validez de 12 meses.',
   particularesPage_pack_popular: 'Most Popular',
   particularesPage_pack1_name: '1 Class Pack',
   particularesPage_pack1_feature1: '1 hour private class',
@@ -74,8 +75,10 @@ export const particularesPage = {
   particularesPage_comparisonTitle: 'Private Classes vs. Premium Classes',
   particularesPage_comparisonSubtitle:
     'Both are excellent options, but each serves different needs',
-  particularesPage_particulares_desc: 'Atención exclusiva 100% dedicada a ti. Perfecto para quienes buscan el máximo progreso en el menor tiempo posible, con total privacidad y horarios ultra-flexibles. Ideal para principiantes absolutos, dancers avanzados que buscan perfeccionarse, o cualquier persona que valore la eficiencia y personalización.',
-  particularesPage_premium_desc: 'Combina lo mejor de ambos mundos: aprendizaje acelerado con la energy de un grupo pequeño y privado. Perfecto para amigos, partners o familias que quieren aprender juntos, compartir costos y mantener un ambiente íntimo. Más económico que classs particulares individuales, pero con atención mucho más personalizada que classs grupales regulares.',
+  particularesPage_particulares_desc:
+    'Atención exclusiva 100% dedicada a ti. Perfecto para quienes buscan el máximo progreso en el menor tiempo posible, con total privacidad y horarios ultra-flexibles. Ideal para principiantes absolutos, dancers avanzados que buscan perfeccionarse, o cualquier persona que valore la eficiencia y personalización.',
+  particularesPage_premium_desc:
+    'Combina lo mejor de ambos mundos: aprendizaje acelerado con la energy de un grupo pequeño y privado. Perfecto para amigos, partners o familias que quieren aprender juntos, compartir costos y mantener un ambiente íntimo. Más económico que classs particulares individuales, pero con atención mucho más personalizada que classs grupales regulares.',
   particularesPage_whyChoose_title: "Why Choose Farray's Center For Your Private Classes?",
   particularesPage_whyChoose_p1:
     'With over 8 years of experience training professional and amateur dancers, Farray\'s International Dance Center is the reference dance academy in Barcelona. Our team of teachers consists of active professional dancers, many with international careers, who master the revolutionary "Farray Method®": a unique methodology that combines classical technique, contemporary creativity and modern pedagogy to accelerate your learning.',
@@ -119,7 +122,8 @@ export const particularesPage = {
   particularesPage_cta_primary: 'Ver Packs y Precios',
   particularesPage_cta_secondary: 'Consultar Disponibilidad',
   particularesPage_benefits_title: 'Why Choose Private Dance Classes?',
-  particularesPage_benefits_subtitle: 'Discover the advantages that only private classes can offer you',
+  particularesPage_benefits_subtitle:
+    'Discover the advantages that only private classes can offer you',
   particularesPage_benefit1_title: '100% Dedicated Teacher',
   particularesPage_benefit1_desc:
     'All attention focused on your technique, your posture, your rhythm. Without distractions or waiting. Each second of class designed to maximize your progress.',
@@ -141,5 +145,6 @@ export const particularesPage = {
   particularesPage_finalCta_button: 'Book My Private Class',
   particularesPage_finalCta_button_secondary: 'Check Availability',
   particularesPage_benefitsTitle: 'Why Choose Private Dance Classes?',
-  particularesPage_benefitsSubtitle: 'Discover the advantages that only private classes can offer you',
+  particularesPage_benefitsSubtitle:
+    'Discover the advantages that only private classes can offer you',
 };

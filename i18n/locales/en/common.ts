@@ -1077,9 +1077,11 @@ export const common = {
     "You don't just rent a studio; you connect with a reference dance center in Barcelona.",
   roomRental_cta_custom_quote: 'Request custom quote',
   // ========== Missing dhV3 keys (added by translate-missing-keys.js) ==========
-  dhV3NeedEnrollP1: 'If you\'ve identified with any of these situations, Dancehall classes in Barcelona at Farray\'s Center are exactly what you need.',
+  dhV3NeedEnrollP1:
+    "If you've identified with any of these situations, Dancehall classes in Barcelona at Farray's Center are exactly what you need.",
   // ========== Missing home_categories keys (added by translate-missing-keys.js) ==========
-  dhV3NeedEnrollP2: 'It doesn\'t matter your level, age, or previous experience. Here you\'ll find a safe space to learn, grow, and connect with the authentic Jamaican Dancehall culture.',
+  dhV3NeedEnrollP2:
+    "It doesn't matter your level, age, or previous experience. Here you'll find a safe space to learn, grow, and connect with the authentic Jamaican Dancehall culture.",
   // ========== Hip Hop Section (auto-translated) ==========
   hipHopPageTitle: `Classes of Hip Hop en Barcelona | Academia Farray's Center`,
   hipHopMetaDescription: `Learn Hip Hop urbano auténtico en Barcelona. Classes ofsde iniciación hasta avanzado. Profesores expertos. Entre Plaza España y Sants. ¡Prueba gratis!`,
@@ -1218,121 +1220,166 @@ export const common = {
   hipHopImage3Alt: `Equipo Farray's - Instructor de Hip Hop`,
   twkHeroTitle: 'CLASES DE TWERKING DANCE EN BARCELONA',
   twkHeroSubtitle: 'Learn a mover el culete con actitud y precisión',
-  twkHeroDesc: 'El Twerking Dance o Twerk es uno de los bailes del momento. Learn la técnica adecuada para controlar los movimientos más conocidos del bootydance con trap, hip hop y reggaeton.',
-  twkHeroLocation: 'En Farray\'s International Dance Center - Barcelona',
+  twkHeroDesc:
+    'El Twerking Dance o Twerk es uno de los bailes del momento. Learn la técnica adecuada para controlar los movimientos más conocidos del bootydance con trap, hip hop y reggaeton.',
+  twkHeroLocation: "En Farray's International Dance Center - Barcelona",
   twkCTA1: 'SIGN UP TODAY MISMO!',
   twkCTA1Subtext: 'First class free',
   twkCTA2: 'Reserva tu clase de prueba',
   twkCTA2Subtext: 'No commitment',
   twkWhatIsTitle: 'What is el Twerk?',
   twkWhatIsP1: 'El Twerking Dance o Twerk es uno de los bailes del momento.',
-  twkWhatIsP2: 'El objetivo principal de las clases de Twerk es que aprendas a mover el "culete" de muchas formas diferentes. En nuestras clases de Twerking Dance aprenderás la técnica adecuada para controlar los movimientos más conocidos del bootydance, y realizarás un montón de coreografías diferentes.',
-  twkWhatIsP3: 'Normalmente esta es una clase en que se usa principalmente músicas más estadounidense tipo trap o hip hop o música más latina tipo reggaeton.',
-  twkWhatIsP4: 'El verdadero origen de estos movimientos de caderas y nalgas se encuentran en las danzas africanas, como en el \'baikoko mapouka\'. Los movimientos del Twerk existen en todo el mundo difuminados por la diáspora africana.',
+  twkWhatIsP2:
+    'El objetivo principal de las clases de Twerk es que aprendas a mover el "culete" de muchas formas diferentes. En nuestras clases de Twerking Dance aprenderás la técnica adecuada para controlar los movimientos más conocidos del bootydance, y realizarás un montón de coreografías diferentes.',
+  twkWhatIsP3:
+    'Normalmente esta es una clase en que se usa principalmente músicas más estadounidense tipo trap o hip hop o música más latina tipo reggaeton.',
+  twkWhatIsP4:
+    "El verdadero origen de estos movimientos de caderas y nalgas se encuentran en las danzas africanas, como en el 'baikoko mapouka'. Los movimientos del Twerk existen en todo el mundo difuminados por la diáspora africana.",
   twkWhatIsQuestionTitle: 'What do you get en nuestros cursos de Twerk en Barcelona?',
   twkWhatIsQuestionAnswer: 'Fortalecimiento, actitud y confianza en ti misma',
   twkCulturalTitle: 'Origen e Historia del Twerk',
-  twkCulturalShortDesc: 'Los movimientos del Twerk tienen raíces profundas en las danzas africanas tradicionales y se han difundido por todo el mundo a través de la diáspora africana.',
-  twkCulturalFullHistory: 'El verdadero origen de estos movimientos de caderas y glúteos se encuentra en las danzas africanas tradicionales, especialmente en el "baikoko mapouka" de Costa de Marfil. Estos movimientos ancestrales han viajado a través de los siglos y continentes, llegando al Caribe y posteriormente a Estados Unidos durante el período de esclavitud y la diáspora africana. En las décadas de 1980 y 1990, el Twerk comenzó a aparecer en videos musicales de hip-hop y bounce music de Nueva Orleans, popularizado por artistas como DJ Jubilee. El término "twerk" se popularizó masivamente en 2013 gracias a artistas como Miley Cyrus, pero el baile ya llevaba décadas siendo parte fundamental de la cultura del hip-hop y la música urbana. Hoy en día, el Twerk ha evolucionado como una forma de expresión artística que combina el poder ancestral de las danzas africanas con la actitud y energía de la música urbana contemporánea, siendo practicado por bailarines profesionales en todo el mundo como una disciplina que fortalece el cuerpo y la confianza personal.',
+  twkCulturalShortDesc:
+    'Los movimientos del Twerk tienen raíces profundas en las danzas africanas tradicionales y se han difundido por todo el mundo a través de la diáspora africana.',
+  twkCulturalFullHistory:
+    'El verdadero origen de estos movimientos de caderas y glúteos se encuentra en las danzas africanas tradicionales, especialmente en el "baikoko mapouka" de Costa de Marfil. Estos movimientos ancestrales han viajado a través de los siglos y continentes, llegando al Caribe y posteriormente a Estados Unidos durante el período de esclavitud y la diáspora africana. En las décadas de 1980 y 1990, el Twerk comenzó a aparecer en videos musicales de hip-hop y bounce music de Nueva Orleans, popularizado por artistas como DJ Jubilee. El término "twerk" se popularizó masivamente en 2013 gracias a artistas como Miley Cyrus, pero el baile ya llevaba décadas siendo parte fundamental de la cultura del hip-hop y la música urbana. Hoy en día, el Twerk ha evolucionado como una forma de expresión artística que combina el poder ancestral de las danzas africanas con la actitud y energía de la música urbana contemporánea, siendo practicado por bailarines profesionales en todo el mundo como una disciplina que fortalece el cuerpo y la confianza personal.',
   twkIdentifyTitle: 'Do you identify con alguna de estas situaciones?',
   twkIdentify1: 'Quieres aprender a bailar Twerk pero no sabes por dónde empezar',
   twkIdentify2: 'Quieres fortalecer tus glúteos, caderas y abdomen de forma divertida',
   twkIdentify3: 'Te encanta la música trap, hip-hop y reggaeton y quieres moverte con actitud',
   twkIdentify4: 'Quieres mejorar tu confianza y expresar tu lado más atrevido',
-  twkIdentify5: 'Buscas una clase de baile que sea cardio, fortalecimiento y empoderamiento a la vez',
+  twkIdentify5:
+    'Buscas una clase de baile que sea cardio, fortalecimiento y empoderamiento a la vez',
   twkIdentify6: 'Quieres aprender figuras provocativas como el body roll y el perreo con técnica',
   twkIdentifyTransition: 'Si te has sentido identificado/a con alguna de estas situaciones...',
   twkNeedEnrollTitle: '¡Necesitas apuntarte a nuestras clases de Twerk!',
-  twkNeedEnrollP1: 'En Farray\'s International Dance Center te enseñaremos a mover tus glúteos de forma controlada y precisa, a colocar tu cuerpo correctamente, a bajar hasta el suelo y volver a subir con técnica.',
-  twkNeedEnrollP2: 'Trabajarás la disociación corporal, aprenderás coreografías completas y descubrirás el potencial de tu cuerpo para bailar con sentimiento, actitud y precisión al ritmo de las músicas más atrevidas.',
+  twkNeedEnrollP1:
+    "En Farray's International Dance Center te enseñaremos a mover tus glúteos de forma controlada y precisa, a colocar tu cuerpo correctamente, a bajar hasta el suelo y volver a subir con técnica.",
+  twkNeedEnrollP2:
+    'Trabajarás la disociación corporal, aprenderás coreografías completas y descubrirás el potencial de tu cuerpo para bailar con sentimiento, actitud y precisión al ritmo de las músicas más atrevidas.',
   twkTransformTitle: '¿Qué conseguirás en nuestras clases de Twerk?',
   twkTransform1Title: 'Fortalece tu cuerpo',
   twkTransform1Desc: 'Fortalecerás tus piernas, glúteos, caderas y abdomen con cada clase.',
   twkTransform2Title: 'Mejora tu flexibilidad',
-  twkTransform2Desc: 'Trabajarás la flexibilidad y ganarás resistencia para que nada te pare cuando sientas el ritmo correr por tus venas.',
+  twkTransform2Desc:
+    'Trabajarás la flexibilidad y ganarás resistencia para que nada te pare cuando sientas el ritmo correr por tus venas.',
   twkTransform3Title: 'Domina figuras provocativas',
-  twkTransform3Desc: 'Dominarás figuras tan provocativas como el body roll o el perreo con técnica y precisión.',
+  twkTransform3Desc:
+    'Dominarás figuras tan provocativas como el body roll o el perreo con técnica y precisión.',
   twkTransform4Title: 'Learn disociación corporal',
-  twkTransform4Desc: 'Te enseñaremos a colocar tu cuerpo con precisión y a mover tus glúteos de forma controlada, a la vez que bajas hasta el suelo y vuelves a subir.',
+  twkTransform4Desc:
+    'Te enseñaremos a colocar tu cuerpo con precisión y a mover tus glúteos de forma controlada, a la vez que bajas hasta el suelo y vuelves a subir.',
   twkTransform5Title: 'Aumenta tu autoconfianza',
-  twkTransform5Desc: 'Expresarás tu lado más atrevido, trabajarás la actitud y te sentirás con más confianza en ti misma.',
+  twkTransform5Desc:
+    'Expresarás tu lado más atrevido, trabajarás la actitud y te sentirás con más confianza en ti misma.',
   twkTransform6Title: 'Mejora tu improvisación',
-  twkTransform6Desc: 'Learnrás a improvisar y a bailar Twerk con libertad al ritmo de trap, hip-hop y reggaeton.',
-  twkTransformCTA: 'Why elegir Farray\'s para aprender Twerk?',
+  twkTransform6Desc:
+    'Learnrás a improvisar y a bailar Twerk con libertad al ritmo de trap, hip-hop y reggaeton.',
+  twkTransformCTA: "Why elegir Farray's para aprender Twerk?",
   twkWhyChoose1Title: 'Expert teachers en Twerk',
-  twkWhyChoose1Desc: 'Learn con profesoras certificadas y con años de experiencia en Twerking Dance y bootydance.',
+  twkWhyChoose1Desc:
+    'Learn con profesoras certificadas y con años de experiencia en Twerking Dance y bootydance.',
   twkWhyChoose2Title: 'Técnica profesional',
-  twkWhyChoose2Desc: 'Te enseñamos la técnica correcta desde el primer día para que desarrolles los movimientos con precisión y seguridad.',
+  twkWhyChoose2Desc:
+    'Te enseñamos la técnica correcta desde el primer día para que desarrolles los movimientos con precisión y seguridad.',
   twkWhyChoose3Title: 'Inclusive environment',
-  twkWhyChoose3Desc: 'Clases para todos los niveles y cuerpos. Todas las personas son bienvenidas sin importar su experiencia previa.',
+  twkWhyChoose3Desc:
+    'Clases para todos los niveles y cuerpos. Todas las personas son bienvenidas sin importar su experiencia previa.',
   twkWhyChoose4Title: 'Clases dinámicas y divertidas',
-  twkWhyChoose4Desc: 'Combina cardio, fuerza y diversión en cada clase de 60 minutos con las mejores músicas urbanas.',
+  twkWhyChoose4Desc:
+    'Combina cardio, fuerza y diversión en cada clase de 60 minutos con las mejores músicas urbanas.',
   twkWhyChoose5Title: 'Grupos reducidos',
-  twkWhyChoose5Desc: 'Atención personalizada en grupos pequeños para que aprendas correctamente desde el inicio.',
+  twkWhyChoose5Desc:
+    'Atención personalizada en grupos pequeños para que aprendas correctamente desde el inicio.',
   twkWhyChoose6Title: 'Schedules flexibles',
-  twkWhyChoose6Desc: '5 clases semanales en diferentes horarios para que puedas entrenar cuando mejor te venga.',
+  twkWhyChoose6Desc:
+    '5 clases semanales en diferentes horarios para que puedas entrenar cuando mejor te venga.',
   twkWhyChoose7Title: 'Professional facilities',
-  twkWhyChoose7Desc: 'Salas amplias con suelos adecuados, espejos completos, equipo de sonido profesional y ambiente motivador.',
+  twkWhyChoose7Desc:
+    'Salas amplias con suelos adecuados, espejos completos, equipo de sonido profesional y ambiente motivador.',
   twkTeachersTitle: 'Meet your teachers de Twerk',
   twkTeachersSubtitle: 'Expertas en Twerking Dance y empoderamiento femenino',
   twkTeacher1Specialty: 'Especialista en Twerk & Bootydance',
-  twkTeacher1Bio: 'Isabel es una de las mejores profesoras de Twerk en Barcelona. Con más de 8 años de experiencia, ha formado a cientos de alumnas en la técnica del Twerking Dance, combinando disociación corporal, fortalecimiento y actitud.',
+  twkTeacher1Bio:
+    'Isabel es una de las mejores profesoras de Twerk en Barcelona. Con más de 8 años de experiencia, ha formado a cientos de alumnas en la técnica del Twerking Dance, combinando disociación corporal, fortalecimiento y actitud.',
   twkTeacher2Specialty: 'Experta en Twerk & Reggaeton',
-  twkTeacher2Bio: 'Sandra combina el Twerk con ritmos latinos y urbanos, creando clases dinámicas y energéticas donde aprenderás a moverte con confianza y técnica en cada sesión.',
-  twkTeachersClosing: 'Nuestras profesoras están aquí para guiarte en cada paso, para que ganes confianza, fuerza y domines el arte del Twerk.',
-  twkLogosTitle: 'You\'ve seen us on',
+  twkTeacher2Bio:
+    'Sandra combina el Twerk con ritmos latinos y urbanos, creando clases dinámicas y energéticas donde aprenderás a moverte con confianza y técnica en cada sesión.',
+  twkTeachersClosing:
+    'Nuestras profesoras están aquí para guiarte en cada paso, para que ganes confianza, fuerza y domines el arte del Twerk.',
+  twkLogosTitle: "You've seen us on",
   twkLogosIntlFestivalsText: 'And at international festivals de danza urbana',
   twkScheduleTitle: 'Schedules de Classes of Twerk',
   twkScheduleSubtitle: '5 clases semanales para todos los niveles',
   twkVideoTitle: '¿Quieres ver cómo son nuestras clases de Twerk?',
-  twkVideoDesc: 'Mira estos videos de nuestras alumnas bailando Twerk en Farray\'s Center',
+  twkVideoDesc: "Mira estos videos de nuestras alumnas bailando Twerk en Farray's Center",
   twkWhyTodayFullTitle: 'Why apuntarte hoy a clases de Twerk?',
-  twkWhyToday1: 'Cada día que pasa es un día menos bailando, moviéndote y sintiéndote bien con tu cuerpo.',
-  twkWhyToday2: 'El Twerk es una forma de expresión que te ayudará a ganar confianza, fuerza física y empoderamiento personal.',
-  twkWhyToday3: 'You don\'t need experiencia previa. Solo ganas de aprender, moverte y divertirte.',
+  twkWhyToday1:
+    'Cada día que pasa es un día menos bailando, moviéndote y sintiéndote bien con tu cuerpo.',
+  twkWhyToday2:
+    'El Twerk es una forma de expresión que te ayudará a ganar confianza, fuerza física y empoderamiento personal.',
+  twkWhyToday3: "You don't need experiencia previa. Solo ganas de aprender, moverte y divertirte.",
   twkWhyTodayClosing1: 'La primera clase es GRATIS',
   twkWhyTodayClosing2: '¿A qué esperas para probar?',
   twkFinalCTATitle: '¿List@ para empezar tu viaje en el Twerk?',
   twkFinalCTASubtitle: '¡Ven a bailar con nosotras!',
-  twkFinalCTADesc: 'Apúntate hoy mismo a nuestras clases de Twerk en Barcelona y descubre el poder de tu cuerpo al ritmo de trap, hip-hop y reggaeton.',
+  twkFinalCTADesc:
+    'Apúntate hoy mismo a nuestras clases de Twerk en Barcelona y descubre el poder de tu cuerpo al ritmo de trap, hip-hop y reggaeton.',
   twkFinalCTAFunny: 'Tus glúteos te lo agradecerán 🍑',
   twkFaqTitle: 'Frequently asked questions sobre las clases de Twerk',
   twkFaqQ1: 'What is el Twerk o Twerking Dance?',
-  twkFaqA1: 'El Twerking Dance o Twerk es un estilo de baile urbano que se centra en movimientos de caderas y glúteos al ritmo de música trap, hip-hop y reggaeton. Su origen se encuentra en las danzas africanas tradicionales y se ha popularizado mundialmente como una forma de expresión artística y empoderamiento.',
+  twkFaqA1:
+    'El Twerking Dance o Twerk es un estilo de baile urbano que se centra en movimientos de caderas y glúteos al ritmo de música trap, hip-hop y reggaeton. Su origen se encuentra en las danzas africanas tradicionales y se ha popularizado mundialmente como una forma de expresión artística y empoderamiento.',
   twkFaqQ2: 'Do I need previous experience? para hacer Twerk?',
-  twkFaqA2: 'You don\'t need ninguna experiencia previa. Nuestras clases están diseñadas para todos los niveles, desde principiantes absolutos hasta bailarines avanzados. Te enseñaremos la técnica correcta desde cero.',
+  twkFaqA2:
+    "You don't need ninguna experiencia previa. Nuestras clases están diseñadas para todos los niveles, desde principiantes absolutos hasta bailarines avanzados. Te enseñaremos la técnica correcta desde cero.",
   twkFaqQ3: '¿Qué ropa debo llevar a las clases de Twerk?',
-  twkFaqA3: 'Ropa cómoda y ajustada que te permita moverte libremente: leggings o shorts, top deportivo, zapatillas deportivas o puedes bailar descalza. Lo importante es que te sientas cómoda y puedas ver tus movimientos en el espejo.',
+  twkFaqA3:
+    'Ropa cómoda y ajustada que te permita moverte libremente: leggings o shorts, top deportivo, zapatillas deportivas o puedes bailar descalza. Lo importante es que te sientas cómoda y puedas ver tus movimientos en el espejo.',
   twkFaqQ4: '¿El Twerk es solo para mujeres?',
-  twkFaqA4: 'No, el Twerk es para todas las personas sin importar su género. Aunque tradicionalmente se ha asociado con mujeres, cada vez más hombres y personas de todos los géneros practican Twerk como forma de expresión y ejercicio.',
+  twkFaqA4:
+    'No, el Twerk es para todas las personas sin importar su género. Aunque tradicionalmente se ha asociado con mujeres, cada vez más hombres y personas de todos los géneros practican Twerk como forma de expresión y ejercicio.',
   twkFaqQ5: '¿Qué beneficios físicos tiene el Twerk?',
-  twkFaqA5: 'El Twerk fortalece piernas, glúteos, caderas, abdomen y zona lumbar. Mejora la flexibilidad, la resistencia cardiovascular, la coordinación y la disociación corporal. Es un ejercicio completo que quema hasta 500 calorías por clase.',
-  twkFaqQ6: '¿Cómo funciona una clase de Twerk en Farray\'s?',
-  twkFaqA6: 'La clase dura 60 minutos y comienza con un calentamiento, seguido de ejercicios de disociación corporal para aprender a independizar los movimientos. Después practicamos técnica específica de Twerk y terminamos con coreografías completas al ritmo de trap, hip-hop o reggaeton.',
+  twkFaqA5:
+    'El Twerk fortalece piernas, glúteos, caderas, abdomen y zona lumbar. Mejora la flexibilidad, la resistencia cardiovascular, la coordinación y la disociación corporal. Es un ejercicio completo que quema hasta 500 calorías por clase.',
+  twkFaqQ6: "¿Cómo funciona una clase de Twerk en Farray's?",
+  twkFaqA6:
+    'La clase dura 60 minutos y comienza con un calentamiento, seguido de ejercicios de disociación corporal para aprender a independizar los movimientos. Después practicamos técnica específica de Twerk y terminamos con coreografías completas al ritmo de trap, hip-hop o reggaeton.',
   twkFaqQ7: '¿Puedo hacer Twerk si no estoy en forma?',
-  twkFaqA7: 'Sí, absolutamente. El Twerk es precisamente una excelente manera de ponerte en forma mientras te diviertes. Irás mejorando tu condición física progresivamente con cada clase.',
+  twkFaqA7:
+    'Sí, absolutamente. El Twerk es precisamente una excelente manera de ponerte en forma mientras te diviertes. Irás mejorando tu condición física progresivamente con cada clase.',
   twkFaqQ8: '¿Qué música se usa en las clases de Twerk?',
-  twkFaqA8: 'Usamos principalmente música trap, hip-hop estadounidense y reggaeton latino. También incorporamos otros ritmos urbanos que se adapten bien a los movimientos del Twerk y bootydance.',
+  twkFaqA8:
+    'Usamos principalmente música trap, hip-hop estadounidense y reggaeton latino. También incorporamos otros ritmos urbanos que se adapten bien a los movimientos del Twerk y bootydance.',
   twkFaqQ9: '¿Cuánto tiempo tarda en aprender Twerk?',
-  twkFaqA9: 'Desde la primera clase ya empezarás a aprender movimientos básicos. En 2-3 meses de práctica regular notarás una mejora significativa en tu técnica, control corporal y confianza. El aprendizaje es continuo y cada nivel tiene nuevos retos.',
+  twkFaqA9:
+    'Desde la primera clase ya empezarás a aprender movimientos básicos. En 2-3 meses de práctica regular notarás una mejora significativa en tu técnica, control corporal y confianza. El aprendizaje es continuo y cada nivel tiene nuevos retos.',
   twkFaqQ10: '¿Hay límite de edad para hacer Twerk?',
-  twkFaqA10: 'Las clases de Twerk en Farray\'s son para adultos (mayores de 16 años). No hay límite de edad superior, solo ganas de bailar y moverte.',
+  twkFaqA10:
+    "Las clases de Twerk en Farray's son para adultos (mayores de 16 años). No hay límite de edad superior, solo ganas de bailar y moverte.",
   twkFaqQ11: 'What is la disociación corporal en el Twerk?',
-  twkFaqA11: 'La disociación corporal es la capacidad de mover independientemente diferentes partes del cuerpo. En el Twerk, aprendes a mover tus glúteos y caderas de forma aislada mientras el resto del cuerpo permanece estable. Es la base técnica fundamental del Twerking Dance.',
+  twkFaqA11:
+    'La disociación corporal es la capacidad de mover independientemente diferentes partes del cuerpo. En el Twerk, aprendes a mover tus glúteos y caderas de forma aislada mientras el resto del cuerpo permanece estable. Es la base técnica fundamental del Twerking Dance.',
   twkFaqQ12: '¿Las clases de Twerk son un buen ejercicio?',
-  twkFaqA12: 'Sí, el Twerk es un ejercicio cardiovascular completo que quema aproximadamente 400-500 calorías por clase de 60 minutos. Fortalece especialmente glúteos, piernas, abdomen y espalda baja, además de mejorar flexibilidad y resistencia.',
+  twkFaqA12:
+    'Sí, el Twerk es un ejercicio cardiovascular completo que quema aproximadamente 400-500 calorías por clase de 60 minutos. Fortalece especialmente glúteos, piernas, abdomen y espalda baja, además de mejorar flexibilidad y resistencia.',
   twkFaqQ13: '¿Ofrecéis clases de Twerk para principiantes?',
-  twkFaqA13: 'Sí, tenemos clases específicas para principiantes donde enseñamos los fundamentos del Twerk desde cero: postura correcta, movimientos básicos, disociación corporal y primeras coreografías sencillas.',
+  twkFaqA13:
+    'Sí, tenemos clases específicas para principiantes donde enseñamos los fundamentos del Twerk desde cero: postura correcta, movimientos básicos, disociación corporal y primeras coreografías sencillas.',
   twkFaqQ14: '¿Puedo probar una clase antes de apuntarme?',
-  twkFaqA14: 'Sí, la primera clase es totalmente GRATIS y sin compromiso. Puedes venir a probar, conocer a las profesoras y ver si las clases de Twerk son para ti.',
+  twkFaqA14:
+    'Sí, la primera clase es totalmente GRATIS y sin compromiso. Puedes venir a probar, conocer a las profesoras y ver si las clases de Twerk son para ti.',
   twkFaqQ15: '¿Qué diferencia hay entre Twerk y Reggaeton?',
-  twkFaqA15: 'El Twerk se enfoca específicamente en movimientos de glúteos y caderas con técnica precisa y control, mientras que el Reggaeton es un estilo de baile más amplio que incluye movimientos de todo el cuerpo. En nuestras clases a veces combinamos ambos estilos.',
+  twkFaqA15:
+    'El Twerk se enfoca específicamente en movimientos de glúteos y caderas con técnica precisa y control, mientras que el Reggaeton es un estilo de baile más amplio que incluye movimientos de todo el cuerpo. En nuestras clases a veces combinamos ambos estilos.',
   twkFaqQ16: '¿Dónde están ubicadas las clases de Twerk en Barcelona?',
-  twkFaqA16: 'Nuestras clases de Twerk se imparten en Farray\'s International Dance Center, ubicado en Calle Entença 100, Barcelona. Muy bien conectado con metro (líneas L1, L3, L5) y bus.',
+  twkFaqA16:
+    "Nuestras clases de Twerk se imparten en Farray's International Dance Center, ubicado en Calle Entença 100, Barcelona. Muy bien conectado con metro (líneas L1, L3, L5) y bus.",
   twkPageTitle: 'Classes of Twerking Dance en Barcelona',
-  twkMetaDescription: 'Classes of Twerk en Barcelona ⭐ Learn bootydance, fortalece glúteos y caderas con música trap y reggaeton. Primera clase GRATIS. Todos los niveles.',
-  twkCourseSchemaName: 'Curso de Twerking Dance en Barcelona - Farray\'s Center',
-  twkCourseSchemaDesc: 'Learn Twerk con profesoras expertas. Técnica de bootydance, disociación corporal, fortalecimiento y empoderamiento. Clases para todos los niveles en Barcelona.',
+  twkMetaDescription:
+    'Classes of Twerk en Barcelona ⭐ Learn bootydance, fortalece glúteos y caderas con música trap y reggaeton. Primera clase GRATIS. Todos los niveles.',
+  twkCourseSchemaName: "Curso de Twerking Dance en Barcelona - Farray's Center",
+  twkCourseSchemaDesc:
+    'Learn Twerk con profesoras expertas. Técnica de bootydance, disociación corporal, fortalecimiento y empoderamiento. Clases para todos los niveles en Barcelona.',
   twkBreadcrumbHome: 'Home',
   twkBreadcrumbClasses: 'Classes of Baile',
   // ========== Breadcrumbs Section ==========
@@ -1345,51 +1392,76 @@ export const common = {
   // ========== Dance Classes Hub Section ==========
   merchandising_breadcrumb_home: 'Home',
   // ========== Dancehall Section ==========
-  dancehallBenefit1Desc: 'Las classes of dancehall rompen la rutina, te ayudan a liberar el estrés y te devuelven las ganas de moverte y de volver a disfrutar.',
+  dancehallBenefit1Desc:
+    'Las classes of dancehall rompen la rutina, te ayudan a liberar el estrés y te devuelven las ganas de moverte y de volver a disfrutar.',
   dancehallBenefit1Title: 'Recuperas Energía, Motivación y Ganas',
-  dancehallBenefit2Desc: 'Bailar dancehall te permite subir tu autoestima, superar miedos, soltarte y descubrir una versión más segura y auténtica de ti mismo.',
+  dancehallBenefit2Desc:
+    'Bailar dancehall te permite subir tu autoestima, superar miedos, soltarte y descubrir una versión más segura y auténtica de ti mismo.',
   dancehallBenefit2Title: 'Ganas Seguridad, Confianza y Autoestima',
-  dancehallBenefit3Desc: 'Las classes of dancehall son dinámicas, divertidas y siempre diferentes. Te pones en forma con una sonrisa en la cara y te sorprendes con cada class.',
+  dancehallBenefit3Desc:
+    'Las classes of dancehall son dinámicas, divertidas y siempre diferentes. Te pones en forma con una sonrisa en la cara y te sorprendes con cada class.',
   dancehallBenefit3Title: 'Evitas Las Rutinas de Ejercicio Aburridas',
-  dancehallBenefit4Desc: 'Las classes of dancehall son el lugar perfecto para conocer gente nueva, reírte y crear conexiones reales mientras te diviertes.',
+  dancehallBenefit4Desc:
+    'Las classes of dancehall son el lugar perfecto para conocer gente nueva, reírte y crear conexiones reales mientras te diviertes.',
   dancehallBenefit4Title: 'Te Diviertes, Conoces Personas Nuevas y Socializas',
-  dancehallBenefit5Desc: 'Bailar dancehall te permitirá descubrir movements y sensaciones nuevas, reconectar con your body y volver a disfrutar bailando.',
+  dancehallBenefit5Desc:
+    'Bailar dancehall te permitirá descubrir movements y sensaciones nuevas, reconectar con your body y volver a disfrutar bailando.',
   dancehallBenefit5Title: 'Conoces Pasos Nuevos y Evitas la Monotonía en el Baile',
-  dancehallBenefit6Desc: 'Te conectarás con la esencia y las raíces de Jamaica sin que tengas que salir of Barcelona. Te contagiará por su style, alegría y autenticidad.',
+  dancehallBenefit6Desc:
+    'Te conectarás con la esencia y las raíces de Jamaica sin que tengas que salir of Barcelona. Te contagiará por su style, alegría y autenticidad.',
   dancehallBenefit6Title: 'Viajas a Jamaica Sin Moverte of Barcelona',
-  dancehallBenefit7Desc: 'Vas a conocer nuevas músicas y rhythms, ejercitar tu coordinación y memoria, y mejorar tu capacidad de improvisación e interpretación musical.',
+  dancehallBenefit7Desc:
+    'Vas a conocer nuevas músicas y rhythms, ejercitar tu coordinación y memoria, y mejorar tu capacidad de improvisación e interpretación musical.',
   dancehallBenefit7Title: 'Descubres Nuevos Ritmos y Entrenas Tu Oído',
-  dancehallBenefitsSubtitle: 'Imagina Tu \'Antes y Después\'',
+  dancehallBenefitsSubtitle: "Imagina Tu 'Antes y Después'",
   dancehallBenefitsTitle: '¿Por Qué Apuntarte a Classes of Dancehall Mejorará Tu Vida?',
   dancehallCTA1: 'Date de Alta Ahora',
   dancehallCTA2: 'View Schedules',
-  dancehallClassStructureDesc: 'En nuestras classes of Dancehall in Barcelona generalmente se enseña una secuencia coreografiada, pero en la practice el Dancehall es una dance improvisada. Cada sesión está diseñada para que aprendas, te diviertas y te expreses.',
+  dancehallClassStructureDesc:
+    'En nuestras classes of Dancehall in Barcelona generalmente se enseña una secuencia coreografiada, pero en la practice el Dancehall es una dance improvisada. Cada sesión está diseñada para que aprendas, te diviertas y te expreses.',
   dancehallClassStructureTitle: 'Estructura de Cada Clase (60 min)',
-  dancehallCommunityDesc: 'Reserva tu plaza ahora y no dejes que te lo cuenten… ni que te lo dancen.',
-  dancehallCommunityFunny: '¡Las plazas vuelan más rápido que un «Dutty Wine» en viernes por la noche! Tienes que dejarte seducir por la energy y el feeling del Dancehall.',
+  dancehallCommunityDesc:
+    'Reserva tu plaza ahora y no dejes que te lo cuenten… ni que te lo dancen.',
+  dancehallCommunityFunny:
+    '¡Las plazas vuelan más rápido que un «Dutty Wine» en viernes por la noche! Tienes que dejarte seducir por la energy y el feeling del Dancehall.',
   dancehallCommunitySubtitle: 'Da el Paso',
   dancehallCommunityTitle: 'Únete a la Comunidad de Dancehall Más Activa of Barcelona',
-  dancehallCourseSchemaDesc: 'Learn Dancehall auténtico in Barcelona con el método exclusivo de Farray\'s International Dance Center. Clases para principiantes, intermedios y avanzados con teacheras expertas formadas en Jamaica.',
+  dancehallCourseSchemaDesc:
+    "Learn Dancehall auténtico in Barcelona con el método exclusivo de Farray's International Dance Center. Clases para principiantes, intermedios y avanzados con teacheras expertas formadas en Jamaica.",
   dancehallCourseSchemaName: 'Classes of Dancehall Jamaicano in Barcelona - Todos los Niveles',
-  dancehallCulturalFull: '### Los Orígenes: Kingston, Jamaica (1970s-1980s)\n\nEl Dancehall nació en los guetos de Kingston, Jamaica, a finales de los años 70. Surgió como una evolución natural del reggae, cuando los "sound systems" (sistemas de sonido móviles) empezaron a llevar la música a las calles y a los dancehalls (salas de dance).\n\nEl nombre "dancehall" proviene literalmente de estos espacios donde la community se reunía para to dance, socializar y expresarse. Era el lugar donde las tensiones sociales se liberaban a través de la música y el movement.\n\n### Las Leyendas: Bogle, Passa Passa y Los Pioneros\n\nGerald "Bogle" Levy (1964-2005) es considerado el padre del dancehall moderno. Creó movements icónicos como el "Bogle", "Row Di Boat", "Log On" y "Willie Bounce" que se convirtieron en la base del vocabulario dancehall.\n\nPassa Passa, las sesiones legendarias de street dancehall todos los miércoles en Tivoli Gardens, Kingston, se convirtieron en el epicentro donde nacían los nuevos pasos y se consagraban los dancers.\n\nOtros pioneers como Ding Dong, Keiva, John Hype y crews como Ravers Clavers llevaron el dancehall a nivel internacional en los 2000s.\n\n### La Expansión Global (2000s-Presente)\n\nEn los años 2000, el dancehall explotó globalmente gracias a artistas como Sean Paul, Shaggy, Elephant Man y Beenie Man. Las redes sociales y YouTube permitieron que pasos como el "Dutty Wine", "Daggering" y "Nuh Linga" se viralizaran mundialmente.\n\nHoy, el dancehall es un fenómeno global con communityes activas en Europa, África, Asia y América. Barcelona se ha convertido en uno de los epicentros europeos del dancehall auténtico.\n\n### La Música: Riddims y Cultura Soundsystem\n\nEl dancehall se baila sobre "riddims" (rhythms instrumentales) que los productores crean y múltiples artistas vocalizan. Riddims legendarios como "Diwali", "Coolie Dance" o "Dump Truck" han definido épocas enteras.\n\nLa culture del sound system —con sus selectores, MCs y el famoso "rewind" cuando una canción es tan buena que se vuelve a poner desde el principio— es fundamental para entender el dancehall.\n\n### Más Que Baile: Identidad y Resistencia\n\nEl dancehall ha sido siempre una forma de endurance culturel y expression de identidad para las communityes marginadas de Jamaica. Es la voz de los guetos, una celebración de la alegría a pesar de las dificultades.\n\nLos pasos tienen nombres con significado: "Log On" (conectarse), "Willie Bounce" (homenaje a Willie Haggart), "Nuh Linga" (no te demores). Cada movement cuenta una historia.',
-  dancehallCulturalShort: 'El Dancehall es una dance tradicional jamaicana que nació en los años 70 y refleja una culture con fuertes raíces en el reggae, referencias africanas y caribeñas, y la energy del hip-hop y otras dances urbanas. Dancehall es mucho más que un dance; es una manera de andar, de hablar y de entender la vida; es una declaración de quién eres. Es expression pura, rhythm, actitud y flow. En el dancehall no hay que ser bueno, hay que ser tú.',
+  dancehallCulturalFull:
+    '### Los Orígenes: Kingston, Jamaica (1970s-1980s)\n\nEl Dancehall nació en los guetos de Kingston, Jamaica, a finales de los años 70. Surgió como una evolución natural del reggae, cuando los "sound systems" (sistemas de sonido móviles) empezaron a llevar la música a las calles y a los dancehalls (salas de dance).\n\nEl nombre "dancehall" proviene literalmente de estos espacios donde la community se reunía para to dance, socializar y expresarse. Era el lugar donde las tensiones sociales se liberaban a través de la música y el movement.\n\n### Las Leyendas: Bogle, Passa Passa y Los Pioneros\n\nGerald "Bogle" Levy (1964-2005) es considerado el padre del dancehall moderno. Creó movements icónicos como el "Bogle", "Row Di Boat", "Log On" y "Willie Bounce" que se convirtieron en la base del vocabulario dancehall.\n\nPassa Passa, las sesiones legendarias de street dancehall todos los miércoles en Tivoli Gardens, Kingston, se convirtieron en el epicentro donde nacían los nuevos pasos y se consagraban los dancers.\n\nOtros pioneers como Ding Dong, Keiva, John Hype y crews como Ravers Clavers llevaron el dancehall a nivel internacional en los 2000s.\n\n### La Expansión Global (2000s-Presente)\n\nEn los años 2000, el dancehall explotó globalmente gracias a artistas como Sean Paul, Shaggy, Elephant Man y Beenie Man. Las redes sociales y YouTube permitieron que pasos como el "Dutty Wine", "Daggering" y "Nuh Linga" se viralizaran mundialmente.\n\nHoy, el dancehall es un fenómeno global con communityes activas en Europa, África, Asia y América. Barcelona se ha convertido en uno de los epicentros europeos del dancehall auténtico.\n\n### La Música: Riddims y Cultura Soundsystem\n\nEl dancehall se baila sobre "riddims" (rhythms instrumentales) que los productores crean y múltiples artistas vocalizan. Riddims legendarios como "Diwali", "Coolie Dance" o "Dump Truck" han definido épocas enteras.\n\nLa culture del sound system —con sus selectores, MCs y el famoso "rewind" cuando una canción es tan buena que se vuelve a poner desde el principio— es fundamental para entender el dancehall.\n\n### Más Que Baile: Identidad y Resistencia\n\nEl dancehall ha sido siempre una forma de endurance culturel y expression de identidad para las communityes marginadas de Jamaica. Es la voz de los guetos, una celebración de la alegría a pesar de las dificultades.\n\nLos pasos tienen nombres con significado: "Log On" (conectarse), "Willie Bounce" (homenaje a Willie Haggart), "Nuh Linga" (no te demores). Cada movement cuenta una historia.',
+  dancehallCulturalShort:
+    'El Dancehall es una dance tradicional jamaicana que nació en los años 70 y refleja una culture con fuertes raíces en el reggae, referencias africanas y caribeñas, y la energy del hip-hop y otras dances urbanas. Dancehall es mucho más que un dance; es una manera de andar, de hablar y de entender la vida; es una declaración de quién eres. Es expression pura, rhythm, actitud y flow. En el dancehall no hay que ser bueno, hay que ser tú.',
   dancehallCulturalTitle: 'What is el Dancehall? Mucho Más Que Un Baile',
-  dancehallFaqA10: 'DIFERENTES NIVELES PARA QUE NADIE SE QUEDE SIN BAILAR: Dancehall Principiantes - Ideal para estudiantes que quieren empezar desde cero, para aprender paso a paso y con buen rollo. Dancehall Básico - Ideal para estudiantes que ya tienen un poco de experience en Dancehall u otras dances urbanas. Dancehall Intermedio - Para estudiantes que quieren mejorar technique, coordinación y expression con pasos más complejos y musicality. Dancehall Avanzado - Pensado para quienes quieren llevar su nivel al máximo y llevar su style al siguiente nivel.',
-  dancehallFaqA11: '¡Sí! Puedes empezar cuando quieras. Consulta nuestro calendario para ver las próximas classs disponibles. Si tienes dudas sobre el nivel o el grupo, escríbenos y te orientamos.',
-  dancehallFaqA12: 'Sí, ofrecemos descuentos si te apuntas a más de un curso. Consulta nuestra web o pregúntanos directamente para más detalles.',
-  dancehallFaqA13: 'Si tienes una membresía y cancelas una class tienes 30 días para recuperarla, contando desde la fecha de la class cancelada. Si tienes un abono de horas, eres tú quien gestiona tus classes of manera flexible y solamente debes cancelar tu class y reservarla para otro día cuando así lo desees, antes que termine el periodo de caducidad. Todas las gestiones se hacen exclusivamente desde la aplicación digital de la academia.',
-  dancehallFaqA14: 'Puedes recuperar tu class cancelada haciendo otro style diferente, siempre y cuando respectes el nivel de la class y gestiones la recuperación desde la aplicación de la escuela.',
-  dancehallFaqA15: 'El Dancehall es un style originario de Jamaica, con mucha energy, pasos característicos y una culture propia. Combina movements enérgicos y sensuales con rhythms de reggae y hip-hop, lo que lo hace único. Se diferencia por su musicality y movements. Es un style que permite la improvisación y la creatividad, ideal para quienes buscan algo más que pasos coreografiados.',
-  dancehallFaqA5: 'Farray\'s Center está ubicado en Calle Entença 100, Barcelona, a solo 5 minutos de Plaza España y Estación de Sants. Contamos con teacheras con amplia experience y un ambiente familiar para all levels.',
-  dancehallFaqA6: 'Sí, organizamos workshops, masterclasses y eventos sociales durante el año. Síguenos en redes o consulta nuestra web para estar al día. También participamos en los mejores festivales de dance de todo el mundo.',
-  dancehallFaqA7: 'Nuestras classs están abiertas a todas las personas, sin importar género o experience previa. ¡El Dancehall es para todos! La diversidad enriquece la experience para todos.',
-  dancehallFaqA8: 'No te preocupes, la coordinación se desarrolla con la practice. Nuestras teacheras te guiarán paso a paso y el ambiente es muy acogedor. ¡Lo importante es que seas constante y disfrutes del proceso!',
-  dancehallFaqA9: 'Diferentes styles para diferentes gustos: DANCEHALL FEMALE - El style tradicional jamaicano con movements auténticos. Sensualidad, actitud y flow. DANCEHALL TWERK - Se utilizan muchos movements del Twerk/Bootydance. Energía, sensualidad y feminidad pura.',
+  dancehallFaqA10:
+    'DIFERENTES NIVELES PARA QUE NADIE SE QUEDE SIN BAILAR: Dancehall Principiantes - Ideal para estudiantes que quieren empezar desde cero, para aprender paso a paso y con buen rollo. Dancehall Básico - Ideal para estudiantes que ya tienen un poco de experience en Dancehall u otras dances urbanas. Dancehall Intermedio - Para estudiantes que quieren mejorar technique, coordinación y expression con pasos más complejos y musicality. Dancehall Avanzado - Pensado para quienes quieren llevar su nivel al máximo y llevar su style al siguiente nivel.',
+  dancehallFaqA11:
+    '¡Sí! Puedes empezar cuando quieras. Consulta nuestro calendario para ver las próximas classs disponibles. Si tienes dudas sobre el nivel o el grupo, escríbenos y te orientamos.',
+  dancehallFaqA12:
+    'Sí, ofrecemos descuentos si te apuntas a más de un curso. Consulta nuestra web o pregúntanos directamente para más detalles.',
+  dancehallFaqA13:
+    'Si tienes una membresía y cancelas una class tienes 30 días para recuperarla, contando desde la fecha de la class cancelada. Si tienes un abono de horas, eres tú quien gestiona tus classes of manera flexible y solamente debes cancelar tu class y reservarla para otro día cuando así lo desees, antes que termine el periodo de caducidad. Todas las gestiones se hacen exclusivamente desde la aplicación digital de la academia.',
+  dancehallFaqA14:
+    'Puedes recuperar tu class cancelada haciendo otro style diferente, siempre y cuando respectes el nivel de la class y gestiones la recuperación desde la aplicación de la escuela.',
+  dancehallFaqA15:
+    'El Dancehall es un style originario de Jamaica, con mucha energy, pasos característicos y una culture propia. Combina movements enérgicos y sensuales con rhythms de reggae y hip-hop, lo que lo hace único. Se diferencia por su musicality y movements. Es un style que permite la improvisación y la creatividad, ideal para quienes buscan algo más que pasos coreografiados.',
+  dancehallFaqA5:
+    "Farray's Center está ubicado en Calle Entença 100, Barcelona, a solo 5 minutos de Plaza España y Estación de Sants. Contamos con teacheras con amplia experience y un ambiente familiar para all levels.",
+  dancehallFaqA6:
+    'Sí, organizamos workshops, masterclasses y eventos sociales durante el año. Síguenos en redes o consulta nuestra web para estar al día. También participamos en los mejores festivales de dance de todo el mundo.',
+  dancehallFaqA7:
+    'Nuestras classs están abiertas a todas las personas, sin importar género o experience previa. ¡El Dancehall es para todos! La diversidad enriquece la experience para todos.',
+  dancehallFaqA8:
+    'No te preocupes, la coordinación se desarrolla con la practice. Nuestras teacheras te guiarán paso a paso y el ambiente es muy acogedor. ¡Lo importante es que seas constante y disfrutes del proceso!',
+  dancehallFaqA9:
+    'Diferentes styles para diferentes gustos: DANCEHALL FEMALE - El style tradicional jamaicano con movements auténticos. Sensualidad, actitud y flow. DANCEHALL TWERK - Se utilizan muchos movements del Twerk/Bootydance. Energía, sensualidad y feminidad pura.',
   dancehallFaqQ10: '¿Qué niveles de Dancehall tenemos en nuestra escuela of Barcelona?',
   dancehallFaqQ11: '¿Puedo unirme en cualquier momento del año?',
   dancehallFaqQ12: '¿Tenéis algún descuento especial?',
   dancehallFaqQ13: '¿Y si falto a una class por trabajo o compromisos?',
-  dancehallFaqQ14: '¿Si falto a una class debo recuperarla haciendo el mismo style, o puedo hacer otro diferente?',
+  dancehallFaqQ14:
+    '¿Si falto a una class debo recuperarla haciendo el mismo style, o puedo hacer otro diferente?',
   dancehallFaqQ15: '¿Qué diferencia el Dancehall de otros styles de dance urbano?',
   dancehallFaqQ5: '¿Dónde puedo encontrar classes of Dancehall cerca de Plaza España in Barcelona?',
   dancehallFaqQ6: '¿Organizáis eventos o talleres especiales de Dancehall?',
@@ -1397,36 +1469,49 @@ export const common = {
   dancehallFaqQ8: '¿Qué pasa si no tengo buena coordinación?',
   dancehallFaqQ9: '¿Qué styles de Dancehall enseñamos en nuestra escuela of Barcelona?',
   dancehallFaqTitle: 'Preguntas Frecuentes Sobre Nuestra Escuela de Dancehall in Barcelona',
-  dancehallFinalCTADesc: 'Porque cada día que no te mueves, your body te pide un poco más. Porque estás solo a una class de cambiar tu rutina. En Farray\'s no vendemos classs. Creamos experiences. Te esperamos con música cañera, teacheras con duende y una energy que no encontrarás en ningún otro lugar of Barcelona.',
+  dancehallFinalCTADesc:
+    "Porque cada día que no te mueves, your body te pide un poco más. Porque estás solo a una class de cambiar tu rutina. En Farray's no vendemos classs. Creamos experiences. Te esperamos con música cañera, teacheras con duende y una energy que no encontrarás en ningún otro lugar of Barcelona.",
   dancehallFinalCTATitle: '¿Por Qué Hoy Es el Mejor Momento Para Empezar?',
   dancehallGalleryTitle: 'Mira el Ambiente',
-  dancehallHeroSubtitleV2: 'Puro Dancehall Jamaicano en Farray\'s Center. Mucho más que dance, una forma de vivir. Viaja a Jamaica sin salir of Barcelona | Clases desde iniciación hasta avanzado, entre Plaza España y Sants.',
+  dancehallHeroSubtitleV2:
+    "Puro Dancehall Jamaicano en Farray's Center. Mucho más que dance, una forma de vivir. Viaja a Jamaica sin salir of Barcelona | Clases desde iniciación hasta avanzado, entre Plaza España y Sants.",
   dancehallHeroTitleV2: 'Classes of Dancehall in Barcelona',
   dancehallHowItWorksTitle: 'How Funcionan Nuestras Classes of Dancehall in Barcelona?',
   dancehallLevelsTitle: 'Niveles Para Todos',
-  dancehallMidCTADesc: 'Habla con nosotros por WhatsApp y reserva tu class gratis ahora mismo. ¡Te respondemos en minutos!',
+  dancehallMidCTADesc:
+    'Habla con nosotros por WhatsApp y reserva tu class gratis ahora mismo. ¡Te respondemos en minutos!',
   dancehallMidCTATitle: '¿Listo Para Transformar Tu Vida?',
-  dancehallPageTitleV2: 'Classes of Dancehall in Barcelona | Puro Dancehall Jamaicano | Farray\'s Center',
-  dancehallProblem1Desc: 'No debes dejar que la monotonía te domine. Es hora de hacer un cambio y recuperar tu vitalidad, motivación y ganas de hacer cosas.',
+  dancehallPageTitleV2:
+    "Classes of Dancehall in Barcelona | Puro Dancehall Jamaicano | Farray's Center",
+  dancehallProblem1Desc:
+    'No debes dejar que la monotonía te domine. Es hora de hacer un cambio y recuperar tu vitalidad, motivación y ganas de hacer cosas.',
   dancehallProblem1Title: '¿Te Sientes Estresado, Sin Energía y Cansado de Tu Rutina?',
-  dancehallProblem2Desc: 'Los que hoy se muestran seguros y confiados aprendieron a vencer sus miedos. Tú también puedes descubrir la mejor versión de ti.',
+  dancehallProblem2Desc:
+    'Los que hoy se muestran seguros y confiados aprendieron a vencer sus miedos. Tú también puedes descubrir la mejor versión de ti.',
   dancehallProblem2Title: '¿Sientes Que Podrías Mostrar Una Versión Más Segura de Ti?',
-  dancehallProblem3Desc: 'Deberías poder mantenerte en forma de una manera divertida, agradable y amena, porque hacer siempre lo mismo es lo que te aburre.',
+  dancehallProblem3Desc:
+    'Deberías poder mantenerte en forma de una manera divertida, agradable y amena, porque hacer siempre lo mismo es lo que te aburre.',
   dancehallProblem3Title: '¿Estás Cansado de Rutinas de Ejercicio Aburridas?',
-  dancehallProblem4Desc: 'Necesitas un momento en tu semana para divertirte, ampliar tu círculo de amigos y hacer una actividad que te conecte contigo y con los demás.',
+  dancehallProblem4Desc:
+    'Necesitas un momento en tu semana para divertirte, ampliar tu círculo de amigos y hacer una actividad que te conecte contigo y con los demás.',
   dancehallProblem4Title: '¿Sientes Que Deberías Divertirte y Socializar Más?',
-  dancehallProblem5Desc: 'Necesitas un soplo de aire fresco para despertar tu creatividad y reconectar con your body de una forma totalmente nueva.',
+  dancehallProblem5Desc:
+    'Necesitas un soplo de aire fresco para despertar tu creatividad y reconectar con your body de una forma totalmente nueva.',
   dancehallProblem5Title: '¿Te Encanta Bailar Pero Necesitas Probar Algo Diferente y Fresco?',
-  dancehallProblem6Desc: 'Si te inspira todo lo que representa Jamaica deberías encontrar formas de experimentar su culture sin tener que cruzar el océano.',
+  dancehallProblem6Desc:
+    'Si te inspira todo lo que representa Jamaica deberías encontrar formas de experimentar su culture sin tener que cruzar el océano.',
   dancehallProblem6Title: '¿La Esencia de Jamaica y Su Cultura Te Mueven Por Dentro?',
   dancehallProblemsTitle: '¿Te Identificas en Alguna de Estas Situaciones?',
   dancehallScheduleSubtitle: 'Clases disponibles practicemente todos los días de la semana',
   dancehallScheduleTitle: 'Schedules de Nuestras Classes of Dancehall in Barcelona',
-  dancehallSolutionDesc: 'Decenas de personas ya han dado el paso y lo viven cada semana en nuestras classes of Dancehall in Barcelona, a tan solo 5 minutos de Plaza España y Estación de Sants. Y cuando salen... ya no son los mismos. Si quieres salir de la rutina, sentirte mejor contigo mismo, conocer gente nueva y ponerte en forma mientras te diviertes, este style caribeño es lo tuyo.',
+  dancehallSolutionDesc:
+    'Decenas de personas ya han dado el paso y lo viven cada semana en nuestras classes of Dancehall in Barcelona, a tan solo 5 minutos de Plaza España y Estación de Sants. Y cuando salen... ya no son los mismos. Si quieres salir de la rutina, sentirte mejor contigo mismo, conocer gente nueva y ponerte en forma mientras te diviertes, este style caribeño es lo tuyo.',
   dancehallSolutionTitle: 'Necesitas Apuntarte a Classes of Dancehall en Una Academia de Baile',
-  dancehallTeacher1Bio: 'Isabel López es una apasionada del dancehall con más de 5 años de experience como teachera especializada en dance urbano y reggaeton. Entrenada con maestros jamaicanos, su energy contagiosa y technique profesional la convierten en una de las instructoras más queridas de Farray\'s Center. Sus classs mezclan old school moves (Willie Bounce, Nuh Linga) con los últimos hits.',
+  dancehallTeacher1Bio:
+    "Isabel López es una apasionada del dancehall con más de 5 años de experience como teachera especializada en dance urbano y reggaeton. Entrenada con maestros jamaicanos, su energy contagiosa y technique profesional la convierten en una de las instructoras más queridas de Farray's Center. Sus classs mezclan old school moves (Willie Bounce, Nuh Linga) con los últimos hits.",
   dancehallTeacher1Specialty: 'Profesora de Dancehall | +5 años de Experiencia',
-  dancehallTeacher2Bio: 'Sandra Gómez es una to danceina profesional con más de 6 años de experience en dancehall y twerk. Su style único fusiona movements del Twerk/Bootydance con la esencia jamaicana. Su technique impecable y metodología de enseñanza la convierten en una de las teacheras más solicitadas. Energía, sensualidad y feminidad pura.',
+  dancehallTeacher2Bio:
+    'Sandra Gómez es una to danceina profesional con más de 6 años de experience en dancehall y twerk. Su style único fusiona movements del Twerk/Bootydance con la esencia jamaicana. Su technique impecable y metodología de enseñanza la convierten en una de las teacheras más solicitadas. Energía, sensualidad y feminidad pura.',
   dancehallTeacher2Specialty: 'Profesora de Dancehall y Twerk | +6 años de Experiencia',
   dancehallTeachersSubtitle: 'Increíbles Profesionales, Mejores Personas',
   dancehallTeachersTitle: 'Conoce Nuestras Profesoras de Dancehall',
@@ -1436,17 +1521,21 @@ export const common = {
   // ========== Facilities Section ==========
   dancehallVideoTitle: 'Vive la Experiencia Dancehall',
   facilitiesActivitiesTitle: '¿Qué sucede en nuestras salas de dance?',
-  facilitiesActivity1: 'Classes of dance y dance de todos los styles: latinos, urbanos, contemporáneos y ballet',
+  facilitiesActivity1:
+    'Classes of dance y dance de todos los styles: latinos, urbanos, contemporáneos y ballet',
   facilitiesActivity2: 'Actividades de fitness y preparación física específica for dancers',
   facilitiesActivity3: 'Ensayos de compañías profesionales y grupos coreográficos',
   facilitiesActivity4: 'Producción de trabajos para televisión, cine, videoclips y musicales',
   facilitiesActivity5: 'Masterclasses con grandes dancers y coreógrafos internacionales',
   facilitiesActivity6: 'Workshops intensivos, audiciones, castings y formaciones profesionales',
-  facilitiesAm1Desc: 'Un espacio donde relajarte, compartir con tus compañeros y vivir el ambiente de community que caracteriza a Farray\'s. Café, bebidas y snacks disponibles.',
+  facilitiesAm1Desc:
+    "Un espacio donde relajarte, compartir con tus compañeros y vivir el ambiente de community que caracteriza a Farray's. Café, bebidas y snacks disponibles.",
   facilitiesAm1Title: 'Bar / Zona Social',
-  facilitiesAm2Desc: 'Más de 30 m² cada uno, equipados con duchas de agua caliente, taquillas seguras y espacio suficiente para cambiarte con comodidad antes y después de tus classs.',
+  facilitiesAm2Desc:
+    'Más de 30 m² cada uno, equipados con duchas de agua caliente, taquillas seguras y espacio suficiente para cambiarte con comodidad antes y después de tus classs.',
   facilitiesAm2Title: '2 Vestuarios Amplios',
-  facilitiesAm3Desc: 'Conexión Wi-Fi de alta velocidad en todas las instalaciones para que puedas trabajar, estudiar o compartir tus contenidos entre classs.',
+  facilitiesAm3Desc:
+    'Conexión Wi-Fi de alta velocidad en todas las instalaciones para que puedas trabajar, estudiar o compartir tus contenidos entre classs.',
   facilitiesAm3Title: 'Zona Wi-Fi Gratuita',
   facilitiesAmenitiesSubtitle: 'Más que una escuela: una community',
   facilitiesAmenitiesTitle: 'Zona Social y Vestuarios de nuestra escuela de dance',
@@ -1456,60 +1545,82 @@ export const common = {
   facilitiesCTA1Subtext: 'Conoce nuestras instalaciones en persona',
   facilitiesCTA2: 'Solicita un Tour',
   facilitiesCTA2Subtext: 'Discover nuestros espacios',
-  facilitiesCTAP1: 'Si buscas una academia de dance in Barcelona con instalaciones profesionales, amplias y cuidadas, Farray\'s International Dance Center te ofrece un espacio de referencia donde entrenar, crear proyectos artísticos y disfrutar de la dance en las mejores condiciones.',
+  facilitiesCTAP1:
+    "Si buscas una academia de dance in Barcelona con instalaciones profesionales, amplias y cuidadas, Farray's International Dance Center te ofrece un espacio de referencia donde entrenar, crear proyectos artísticos y disfrutar de la dance en las mejores condiciones.",
   facilitiesCTAP2: 'Ven a conocernos. Te enseñamos las instalaciones sin compromiso.',
-  facilitiesCTATitle: 'Farray\'s International Dance Center: Más que una Escuela',
-  facilitiesEq1Desc: 'Parquet o linóleo flotante de alta calidad, específicamente diseñados para cada disciplina. Absorción de impactos, agarre óptimo y protección articular.',
+  facilitiesCTATitle: "Farray's International Dance Center: Más que una Escuela",
+  facilitiesEq1Desc:
+    'Parquet o linóleo flotante de alta calidad, específicamente diseñados para cada disciplina. Absorción de impactos, agarre óptimo y protección articular.',
   facilitiesEq1Title: 'Suelos Profesionales',
-  facilitiesEq2Desc: 'Espejos profesionales de pared a pared para trabajar technique, líneas corporales y postura. Visibilidad perfecta desde cualquier ángulo de la sala.',
+  facilitiesEq2Desc:
+    'Espejos profesionales de pared a pared para trabajar technique, líneas corporales y postura. Visibilidad perfecta desde cualquier ángulo de la sala.',
   facilitiesEq2Title: 'Espejos de Pared Completa',
-  facilitiesEq3Desc: 'Sistema de climatización profesional con ventilación centralizada, pensado para el esfuerzo físico intenso. Temperatura controlada todo el año.',
+  facilitiesEq3Desc:
+    'Sistema de climatización profesional con ventilación centralizada, pensado para el esfuerzo físico intenso. Temperatura controlada todo el año.',
   facilitiesEq3Title: 'Ventilación y Aire Acondicionado',
-  facilitiesEq4Desc: 'Barras fijas de doble altura en las salas orientadas a dance clásica y technique contemporánea. Instalación profesional.',
+  facilitiesEq4Desc:
+    'Barras fijas de doble altura en las salas orientadas a dance clásica y technique contemporánea. Instalación profesional.',
   facilitiesEq4Title: 'Barras de Ballet',
-  facilitiesEq5Desc: 'Colchonetas, pesas ligeras, bandas elásticas, foam rollers y material específico para preparación física for dancers.',
+  facilitiesEq5Desc:
+    'Colchonetas, pesas ligeras, bandas elásticas, foam rollers y material específico para preparación física for dancers.',
   facilitiesEq5Title: 'Material de Fitness',
-  facilitiesEq6Desc: 'Sistemas de sonido de alta fidelidad con entrada para smartphone, tablet u ordenador. Listos para tus classs, ensayos o grabaciones.',
+  facilitiesEq6Desc:
+    'Sistemas de sonido de alta fidelidad con entrada para smartphone, tablet u ordenador. Listos para tus classs, ensayos o grabaciones.',
   facilitiesEq6Title: 'Equipos de Audio Profesionales',
   facilitiesEquipmentSubtitle: 'Todo lo que necesitas para tu practice y rendimiento',
   facilitiesEquipmentTitle: 'Equipamiento Profesional en Cada Sala',
-  facilitiesFaqA1: 'Estamos en Calle Entença 100, Barcelona, entre Plaza España y Estación de Sants. Acceso fácil en metro (Entença L5, Rocafort L1, Tarragona L3), tren (Sants) y autobús. A 5 minutos caminando de Plaza España.',
-  facilitiesFaqA2: 'Tenemos 4 salas profesionales: una sala principal de 120 m² con linóleo, una sala de ballet de 80 m² con linóleo, una sala de latinos y urbanos de 80 m² con parquet, y una sala de fitness de 40 m² con parquet.',
-  facilitiesFaqA3: 'Nuestras salas tienen suelos flotantes profesionales: linóleo flotante en 2 salas (ideal para ballet y contemporáneo) y parquet flotante de alta calidad en 2 salas (perfecto para latinos y fitness). Todos con absorción de impactos para proteger tus articulaciones.',
-  facilitiesFaqA4: 'Sí, todas nuestras salas están equipadas con aire acondicionado y ventilación centralizada, específicamente diseñada para actividades físicas intensas. Temperatura controlada durante todo el año.',
-  facilitiesFaqA5: 'Sí, tenemos 2 vestuarios amplios (más de 30 m² cada uno) equipados con duchas de agua caliente, taquillas seguras y espacio suficiente para cambiarte con comodidad antes y después de tus classs.',
-  facilitiesFaqA6: 'Por supuesto. Puedes venir a conocer nuestras instalaciones sin compromiso. También ofrecemos classes of prueba donde podrás experimentar las salas, conocer a los teacheres y sentir el ambiente de la escuela.',
-  facilitiesFaqA7: 'Sí, ofrecemos alquiler de salas por horas para ensayos, classs particulares, workshops, castings, grabaciones y eventos. Contáctanos para disponibilidad y tarifas especiales.',
-  facilitiesFaqQ1: '¿Dónde están ubicadas las instalaciones de Farray\'s Center?',
-  facilitiesFaqQ2: '¿Cuántas salas de dance tiene Farray\'s Center?',
+  facilitiesFaqA1:
+    'Estamos en Calle Entença 100, Barcelona, entre Plaza España y Estación de Sants. Acceso fácil en metro (Entença L5, Rocafort L1, Tarragona L3), tren (Sants) y autobús. A 5 minutos caminando de Plaza España.',
+  facilitiesFaqA2:
+    'Tenemos 4 salas profesionales: una sala principal de 120 m² con linóleo, una sala de ballet de 80 m² con linóleo, una sala de latinos y urbanos de 80 m² con parquet, y una sala de fitness de 40 m² con parquet.',
+  facilitiesFaqA3:
+    'Nuestras salas tienen suelos flotantes profesionales: linóleo flotante en 2 salas (ideal para ballet y contemporáneo) y parquet flotante de alta calidad en 2 salas (perfecto para latinos y fitness). Todos con absorción de impactos para proteger tus articulaciones.',
+  facilitiesFaqA4:
+    'Sí, todas nuestras salas están equipadas con aire acondicionado y ventilación centralizada, específicamente diseñada para actividades físicas intensas. Temperatura controlada durante todo el año.',
+  facilitiesFaqA5:
+    'Sí, tenemos 2 vestuarios amplios (más de 30 m² cada uno) equipados con duchas de agua caliente, taquillas seguras y espacio suficiente para cambiarte con comodidad antes y después de tus classs.',
+  facilitiesFaqA6:
+    'Por supuesto. Puedes venir a conocer nuestras instalaciones sin compromiso. También ofrecemos classes of prueba donde podrás experimentar las salas, conocer a los teacheres y sentir el ambiente de la escuela.',
+  facilitiesFaqA7:
+    'Sí, ofrecemos alquiler de salas por horas para ensayos, classs particulares, workshops, castings, grabaciones y eventos. Contáctanos para disponibilidad y tarifas especiales.',
+  facilitiesFaqQ1: "¿Dónde están ubicadas las instalaciones de Farray's Center?",
+  facilitiesFaqQ2: "¿Cuántas salas de dance tiene Farray's Center?",
   facilitiesFaqQ3: '¿Qué tipo de suelo tienen las salas?',
   facilitiesFaqQ4: '¿Las salas tienen aire acondicionado?',
   facilitiesFaqQ5: '¿Hay vestuarios y duchas disponibles?',
   facilitiesFaqQ6: '¿Puedo visitar las instalaciones antes de inscribirme?',
   facilitiesFaqQ7: '¿Se pueden alquilar las salas para ensayos privados o eventos?',
   facilitiesFaqTitle: 'Preguntas Frecuentes sobre las Facilities de nuestra academia de dance',
-  facilitiesHeroDesc: 'Farray\'s International Dance Center es una escuela de dance in Barcelona con más de 700 m² de instalaciones diseñadas específicamente para la dance, el entrenamiento físico y la creación artística.',
+  facilitiesHeroDesc:
+    "Farray's International Dance Center es una escuela de dance in Barcelona con más de 700 m² de instalaciones diseñadas específicamente para la dance, el entrenamiento físico y la creación artística.",
   facilitiesHeroLocation: 'Calle Entença 100, Barcelona - Entre Plaza España y Sants',
   facilitiesHeroSubtitle: 'Over 700 m² dedicated to dance in the heart of Barcelona',
   facilitiesHeroTitle: 'Facilities - Dance School in Barcelona',
-  facilitiesIntroP1: 'Farray\'s International Dance Center es una escuela de dance in Barcelona con más de 700 m² de instalaciones diseñadas específicamente para la dance, el entrenamiento físico y la creación artística. Todo está pensado para que puedas aprovechar al máximo tus classes of dance, ensayos, formaciones y eventos, en un espacio profesional y cuidado.',
-  facilitiesIntroP2: 'Nuestras instalaciones combinan equipamiento de última generación con un ambiente familiar y acogedor, donde cada detalle está pensado para tu comodidad y rendimiento.',
+  facilitiesIntroP1:
+    "Farray's International Dance Center es una escuela de dance in Barcelona con más de 700 m² de instalaciones diseñadas específicamente para la dance, el entrenamiento físico y la creación artística. Todo está pensado para que puedas aprovechar al máximo tus classes of dance, ensayos, formaciones y eventos, en un espacio profesional y cuidado.",
+  facilitiesIntroP2:
+    'Nuestras instalaciones combinan equipamiento de última generación con un ambiente familiar y acogedor, donde cada detalle está pensado para tu comodidad y rendimiento.',
   facilitiesIntroTitle: 'Un espacio pensado para to dance, entrenar y compartir',
-  facilitiesMetaDescription: 'Más de 700 m² de instalaciones profesionales para dance in Barcelona. 4 salas equipadas con suelos especializados, espejos, aire acondicionado, vestuarios y zona social. Centro acreditado CID-UNESCO.',
+  facilitiesMetaDescription:
+    'Más de 700 m² de instalaciones profesionales para dance in Barcelona. 4 salas equipadas con suelos especializados, espejos, aire acondicionado, vestuarios y zona social. Centro acreditado CID-UNESCO.',
   facilitiesPageTitle: 'Facilities - Dance School in Barcelona',
-  facilitiesRoom1Desc: 'Nuestra sala más grande, ideal para classs numerosas, ensayos de compañías, workshops internacionales y eventos especiales. Capacidad para más de 40 dancers.',
+  facilitiesRoom1Desc:
+    'Nuestra sala más grande, ideal para classs numerosas, ensayos de compañías, workshops internacionales y eventos especiales. Capacidad para más de 40 dancers.',
   facilitiesRoom1Floor: 'Suelo de linóleo flotante profesional',
   facilitiesRoom1Size: '120 m² de espacio diáfano',
   facilitiesRoom1Title: 'Sala Principal - 120 m²',
-  facilitiesRoom2Desc: 'Diseñada específicamente para ballet, dance contemporánea y dance moderna. Equipada con barras de ballet a lo largo de toda la sala y espejos de pared completa.',
+  facilitiesRoom2Desc:
+    'Diseñada específicamente para ballet, dance contemporánea y dance moderna. Equipada con barras de ballet a lo largo de toda la sala y espejos de pared completa.',
   facilitiesRoom2Floor: 'Suelo de linóleo flotante',
   facilitiesRoom2Size: '80 m² de espacio técnico',
   facilitiesRoom2Title: 'Sala de Ballet - 80 m²',
-  facilitiesRoom3Desc: 'Perfecta para classes of salsa, bachata, kizomba, dances urbanas y dances de partner. Espacio versátil diseñado para trabajo técnico en partners y grupos medianos.',
+  facilitiesRoom3Desc:
+    'Perfecta para classes of salsa, bachata, kizomba, dances urbanas y dances de partner. Espacio versátil diseñado para trabajo técnico en partners y grupos medianos.',
   facilitiesRoom3Floor: 'Parquet flotante de alta calidad',
   facilitiesRoom3Size: '80 m² optimizados',
   facilitiesRoom3Title: 'Sala de Latinos y Urbanos - 80 m²',
-  facilitiesRoom4Desc: 'Ideal para preparación física, fitness y acondicionamiento for dancers. Espacio optimizado para entrenamientos funcionales y classes of cardio.',
+  facilitiesRoom4Desc:
+    'Ideal para preparación física, fitness y acondicionamiento for dancers. Espacio optimizado para entrenamientos funcionales y classes of cardio.',
   facilitiesRoom4Floor: 'Parquet flotante resistente',
   facilitiesRoom4Size: '40 m² de pura energy',
   facilitiesRoom4Title: 'Sala de Fitness - 40 m²',
@@ -1519,50 +1630,70 @@ export const common = {
   facilitiesStatRooms: 'Salas Profesionales',
   facilitiesStatSpace: 'm² de instalaciones',
   facilitiesTrustTitle: 'Un Centro de Referencia in Barcelona',
-  facilitiesWhy1Desc: 'En pleno corazón of Barcelona, entre Plaza España y Sants. Acceso fácil en metro (L1, L3, L5), tren y autobús. Parking público cercano.',
+  facilitiesWhy1Desc:
+    'En pleno corazón of Barcelona, entre Plaza España y Sants. Acceso fácil en metro (L1, L3, L5), tren y autobús. Parking público cercano.',
   facilitiesWhy1Title: 'Ubicación Inmejorable',
-  facilitiesWhy2Desc: 'Más de 700 m² específicamente diseñados para dance. Suelos flotantes, climatización, espejos profesionales y equipamiento de primera calidad.',
+  facilitiesWhy2Desc:
+    'Más de 700 m² específicamente diseñados para dance. Suelos flotantes, climatización, espejos profesionales y equipamiento de primera calidad.',
   facilitiesWhy2Title: 'Facilities Profesionales',
-  facilitiesWhy3Desc: 'Centro reconocido por el Consejo Internacional de la Danza de la UNESCO. Garantía de calidad, profesionalidad y estándares internacionales.',
+  facilitiesWhy3Desc:
+    'Centro reconocido por el Consejo Internacional de la Danza de la UNESCO. Garantía de calidad, profesionalidad y estándares internacionales.',
   facilitiesWhy3Title: 'Acreditación CID-UNESCO',
-  facilitiesWhy4Desc: 'No eres un número. Aquí todos nos conocemos, nos apoyamos y compartimos la pasión por el dance. Comunidad real, no marketing.',
+  facilitiesWhy4Desc:
+    'No eres un número. Aquí todos nos conocemos, nos apoyamos y compartimos la pasión por el dance. Comunidad real, no marketing.',
   facilitiesWhy4Title: 'Ambiente Familiar',
-  facilitiesWhy5Desc: 'Más de 100 classs semanales en horarios de mañana, tarde y noche. De lunes a viernes. Siempre hay un horario que se adapta a tu vida.',
+  facilitiesWhy5Desc:
+    'Más de 100 classs semanales en horarios de mañana, tarde y noche. De lunes a viernes. Siempre hay un horario que se adapta a tu vida.',
   facilitiesWhy5Title: 'Flexibilidad Horaria',
-  facilitiesWhy6Desc: 'Facilities cuidadas diariamente. Limpieza profesional, mantenimiento preventivo y renovación constante del equipamiento.',
+  facilitiesWhy6Desc:
+    'Facilities cuidadas diariamente. Limpieza profesional, mantenimiento preventivo y renovación constante del equipamiento.',
   facilitiesWhy6Title: 'Mantenimiento Impecable',
   // ========== Clases Particulares Section ==========
   facilitiesWhyTitle: '¿Por Qué Elegir Nuestras Facilities?',
   // ========== Room Rental Section ==========
-  roomRental_broadcast_footer: '👉 Pregúntanos por el servicio de broadcast al solicitar tu presupuesto.',
+  roomRental_broadcast_footer:
+    '👉 Pregúntanos por el servicio de broadcast al solicitar tu presupuesto.',
   roomRental_cta_location: '📍 Calle Entença 100, Barcelona (entre Plaza España y Sants)',
   roomRental_cta_phone: 'Llamar: 933 25 96 44',
   // ========== Session Structure Section ==========
-  choreographyDesc: 'Learn secuencias dinámicas que combinan pasos tradicionales y modernos del Dancehall.',
+  choreographyDesc:
+    'Learn secuencias dinámicas que combinan pasos tradicionales y modernos del Dancehall.',
   choreographyTitle: 'Choreography',
-  improvisationDesc: 'Trabajamos la improvisación para estimular tus capacidades creativas y llevar tu dance a un nivel informal, sensual y atrevido.',
+  improvisationDesc:
+    'Trabajamos la improvisación para estimular tus capacidades creativas y llevar tu dance a un nivel informal, sensual y atrevido.',
   improvisationTitle: 'Improvisation',
-  sessionItem1Desc: 'Prepare your body with specific exercises to avoid injuries and improve your technique.',
+  sessionItem1Desc:
+    'Prepare your body with specific exercises to avoid injuries and improve your technique.',
   sessionItem1Title: 'Warm-up',
-  sessionItem2Desc: 'Learn secuencias dinámicas que combinan pasos tradicionales y modernos del Dancehall.',
+  sessionItem2Desc:
+    'Learn secuencias dinámicas que combinan pasos tradicionales y modernos del Dancehall.',
   sessionItem2Title: 'Choreography',
-  sessionItem3Desc: 'Trabajamos la improvisación para estimular tus capacidades creativas para que puedas llevar tu dance a un nivel informal, sensual y atrevido.',
+  sessionItem3Desc:
+    'Trabajamos la improvisación para estimular tus capacidades creativas para que puedas llevar tu dance a un nivel informal, sensual y atrevido.',
   sessionItem3Title: 'Improvisation',
   sessionStructureTitle: 'CADA SESIÓN DURA 1 HORA E INCLUYE:',
-  warmupDesc: 'Prepare your body with specific exercises to avoid injuries and improve your technique.',
+  warmupDesc:
+    'Prepare your body with specific exercises to avoid injuries and improve your technique.',
   // ========== Levels Section ==========
   warmupTitle: 'Warm-up',
-  advancedLevelDesc: 'Pensado para quienes quieren llevar su nivel al máximo y su style al siguiente nivel.',
-  beginnerLevelDesc: 'Ideal para estudiantes que quieren empezar desde cero, aprender paso a paso con buen rollo.',
+  advancedLevelDesc:
+    'Pensado para quienes quieren llevar su nivel al máximo y su style al siguiente nivel.',
+  beginnerLevelDesc:
+    'Ideal para estudiantes que quieren empezar desde cero, aprender paso a paso con buen rollo.',
   // ========== Other Section ==========
-  intermediateLevelDesc: 'Para estudiantes que quieren mejorar technique, coordinación y expression con pasos más complejos.',
+  intermediateLevelDesc:
+    'Para estudiantes que quieren mejorar technique, coordinación y expression con pasos más complejos.',
   basedOn: 'basado en',
-  howItWorksIntro: 'En nuestras classes of Dancehall in Barcelona generalmente se enseña una secuencia coreografiada, pero en la practice el Dancehall es una dance improvisada.',
-  howItWorksPillar1Desc: 'Desde iniciación hasta avanzado. Cada student encuentra su espacio para crecer a su rhythm, con classs adaptadas a cada nivel de experience.',
+  howItWorksIntro:
+    'En nuestras classes of Dancehall in Barcelona generalmente se enseña una secuencia coreografiada, pero en la practice el Dancehall es una dance improvisada.',
+  howItWorksPillar1Desc:
+    'Desde iniciación hasta avanzado. Cada student encuentra su espacio para crecer a su rhythm, con classs adaptadas a cada nivel de experience.',
   howItWorksPillar1Title: 'Niveles para TODOS',
-  howItWorksPillar2Desc: 'Contenido estructurado para facilitar el aprendizaje. Seguimos un sistema progresivo que te permite avanzar con confidence y solidez.',
+  howItWorksPillar2Desc:
+    'Contenido estructurado para facilitar el aprendizaje. Seguimos un sistema progresivo que te permite avanzar con confidence y solidez.',
   howItWorksPillar2Title: 'Metodología CLARA',
-  howItWorksPillar3Desc: 'Respetamos las raíces y traemos la esencia jamaicana a cada class. Conocerás el verdadero espíritu del Dancehall.',
+  howItWorksPillar3Desc:
+    'Respetamos las raíces y traemos la esencia jamaicana a cada class. Conocerás el verdadero espíritu del Dancehall.',
   howItWorksPillar3Title: 'Estilo AUTÉNTICO',
   howItWorksTitle: 'How Funcionan Nuestras Classes of Dancehall in Barcelona?',
   reviews: 'reseñas',

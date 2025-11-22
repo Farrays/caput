@@ -82,7 +82,10 @@
       "Bash(if [ -f coverage/coverage-summary.json ])",
       "Bash(then cat coverage/coverage-summary.json)",
       "Bash(else echo \"No coverage report found. Running tests...\")",
-      "Bash(npx playwright:*)"
+      "Bash(npx playwright:*)",
+      "Bash(git fsck:*)",
+      "Bash(git cherry-pick:*)",
+      "Bash(npx prettier --write \"i18n/locales/**/*.ts\")"
     ],
     "deny": [],
     "ask": []

@@ -25,7 +25,8 @@ export const particularesPage = {
   particularesPage_premium_feature5: 'Posibilidad de courss online',
   particularesPage_premium_feature6: 'Posibilidad de courss a domicilio',
   particularesPage_packs_title: 'Nuestros Packs de Clases Particulares',
-  particularesPage_packs_subtitle: 'Elige el pack que mejor se adapte a tus necesidades. Todos incluyen validez de 12 meses.',
+  particularesPage_packs_subtitle:
+    'Elige el pack que mejor se adapte a tus necesidades. Todos incluyen validez de 12 meses.',
   particularesPage_pack_popular: 'Le Plus Populaire',
   particularesPage_pack1_name: 'Pack 1 Cours',
   particularesPage_pack1_feature1: '1 heure de cours particulier',
@@ -125,7 +126,8 @@ export const particularesPage = {
   particularesPage_cta_primary: 'Ver Packs y Precios',
   particularesPage_cta_secondary: 'Consultar Disponibilidad',
   particularesPage_benefits_title: 'Pourquoi Choisir des Cours Particuliers de Danse?',
-  particularesPage_benefits_subtitle: 'Découvrez les avantages que seuls les cours privés peuvent vous offrir',
+  particularesPage_benefits_subtitle:
+    'Découvrez les avantages que seuls les cours privés peuvent vous offrir',
   particularesPage_benefit1_title: 'Professeur 100% Dédié à Vous',
   particularesPage_benefit1_desc:
     "Toute l'attention concentrée sur votre technique, votre posture, votre rythme. Sans distractions ni attentes. Chaque seconde de cours conçue pour maximiser votre progrès.",
@@ -147,5 +149,6 @@ export const particularesPage = {
   particularesPage_finalCta_button: 'Réserver Mon Cours Particulier',
   particularesPage_finalCta_button_secondary: 'Vérifier la Disponibilité',
   particularesPage_benefitsTitle: 'Pourquoi Choisir les Cours Particuliers de Danse ?',
-  particularesPage_benefitsSubtitle: 'Découvrez les avantages que seuls les cours privés peuvent vous offrir',
+  particularesPage_benefitsSubtitle:
+    'Découvrez les avantages que seuls les cours privés peuvent vous offrir',
 };

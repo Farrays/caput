@@ -33,5 +33,5 @@ export const ca = {
   ...roomRental,
   ...salsaBachata,
   ...serviciosBaile,
-  ...yunaisyFarray
+  ...yunaisyFarray,
 };

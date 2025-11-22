@@ -25,7 +25,8 @@ export const particularesPage = {
   particularesPage_premium_feature5: 'Posibilidad de classes online',
   particularesPage_premium_feature6: 'Posibilidad de classes a domicilio',
   particularesPage_packs_title: 'Nuestros Packs de Clases Particulares',
-  particularesPage_packs_subtitle: 'Elige el pack que mejor se adapte a tus necesidades. Todos incluyen validez de 12 meses.',
+  particularesPage_packs_subtitle:
+    'Elige el pack que mejor se adapte a tus necesidades. Todos incluyen validez de 12 meses.',
   particularesPage_pack_popular: 'Més Popular',
   particularesPage_pack1_name: 'Pack 1 Classe',
   particularesPage_pack1_feature1: '1 hora de classe particular',
@@ -74,8 +75,10 @@ export const particularesPage = {
   particularesPage_comparisonTitle: 'Classes Particulars vs. Classes Premium',
   particularesPage_comparisonSubtitle:
     'Totes dues són excel·lents opcions, però cadascuna serveix diferents necessitats',
-  particularesPage_particulares_desc: 'Atención exclusiva 100% dedicada a ti. Perfecto para quienes buscan el máximo progreso en el menor tiempo posible, con total privacidad y horarios ultra-flexibles. Ideal para principiantes absolutos, ballarins avanzados que buscan perfeccionarse, o cualquier persona que valore la eficiencia y personalización.',
-  particularesPage_premium_desc: 'Combina lo mejor de ambos mundos: aprendizaje acelerado con la energia de un grupo pequeño y privado. Perfecto para amigos, parellas o familias que quieren aprender juntos, compartir costos y mantener un ambiente íntimo. Más económico que classes particulares individuales, pero con atención mucho más personalizada que classes grupales regulares.',
+  particularesPage_particulares_desc:
+    'Atención exclusiva 100% dedicada a ti. Perfecto para quienes buscan el máximo progreso en el menor tiempo posible, con total privacidad y horarios ultra-flexibles. Ideal para principiantes absolutos, ballarins avanzados que buscan perfeccionarse, o cualquier persona que valore la eficiencia y personalización.',
+  particularesPage_premium_desc:
+    'Combina lo mejor de ambos mundos: aprendizaje acelerado con la energia de un grupo pequeño y privado. Perfecto para amigos, parellas o familias que quieren aprender juntos, compartir costos y mantener un ambiente íntimo. Más económico que classes particulares individuales, pero con atención mucho más personalizada que classes grupales regulares.',
   particularesPage_whyChoose_title:
     "Per Què Triar Farray's Center Per a les Teves Classes Particulars?",
   particularesPage_whyChoose_p1:
@@ -120,7 +123,8 @@ export const particularesPage = {
   particularesPage_cta_primary: 'Ver Packs y Precios',
   particularesPage_cta_secondary: 'Consultar Disponibilidad',
   particularesPage_benefits_title: 'Per Què Escollir Classes Particulars de Ball?',
-  particularesPage_benefits_subtitle: 'Descobreix els avantatges que només les classes privades et poden oferir',
+  particularesPage_benefits_subtitle:
+    'Descobreix els avantatges que només les classes privades et poden oferir',
   particularesPage_benefit1_title: 'Professor 100% Dedicat a Tu',
   particularesPage_benefit1_desc:
     "Tota l'atenció centrada en la teva tècnica, la teva postura, el teu ritme. Sense distraccions ni esperes. Cada segon de classe dissenyat per maximitzar el teu progrés.",
@@ -142,5 +146,6 @@ export const particularesPage = {
   particularesPage_finalCta_button: 'Reserva la Meva Classe Particular',
   particularesPage_finalCta_button_secondary: 'Consultar Disponibilitat',
   particularesPage_benefitsTitle: 'Per Què Escollir Classes Particulars de Ball?',
-  particularesPage_benefitsSubtitle: 'Descobreix els avantatges que només les classes privades et poden oferir',
+  particularesPage_benefitsSubtitle:
+    'Descobreix els avantatges que només les classes privades et poden oferir',
 };

@@ -110,12 +110,14 @@ export const roomRental = {
   roomRental_gallery_prev: 'Previous image',
   roomRental_gallery_next: 'Next image',
   roomRental_gallery_view: 'View image',
-  roomRental_broadcast_intro: 'En Farray\'s puedes organizar tu workshop o intensivo en la academia y retransmitirlo en directo por internet, con nuestro servicio de broadcast profesional.',
+  roomRental_broadcast_intro:
+    "En Farray's puedes organizar tu workshop o intensivo en la academia y retransmitirlo en directo por internet, con nuestro servicio de broadcast profesional.",
   roomRental_broadcast_item1: 'Lanzar formaciones online',
   roomRental_broadcast_item2: 'Vender plazas híbridas (presencial + online)',
   roomRental_broadcast_item3: 'Llegar a students de otros países sin salir of Barcelona',
   roomRental_broadcast_perfect_for: 'Perfecto para:',
-  roomRental_broadcast_subtitle: '¿Quieres que tu evento llegue más lejos que las cuatro paredes de la sala?',
+  roomRental_broadcast_subtitle:
+    '¿Quieres que tu evento llegue más lejos que las cuatro paredes de la sala?',
   roomRental_broadcast_title: 'Novedad: Retransmisión Online (Broadcast)',
   roomRental_room2_condition: 'Fines de semana y festivos: mínimo 3 horas de alquiler',
   roomRental_room2_holiday_companies: 'Compañías / ensayos',

@@ -50,33 +50,44 @@ export const danzasUrbanas = {
     'La Différence FIDC : Pourquoi choisir notre Académie de danses urbaines à Barcelone ?',
   danzasUrbanas_faq_title: 'Questions fréquentes sur nos cours de danses urbaines à Barcelone',
   danzasUrbanas_viewMore: 'Voir plus →',
-  danzasUrbanas_whichStyle_adult_text: 'Muchos adultos empiezan desde cero en nuestras cours de danses urbanas. Tenemos grupos específicos para adultos principiantes en Hip Hop, Dancehall, K-Pop y Reggaeton. La edad no importa: importa la actitud y las ganas de moverte.',
+  danzasUrbanas_whichStyle_adult_text:
+    'Muchos adultos empiezan desde cero en nuestras cours de danses urbanas. Tenemos grupos específicos para adultos principiantes en Hip Hop, Dancehall, K-Pop y Reggaeton. La edad no importa: importa la actitud y las ganas de moverte.',
   danzasUrbanas_whichStyle_adult_title: '¿Adulto sin expérience previa? Sin problema',
-  danzasUrbanas_whichStyle_beginner_text: 'Si nunca has bailado urbano, los mejores styles para empezar son Hip Hop (base y fundamentos), Dancehall (énergie y diversión inmediata) o Reggaeton (rythme latino accesible). Luego puedes expandirte a K-Pop, Heels, Afrobeat o Commercial.',
+  danzasUrbanas_whichStyle_beginner_text:
+    'Si nunca has bailado urbano, los mejores styles para empezar son Hip Hop (base y fundamentos), Dancehall (énergie y diversión inmediata) o Reggaeton (rythme latino accesible). Luego puedes expandirte a K-Pop, Heels, Afrobeat o Commercial.',
   danzasUrbanas_whichStyle_beginner_title: '¿Primera vez en danses urbanas? Empieza aquí',
-  danzasUrbanas_whichStyle_combine_text: 'Absolutamente sí. De hecho, te lo recomendamos. Hip Hop y Dancehall te da base y flow. K-Pop y Commercial te prepara para la industria. Heels y Dancehall fusiona sensualidad con énergie. Experimenta y encuentra tu combinación perfecta.',
+  danzasUrbanas_whichStyle_combine_text:
+    'Absolutamente sí. De hecho, te lo recomendamos. Hip Hop y Dancehall te da base y flow. K-Pop y Commercial te prepara para la industria. Heels y Dancehall fusiona sensualidad con énergie. Experimenta y encuentra tu combinación perfecta.',
   danzasUrbanas_whichStyle_combine_title: '¿Puedo combinar varios styles?',
   danzasUrbanas_whichStyle_commercial_goal: 'Prepararte para videoclips y audiciones',
   danzasUrbanas_whichStyle_commercial_style: 'Commercial Dance',
-  danzasUrbanas_whichStyle_commercial_why: 'Fusión de styles urbanos con technique comercial. Te prepara para castings, videoclips y la industria del entretenimiento profesional.',
+  danzasUrbanas_whichStyle_commercial_why:
+    'Fusión de styles urbanos con technique comercial. Te prepara para castings, videoclips y la industria del entretenimiento profesional.',
   danzasUrbanas_whichStyle_flow_goal: 'Mucho flow y cardio intenso',
   danzasUrbanas_whichStyle_flow_style: 'Dancehall',
-  danzasUrbanas_whichStyle_flow_why: 'Energía jamaicana explosiva, pasos rápidos, mucho mouvement de cadera y cardio. Quemas calorías mientras desarrollas groove y actitud.',
+  danzasUrbanas_whichStyle_flow_why:
+    'Energía jamaicana explosiva, pasos rápidos, mucho mouvement de cadera y cardio. Quemas calorías mientras desarrollas groove y actitud.',
   danzasUrbanas_whichStyle_foundation_goal: 'Base sólida y culture urbana',
   danzasUrbanas_whichStyle_foundation_style: 'Hip Hop',
-  danzasUrbanas_whichStyle_foundation_why: 'Fundamentos del Old School (Locking, Popping, House), groove, musicalité y freestyle. La base de todas las danses urbanas modernas.',
+  danzasUrbanas_whichStyle_foundation_why:
+    'Fundamentos del Old School (Locking, Popping, House), groove, musicalité y freestyle. La base de todas las danses urbanas modernas.',
   danzasUrbanas_whichStyle_glutes_goal: 'Trabajo de glúteos y twerking',
   danzasUrbanas_whichStyle_glutes_style: 'Twerk',
-  danzasUrbanas_whichStyle_glutes_why: 'Entrenamiento intenso de glúteos, piernas y core. Técnica de aislamiento, force y tonificación. Resultados físicos visibles y mejora de autoestima corporal.',
-  danzasUrbanas_whichStyle_intro: 'Cada style urbano tiene su personalidad, énergie y beneficios únicos. Usa esta guía para descubrir qué cours se adapta mejor a lo que buscas. No hay respuestas incorrectas: puedes combinar varios styles y explorar libremente.',
+  danzasUrbanas_whichStyle_glutes_why:
+    'Entrenamiento intenso de glúteos, piernas y core. Técnica de aislamiento, force y tonificación. Resultados físicos visibles y mejora de autoestima corporal.',
+  danzasUrbanas_whichStyle_intro:
+    'Cada style urbano tiene su personalidad, énergie y beneficios únicos. Usa esta guía para descubrir qué cours se adapta mejor a lo que buscas. No hay respuestas incorrectas: puedes combinar varios styles y explorar libremente.',
   danzasUrbanas_whichStyle_power_goal: 'Energía africana y potencia',
   danzasUrbanas_whichStyle_power_style: 'Afrobeat / Afrodance',
-  danzasUrbanas_whichStyle_power_why: 'Ritmos africanos contemporáneos, pasos potentes, conexión con raíces cultureles y énergie contagiosa. Cardio + expression culturel.',
+  danzasUrbanas_whichStyle_power_why:
+    'Ritmos africanos contemporáneos, pasos potentes, conexión con raíces cultureles y énergie contagiosa. Cardio + expression culturel.',
   danzasUrbanas_whichStyle_precision_goal: 'Disciplina y precisión coreográfica',
   danzasUrbanas_whichStyle_precision_style: 'K-Pop',
-  danzasUrbanas_whichStyle_precision_why: 'Coreografías de K-Pop con sincronización perfecta, formaciones y estética coreana. Ideal si te gusta el detalle y la coordinación grupal.',
+  danzasUrbanas_whichStyle_precision_why:
+    'Coreografías de K-Pop con sincronización perfecta, formaciones y estética coreana. Ideal si te gusta el detalle y la coordinación grupal.',
   danzasUrbanas_whichStyle_sensual_goal: 'Sensualidad y technique femenina en tacones',
   danzasUrbanas_whichStyle_sensual_style: 'Heels / Femmology / Sexy Style',
-  danzasUrbanas_whichStyle_sensual_why: 'Trabaja feminidad, confiance, isolaciones corporales y mouvements sensuales. Entrenas en tacones con technique de alta calidad, force de piernas y elegancia.',
+  danzasUrbanas_whichStyle_sensual_why:
+    'Trabaja feminidad, confiance, isolaciones corporales y mouvements sensuales. Entrenas en tacones con technique de alta calidad, force de piernas y elegancia.',
   danzasUrbanas_whichStyle_title: '¿Qué Estilo Urbano Elegir? Encuentra tu Baile Perfecto',
 };

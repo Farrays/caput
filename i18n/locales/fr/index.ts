@@ -33,5 +33,5 @@ export const fr = {
   ...roomRental,
   ...salsaBachata,
   ...serviciosBaile,
-  ...yunaisyFarray
+  ...yunaisyFarray,
 };

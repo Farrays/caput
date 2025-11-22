@@ -20,7 +20,8 @@ export const home = {
     'Commencez votre journée avec énergie. Consultez notre horaire de cours de danse et fitness le matin.',
   home_categories_otras_title: 'Danses du Monde et Exotiques',
   home_categories_otras_image_alt: 'Danses exotiques et du monde',
-  home_categories_danza_bullets: '• **Ballet Classique École Cubaine**: Technique professionnelle de niveau mondial|• **Contemporain Lyrique et Sol & Flow**: Expression artistique profonde|• **Afro Jazz et Afro Contemporain Technique Cubaine**: Fusion unique',
+  home_categories_danza_bullets:
+    '• **Ballet Classique École Cubaine**: Technique professionnelle de niveau mondial|• **Contemporain Lyrique et Sol & Flow**: Expression artistique profonde|• **Afro Jazz et Afro Contemporain Technique Cubaine**: Fusion unique',
   home_categories_danza_styles_afro_contemporaneo: 'Afro Contemporain (Technique Cubaine)',
   home_categories_danza_styles_afro_jazz: 'Afro Jazz (Technique Cubaine)',
   home_categories_danza_styles_ballet_clasico: 'Ballet Classique (École Cubaine)',
@@ -28,21 +29,25 @@ export const home = {
   home_categories_danza_styles_contemporaneo: 'Contemporain (Lyrique et Sol & Flow)',
   home_categories_danza_styles_modern_jazz: 'Modern Jazz',
   home_categories_danza_styles_stretching: 'Stretching',
-  home_categories_fitness_bullets: '• **Préparation Physique Professionnelle**: Entraînement spécifique pour danseurs|• **Bum Bum Fessiers**: Tonification et renforcement|• **Body Conditioning**: Flexibilité et endurance',
+  home_categories_fitness_bullets:
+    '• **Préparation Physique Professionnelle**: Entraînement spécifique pour danseurs|• **Bum Bum Fessiers**: Tonification et renforcement|• **Body Conditioning**: Flexibilité et endurance',
   home_categories_fitness_styles_body_conditioning: 'Body Conditioning & Stretching',
   home_categories_fitness_styles_bum_bum_fit: 'Bum Bum Corps Fit',
   home_categories_fitness_styles_bum_bum_gluteos: 'Bum Bum Fessiers Merveilleux',
   home_categories_fitness_styles_dance_barre: 'Dance Barre',
   home_categories_fitness_styles_pilates: 'Pilates',
   home_categories_fitness_styles_stretching: 'Stretching',
-  home_categories_mananas_bullets: '• **Horaires Matinaux Spéciaux**: Cours de 10h00 à 14h00|• **Petits Groupes**: Attention plus personnalisée|• **Ambiance Calme**: Énergie positive pour commencer la journée',
+  home_categories_mananas_bullets:
+    '• **Horaires Matinaux Spéciaux**: Cours de 10h00 à 14h00|• **Petits Groupes**: Attention plus personnalisée|• **Ambiance Calme**: Énergie positive pour commencer la journée',
   home_categories_mananas_styles_afro_jazz: 'Afro Jazz (Technique Cubaine)',
   home_categories_mananas_styles_contemporaneo: 'Contemporain Lyrique & Sol et Flow',
   home_categories_mananas_styles_otras_danzas: 'Danses du Monde et Exotiques',
   home_categories_mananas_styles_sexy_reggaeton: 'Sexy Reggaeton',
   home_categories_mananas_styles_sexy_style: 'Sexy Style',
-  home_categories_otras_bullets: '• **Kizomba, Semba, Kompa**: Rythmes africains authentiques|• **Flamenco et Sevillanas**: Passion espagnole traditionnelle|• **Tissus Aériens et Acro Yoga**: Disciplines aériennes et acrobatiques',
-  home_categories_otras_intro: 'Explorez des danses uniques de différentes cultures : des rythmes africains comme la Kizomba et la Semba, en passant par l\'art traditionnel espagnol du Flamenco, jusqu\'aux disciplines aériennes comme les Tissus et l\'Acro Yoga. Une fenêtre sur le monde à travers la danse.',
+  home_categories_otras_bullets:
+    '• **Kizomba, Semba, Kompa**: Rythmes africains authentiques|• **Flamenco et Sevillanas**: Passion espagnole traditionnelle|• **Tissus Aériens et Acro Yoga**: Disciplines aériennes et acrobatiques',
+  home_categories_otras_intro:
+    "Explorez des danses uniques de différentes cultures : des rythmes africains comme la Kizomba et la Semba, en passant par l'art traditionnel espagnol du Flamenco, jusqu'aux disciplines aériennes comme les Tissus et l'Acro Yoga. Une fenêtre sur le monde à travers la danse.",
   home_categories_otras_styles_acro_yoga: 'Acro Yoga',
   home_categories_otras_styles_flamenco: 'Flamenco',
   home_categories_otras_styles_kizomba: 'Kizomba',
@@ -50,8 +55,10 @@ export const home = {
   home_categories_otras_styles_semba: 'Semba',
   home_categories_otras_styles_sevillanas: 'Sevillanas',
   home_categories_otras_styles_telas_aereas: 'Tissus Aériens et Cerceau',
-  home_categories_salsa_bachata_bullets: '• **Salsa Cubaine Authentique**: Des maîtres cubains professionnels|• **Bachata Sensuelle**: Technique et feeling caribéen|• **Folklore et Timba**: Racines culturelles profondes',
-  home_categories_salsa_bachata_intro: 'Apprenez la Salsa Cubaine authentique, la Bachata sensuelle et la Timba avec des professeurs cubains ayant des années d\'expérience. Du niveau débutant à avancé, découvrez la vraie saveur des Caraïbes.',
+  home_categories_salsa_bachata_bullets:
+    '• **Salsa Cubaine Authentique**: Des maîtres cubains professionnels|• **Bachata Sensuelle**: Technique et feeling caribéen|• **Folklore et Timba**: Racines culturelles profondes',
+  home_categories_salsa_bachata_intro:
+    "Apprenez la Salsa Cubaine authentique, la Bachata sensuelle et la Timba avec des professeurs cubains ayant des années d'expérience. Du niveau débutant à avancé, découvrez la vraie saveur des Caraïbes.",
   home_categories_salsa_bachata_styles_bachata: 'Bachata',
   home_categories_salsa_bachata_styles_folklore_cubano: 'Folklore Cubain',
   home_categories_salsa_bachata_styles_men_style_salsa: 'Men Style Salsa',
@@ -60,8 +67,10 @@ export const home = {
   home_categories_salsa_bachata_styles_salsa_lady_timba: 'Salsa Lady Timba',
   home_categories_salsa_bachata_styles_son_cubano: 'Son Cubain',
   home_categories_salsa_bachata_styles_timba_cubana: 'Timba Cubaine',
-  home_categories_urbano_bullets: '• **Plus de 10 styles urbains**: Hip Hop, Dancehall, Twerk, Reggaeton et plus|• **Professeurs spécialisés**: Chaque style avec son expert dédié|• **Tous les niveaux**: Du débutant à l\'avancé',
-  home_categories_urbano_intro: 'Découvrez le rythme urbain avec notre large offre : Hip Hop authentique, Dancehall jamaïcain, Twerk, Afrobeat, Reggaeton et plus. Professeurs spécialisés dans chaque style pour que vous trouviez votre flow.',
+  home_categories_urbano_bullets:
+    "• **Plus de 10 styles urbains**: Hip Hop, Dancehall, Twerk, Reggaeton et plus|• **Professeurs spécialisés**: Chaque style avec son expert dédié|• **Tous les niveaux**: Du débutant à l'avancé",
+  home_categories_urbano_intro:
+    'Découvrez le rythme urbain avec notre large offre : Hip Hop authentique, Dancehall jamaïcain, Twerk, Afrobeat, Reggaeton et plus. Professeurs spécialisés dans chaque style pour que vous trouviez votre flow.',
   home_categories_urbano_styles_afrobeat: 'Afrobeat',
   home_categories_urbano_styles_commercial_dance: 'Commercial Dance',
   home_categories_urbano_styles_dancehall: 'Dancehall',
