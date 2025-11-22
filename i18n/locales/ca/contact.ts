@@ -1,0 +1,30 @@
+export const contact = {
+  contact_page_title: 'Contacte',
+  contact_page_description:
+    "Contacta amb Farray's International Dance Center a Barcelona. Horaris, ubicació, telèfon i formulari de contacte per classes de ball.",
+  contact_info_title: 'Informació de Contacte',
+  contact_address_title: 'Adreça',
+  contact_phone_title: 'Telèfon',
+  contact_email_title: 'Email',
+  contact_form_title: "Envia'ns un Missatge",
+  contact_form_subtitle:
+    'Tens alguna pregunta? Completa el formulari i ens posarem en contacte amb tu aviat.',
+  contact_form_name: 'Nom complet',
+  contact_form_name_placeholder: 'El teu nom',
+  contact_form_email: 'Email',
+  contact_form_email_placeholder: 'el.teu@email.com',
+  contact_form_phone: 'Telèfon',
+  contact_form_phone_placeholder: '+34 XXX XXX XXX',
+  contact_form_subject: 'Assumpte',
+  contact_form_subject_general: 'Consulta general',
+  contact_form_subject_private: 'Classes privades',
+  contact_form_subject_events: 'Esdeveniments i actuacions',
+  contact_form_subject_other: 'Altre',
+  contact_form_message: 'Missatge',
+  contact_form_message_placeholder: "Explica'ns com podem ajudar-te...",
+  contact_form_submit: 'Enviar Missatge',
+  contact_form_sending: 'Enviant...',
+  contact_form_success: 'Missatge enviat amb èxit! Et respondrem aviat.',
+  contact_form_error:
+    'Hi ha hagut un error en enviar el missatge. Si us plau, torna-ho a intentar.',
+};
