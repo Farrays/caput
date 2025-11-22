@@ -46,6 +46,7 @@ i18n/locales/
 ### 2. New API
 
 #### Load All Translations (Backward Compatible)
+
 ```typescript
 import { loadTranslations } from './i18n/locales';
 
@@ -53,6 +54,7 @@ const translations = await loadTranslations('es');
 ```
 
 #### Load Specific Modules (Optimized)
+
 ```typescript
 import { loadTranslationsWithModules } from './i18n/locales';
 
@@ -64,6 +66,7 @@ const translations = await loadTranslationsWithModules('es', ['home', 'contact']
 ```
 
 #### Load Individual Module
+
 ```typescript
 import { loadModule } from './i18n/locales';
 
@@ -71,6 +74,7 @@ const homeTranslations = await loadModule('es', 'home');
 ```
 
 #### Preload Modules
+
 ```typescript
 import { preloadModules } from './i18n/locales';
 
@@ -107,15 +111,15 @@ type TranslationModule =
 
 ### Performance Improvements
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| **Largest file** | 311KB | 156KB | **-50%** |
-| **Total keys** | 1,157 | 1,157 | ✅ Same |
-| **Files per language** | 1 monolithic | 17 modules | **Better organization** |
-| **Lazy loading** | ❌ None | ✅ Full support | **Massive improvement** |
-| **Initial bundle** | ~1.2MB | Variable* | **Up to -80%** |
+| Metric                 | Before       | After           | Improvement             |
+| ---------------------- | ------------ | --------------- | ----------------------- |
+| **Largest file**       | 311KB        | 156KB           | **-50%**                |
+| **Total keys**         | 1,157        | 1,157           | ✅ Same                 |
+| **Files per language** | 1 monolithic | 17 modules      | **Better organization** |
+| **Lazy loading**       | ❌ None      | ✅ Full support | **Massive improvement** |
+| **Initial bundle**     | ~1.2MB       | Variable\*      | **Up to -80%**          |
 
-*Depends on which modules are loaded. Loading only `common` + `home` is ~162KB vs 311KB before.
+\*Depends on which modules are loaded. Loading only `common` + `home` is ~162KB vs 311KB before.
 
 ### Bundle Size Examples
 
@@ -164,6 +168,7 @@ export const es = {
 ### Validation
 
 Created validation scripts that ensure:
+
 - All modules have the same keys across all languages
 - No duplicate keys
 - Proper TypeScript syntax
@@ -172,6 +177,7 @@ Created validation scripts that ensure:
 ### Migration
 
 All migration was automated using custom scripts:
+
 1. `split-translations.cjs` - Split monolithic files into modules
 2. `extract-dance-hub.cjs` - Extracted danceClassesHub from common
 3. `sync-all-translations.cjs` - Synchronized all keys across languages
@@ -185,7 +191,7 @@ Load only the modules you need:
 
 ```typescript
 const translations = await loadTranslationsWithModules(locale, [
-  'moduleName' // Only load specific module
+  'moduleName', // Only load specific module
 ]);
 ```
 
@@ -237,9 +243,11 @@ preloadModules(locale, ['contact']);
 ## Next Steps
 
 ### Immediate
+
 - ✅ All done! System is production-ready
 
 ### Future Optimizations
+
 1. **Route-based code splitting**: Automatically load modules based on route
 2. **Preloading strategy**: Preload likely next pages
 3. **CMS integration**: Connect to headless CMS for dynamic translations

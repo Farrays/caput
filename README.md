@@ -15,18 +15,21 @@
 
 ## 🚀 Quick Start
 
-**Prerequisites:**  
+**Prerequisites:**
+
 - Node.js 20+ (LTS recommended)
 - npm 10+
 
 **Development:**
 
 1. Install dependencies:
+
    ```bash
    npm install
    ```
 
 2. Copy environment variables (optional):
+
    ```bash
    cp .env.example .env
    ```
@@ -93,6 +96,7 @@ npm run typecheck        # TypeScript type checking
 See [`.env.example`](.env.example) for full documentation.
 
 **Required for production:**
+
 - `VITE_SENTRY_DSN` - Error tracking (Sentry)
 - `VITE_GA_MEASUREMENT_ID` - Analytics (Google Analytics)
 

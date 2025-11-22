@@ -1,6 +1,7 @@
 # Preparación para Headless CMS
 
 ## Índice
+
 1. [Introducción](#introducción)
 2. [¿Por qué un Headless CMS?](#por-qué-un-headless-cms)
 3. [CMS Recomendados](#cms-recomendados)
@@ -17,6 +18,7 @@
 Este documento describe cómo preparar **Farrays Center** para integración con un **Headless CMS**, permitiendo que el equipo de marketing gestione contenido sin tocar código.
 
 ### Estado Actual
+
 - ✅ Contenido hardcodeado en componentes React
 - ✅ i18n con archivos TypeScript estáticos (`i18n/locales/`)
 - ✅ Imágenes gestionadas manualmente en `/public/images/`
@@ -27,6 +29,7 @@ Este documento describe cómo preparar **Farrays Center** para integración con 
 ## ¿Por qué un Headless CMS?
 
 ### Ventajas
+
 1. **Autonomía del equipo de marketing**: Editar textos, imágenes, horarios sin desarrolladores
 2. **Multilenguaje simplificado**: Gestionar ES/EN/CA/FR desde interfaz visual
 3. **Contenido dinámico**: Cambiar promociones, precios, horarios en tiempo real
@@ -36,6 +39,7 @@ Este documento describe cómo preparar **Farrays Center** para integración con 
 7. **SEO mejorado**: Meta tags, Open Graph editables sin código
 
 ### Casos de Uso
+
 - Actualizar horarios de clases semanalmente
 - Crear/editar landing pages de nuevos estilos de baile
 - Gestionar testimonios y reviews
@@ -47,7 +51,9 @@ Este documento describe cómo preparar **Farrays Center** para integración con 
 ## CMS Recomendados
 
 ### 1. **Sanity.io** (Recomendado) ⭐
+
 **Pros:**
+
 - Excelente DX (Developer Experience)
 - Real-time collaboration
 - GROQ (query language potente)
@@ -56,6 +62,7 @@ Este documento describe cómo preparar **Farrays Center** para integración con 
 - Portable Text (contenido enriquecido)
 
 **Cons:**
+
 - Requiere aprender GROQ
 - Más configuración inicial
 
@@ -64,13 +71,16 @@ Este documento describe cómo preparar **Farrays Center** para integración con 
 ---
 
 ### 2. **Contentful**
+
 **Pros:**
+
 - UI intuitiva para editores
 - GraphQL + REST API
 - Gran ecosistema de plugins
 - Excelente documentación
 
 **Cons:**
+
 - Límite de 25k entries en plan gratuito
 - Más costoso al escalar
 
@@ -79,13 +89,16 @@ Este documento describe cómo preparar **Farrays Center** para integración con 
 ---
 
 ### 3. **Strapi** (Self-hosted)
+
 **Pros:**
+
 - Open source
 - Control total (self-hosted)
 - Sin límites de contenido
 - Customizable
 
 **Cons:**
+
 - Requiere servidor propio
 - Más mantenimiento
 - Hosting adicional
@@ -95,13 +108,16 @@ Este documento describe cómo preparar **Farrays Center** para integración con 
 ---
 
 ### 4. **Payload CMS**
+
 **Pros:**
+
 - TypeScript nativo
 - Next.js friendly
 - Autenticación incluida
 - Moderna y rápida
 
 **Cons:**
+
 - Menor comunidad
 - Self-hosted
 
@@ -112,6 +128,7 @@ Este documento describe cómo preparar **Farrays Center** para integración con 
 ## Arquitectura Actual
 
 ### Estructura de Contenido
+
 ```
 web-local/
 ├── components/               # Componentes React
@@ -131,6 +148,7 @@ web-local/
 ```
 
 ### Sistema i18n Actual
+
 ```typescript
 // i18n/locales/es.ts
 export const es = {
@@ -153,6 +171,7 @@ export default function HomePage() {
 ## Contenido Gestionable
 
 ### Prioridad Alta (Cambios frecuentes)
+
 1. **Horarios de clases** (`DanceScheduleSection`)
    - Días de la semana
    - Horarios
@@ -174,6 +193,7 @@ export default function HomePage() {
    - Respuestas
 
 ### Prioridad Media
+
 5. **Páginas de clases** (`DancePageTemplate`)
    - Descripciones de estilos de baile
    - Beneficios
@@ -192,6 +212,7 @@ export default function HomePage() {
    - Imágenes de estudio
 
 ### Prioridad Baja (Cambios ocasionales)
+
 8. **SEO Metadata**
    - Meta titles
    - Meta descriptions
@@ -207,12 +228,14 @@ export default function HomePage() {
 ## Plan de Migración
 
 ### Fase 1: Setup CMS (1-2 semanas)
+
 1. **Elegir CMS** (recomendado: Sanity)
 2. **Crear cuenta** y proyecto
 3. **Diseñar schemas** (tipos de contenido)
 4. **Configurar entorno local**
 
 #### Ejemplo Schema - Clase de Baile (Sanity)
+
 ```javascript
 // schemas/danceClass.js
 export default {
@@ -301,22 +324,24 @@ export default {
 ---
 
 ### Fase 2: Migración de Contenido (2-3 semanas)
+
 1. **Exportar contenido actual** de archivos TypeScript
 2. **Importar a CMS** (manual o script)
 3. **Crear scripts de importación** para contenido masivo
 
 #### Script Ejemplo - Importar i18n a Sanity
+
 ```typescript
 // scripts/migrate-to-sanity.ts
-import { createClient } from '@sanity/client'
-import { es } from '../i18n/locales/es'
+import { createClient } from '@sanity/client';
+import { es } from '../i18n/locales/es';
 
 const client = createClient({
   projectId: 'xxx',
   dataset: 'production',
   token: process.env.SANITY_WRITE_TOKEN,
-  useCdn: false
-})
+  useCdn: false,
+});
 
 async function migrateTranslations() {
   // Crear documentos de traducción
@@ -327,13 +352,13 @@ async function migrateTranslations() {
       es: value,
       en: en[key],
       ca: ca[key],
-      fr: fr[key]
-    }
-  }))
+      fr: fr[key],
+    },
+  }));
 
   // Importar en lotes
   for (const translation of translations) {
-    await client.create(translation)
+    await client.create(translation);
   }
 }
 ```
@@ -341,22 +366,24 @@ async function migrateTranslations() {
 ---
 
 ### Fase 3: Integración Frontend (2-3 semanas)
+
 1. **Instalar SDK del CMS** (`npm install @sanity/client`)
 2. **Crear API layer** para fetching
 3. **Actualizar componentes** para usar CMS data
 4. **Implementar ISR/SSG** (Incremental Static Regeneration)
 
 #### Ejemplo - Fetching desde Sanity
+
 ```typescript
 // lib/sanity.ts
-import { createClient } from '@sanity/client'
+import { createClient } from '@sanity/client';
 
 export const sanityClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: 'production',
   apiVersion: '2024-01-01',
-  useCdn: true // para producción
-})
+  useCdn: true, // para producción
+});
 
 // Queries
 export async function getDanceClass(slug: string, lang: string) {
@@ -370,11 +397,12 @@ export async function getDanceClass(slug: string, lang: string) {
       seo
     }`,
     { slug }
-  )
+  );
 }
 ```
 
 #### Ejemplo - Componente actualizado
+
 ```typescript
 // components/DancehallPage.tsx (antes)
 export default function DancehallPage() {
@@ -415,6 +443,7 @@ export async function getStaticProps({ locale }) {
 ---
 
 ### Fase 4: Testing y Rollout (1-2 semanas)
+
 1. **Testing en staging** con contenido CMS
 2. **Capacitación equipo** (workshop de 2h)
 3. **Documentación editorial** (guía de uso)
@@ -429,13 +458,14 @@ export async function getStaticProps({ locale }) {
 1. **DancePageTemplate** ([components/templates/DancePageTemplate.tsx](components/templates/DancePageTemplate.tsx))
    - Props claramente definidos
    - Fácil pasar data desde CMS
+
    ```typescript
    interface DancePageTemplateProps {
-     style: string
-     title: Record<string, string> // Multi-idioma
-     description: Record<string, string>
-     benefits: Benefit[]
-     schedule: ScheduleItem[]
+     style: string;
+     title: Record<string, string>; // Multi-idioma
+     description: Record<string, string>;
+     benefits: Benefit[];
+     schedule: ScheduleItem[];
      // ... ya preparado para data externa
    }
    ```
@@ -456,16 +486,15 @@ export async function getStaticProps({ locale }) {
 1. **Sistema i18n** ([i18n/locales/](i18n/locales/))
    - Actualmente archivos TypeScript estáticos
    - Necesita wrapper para fetchear desde CMS
+
    ```typescript
    // lib/i18n-cms.ts
    export async function getTranslations(locale: string) {
      // Fetch desde CMS en lugar de import estático
      const translations = await sanityClient.fetch(
        `*[_type == "translation"]{key, "value": value.${locale}}`
-     )
-     return Object.fromEntries(
-       translations.map(t => [t.key, t.value])
-     )
+     );
+     return Object.fromEntries(translations.map(t => [t.key, t.value]));
    }
    ```
 
@@ -479,21 +508,25 @@ export async function getStaticProps({ locale }) {
 ## Próximos Pasos
 
 ### Inmediato (esta semana)
+
 - [ ] Decidir CMS (recomendación: **Sanity.io**)
 - [ ] Crear cuenta y proyecto de prueba
 - [ ] Definir schemas iniciales (DanceClass, Teacher, Testimonial)
 
 ### Corto plazo (1 mes)
+
 - [ ] Implementar 1 página piloto (ej: Dancehall) con CMS
 - [ ] Crear scripts de migración de contenido
 - [ ] Testing en staging
 
 ### Medio plazo (2-3 meses)
+
 - [ ] Migrar todas las páginas de clases
 - [ ] Migrar sistema i18n completo
 - [ ] Capacitar equipo de marketing
 
 ### Largo plazo (6 meses)
+
 - [ ] Workflow editorial completo
 - [ ] Preview de cambios
 - [ ] Scheduled publishing
@@ -504,15 +537,18 @@ export async function getStaticProps({ locale }) {
 ## Recursos
 
 ### Documentación Recomendada
+
 - [Sanity + Next.js Guide](https://www.sanity.io/guides/sanity-nextjs-guide)
 - [Contentful + React](https://www.contentful.com/developers/docs/javascript/tutorials/integrate-contentful-with-react/)
 - [Strapi Documentation](https://docs.strapi.io/)
 
 ### Ejemplos de Código
+
 - [Sanity Studio Templates](https://www.sanity.io/templates)
 - [Next.js + Sanity Starter](https://github.com/sanity-io/nextjs-sanity-starter)
 
 ### Tools
+
 - [Sanity Migration Tool](https://www.sanity.io/docs/migrating-data)
 - [Contentful Import](https://github.com/contentful/contentful-import)
 
@@ -521,6 +557,7 @@ export async function getStaticProps({ locale }) {
 ## Conclusión
 
 El código actual de **Farrays Center** está **bien preparado** para integración con CMS gracias a:
+
 - ✅ Componentes genéricos reutilizables
 - ✅ DancePageTemplate centralizado
 - ✅ Constants extraídas

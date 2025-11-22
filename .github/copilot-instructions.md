@@ -11,6 +11,7 @@
 ## Architecture & Data Flows
 
 ### Core Stack
+
 - **Framework:** React 19 + TypeScript (strict mode)
 - **Build:** Vite 6 with React plugin + TailwindCSS 3
 - **Routing:** React Router 7 with locale-prefixed URLs (`/:locale/...`)
@@ -20,6 +21,7 @@
 - **Styling:** TailwindCSS with custom holographic effects & brand colors
 
 ### URL Structure & Locale Routing
+
 ```
 /                          → Redirects to /{defaultLocale} (Spanish)
 /:locale                   → Home page (es/en/ca/fr)
@@ -33,6 +35,7 @@ Legacy redirects:
 ```
 
 ### I18n System (Critical Architecture)
+
 **Location:** `hooks/useI18n.tsx` + `i18n/locales/`
 
 - **Translation loading:** Lazy-loaded via dynamic `import()` to reduce initial bundle
@@ -42,27 +45,31 @@ Legacy redirects:
 - **Type safety:** `TranslationKeys` type ensures all keys are available
 
 **Key functions:**
+
 ```tsx
-useI18n()        // Hook: returns { locale, setLocale, t(key), isLoading }
-t('key')         // Get translation (returns key if missing in DEV)
-setLocale(lang)  // Change locale + persist to localStorage/cookie
+useI18n(); // Hook: returns { locale, setLocale, t(key), isLoading }
+t('key'); // Get translation (returns key if missing in DEV)
+setLocale(lang); // Change locale + persist to localStorage/cookie
 ```
 
 **Translation files structure:**
+
 ```typescript
 // i18n/locales/es.ts (and en.ts, ca.ts, fr.ts)
 export const es = {
-  'homepageHeroTitle': 'Títol en Espanyol',
-  'dancehallFaqQ1': '¿Pregunta 1?',
+  homepageHeroTitle: 'Títol en Espanyol',
+  dancehallFaqQ1: '¿Pregunta 1?',
   // ... all keys must be here
 } as const;
-export type TranslationKeys = typeof es;  // Enforced type
+export type TranslationKeys = typeof es; // Enforced type
 ```
 
 ### Prerendering & Hydration Pipeline
+
 **Location:** `prerender.mjs` + `index.tsx`
 
 **How it works:**
+
 1. **Build step:** `npm run build` → Vite builds SPA to `dist/`
 2. **Prerender step:** `node prerender.mjs` reads `dist/index.html` and generates static pages:
    - Creates nested directories: `dist/{locale}/{page}/index.html`
@@ -72,6 +79,7 @@ export type TranslationKeys = typeof es;  // Enforced type
 3. **Client hydration:** `index.tsx` detects prerendered content and calls `hydrateRoot()` instead of `createRoot()`
 
 **Routes prerendered (16 total):**
+
 - 4 languages × 4 pages = 16 static HTML files
 - Pages: home, classes (/clases), dancehall (/clases/dancehall-barcelona), afrobeats (/clases/afrobeats-barcelona)
 
@@ -80,9 +88,11 @@ export type TranslationKeys = typeof es;  // Enforced type
 ## Component Architecture & Patterns
 
 ### Page Components
+
 **Location:** `components/DancehallPageV2.tsx` (template), `components/DanceClassesPage.tsx`, etc.
 
 **Key characteristics:**
+
 - Use Helmet for dynamic SEO (from `react-helmet-async`)
 - Import i18n hook: `const { t, locale } = useI18n()`
 - Structure: Hero → Problem-Agitate → Benefits → Schedule → FAQs → CTA
@@ -90,11 +100,12 @@ export type TranslationKeys = typeof es;  // Enforced type
 - Lazy load with Suspense in `App.tsx` to reduce initial bundle
 
 **Example pattern:**
+
 ```tsx
 const DancehallPageV2: React.FC = () => {
   const { t, locale } = useI18n();
   const baseUrl = 'https://www.farrayscenter.com';
-  
+
   return (
     <>
       <Helmet>
@@ -102,15 +113,14 @@ const DancehallPageV2: React.FC = () => {
         <meta name="description" content={t('dancehallPageDesc')} />
         <link rel="canonical" href={`${baseUrl}/${locale}/clases/dancehall-barcelona`} />
       </Helmet>
-      <main>
-        {/* Page sections */}
-      </main>
+      <main>{/* Page sections */}</main>
     </>
   );
 };
 ```
 
 ### Reusable Section Components
+
 - `ProblemAgitateSectionV2.tsx` – Problem/solution narrative
 - `BenefitsGridSection.tsx` – 6-7 numbered benefits
 - `ScheduleSection.tsx` – Class schedules with teacher names
@@ -120,9 +130,11 @@ const DancehallPageV2: React.FC = () => {
 - `AnimateOnScroll.tsx` – Scroll-triggered animations (Intersection Observer)
 
 ### Image Optimization
+
 **Location:** `src/components/ResponsiveImage.tsx`, `vite-imagetools` plugin
 
 **Flow:**
+
 1. Place raw image in `public/images/classes/{className}/raw/`
 2. Run `npm run build:images` (uses `scripts/build-images.mjs` + Sharp)
 3. Generates multiple sizes & formats: `{base}_640.webp`, `{base}_960.webp`, `{base}.jpg`
@@ -134,6 +146,7 @@ const DancehallPageV2: React.FC = () => {
 ## Developer Workflows
 
 ### Essential Commands
+
 ```bash
 npm run dev              # Start Vite dev server (http://localhost:5173)
 npm run build            # Production build + prerendering
@@ -151,6 +164,7 @@ npm run create:class     # Interactive class page generator (Node.js CLI)
 ```
 
 ### Creating a New Class Page
+
 ```bash
 # 1. Generate template (interactive CLI)
 npm run create:class
@@ -172,6 +186,7 @@ npm run create:class -- --name=salsa --instructor="Ana García" --specialty="Sal
 ```
 
 ### Git Workflow (Safe Branching)
+
 ```bash
 # 1. Never commit directly to main
 git checkout -b feat/new-feature  # or fix/, content/, etc.
@@ -198,6 +213,7 @@ git push -u origin feat/new-feature
 ```
 
 ### Pre-Deployment Checklist (from `.claude/QA_CHECKLIST.md`)
+
 - [ ] **Functionality:** All features work locally & in Vercel preview
 - [ ] **SEO:** Google Rich Results Test passes (schema valid)
 - [ ] **Performance:** Lighthouse score > 90 (all metrics)
@@ -214,6 +230,7 @@ git push -u origin feat/new-feature
 ## Project-Specific Conventions
 
 ### Naming Conventions
+
 - **Components:** PascalCase, suffix with `Page` for routes (e.g., `DancehallPageV2.tsx`)
 - **Hooks:** camelCase, prefix with `use` (e.g., `useI18n.tsx`, `useLazyImage.tsx`)
 - **Translation keys:** camelCase, descriptive (e.g., `dancehallPageTitle`, `dancehallFaqQ1`)
@@ -221,6 +238,7 @@ git push -u origin feat/new-feature
 - **CSS classes:** Use TailwindCSS utilities; custom classes are minimal
 
 ### TypeScript Patterns
+
 - **Strict mode enabled:** All code must pass strict type checking
 - **No `any` type** – Always define interfaces or use generics
 - **React.FC pattern:** All components are `React.FC<Props>`
@@ -228,6 +246,7 @@ git push -u origin feat/new-feature
 - **Props interfaces:** Define for all components (even if empty)
 
 ### Component Structure
+
 ```tsx
 import React, { ... } from 'react';
 import { Helmet } from 'react-helmet-async';
@@ -241,7 +260,7 @@ interface ComponentProps {
 
 export const MyComponent: React.FC<ComponentProps> = ({ children }) => {
   const { t, locale } = useI18n();  // Always get locale for consistency
-  
+
   return (
     <>
       <Helmet>
@@ -258,12 +277,14 @@ export default MyComponent;
 ```
 
 ### Error Handling
+
 - **Error Boundary:** Root component wrapped in `<ErrorBoundary>` (class component)
 - **Development vs Production:** Error details shown only in `import.meta.env.DEV`
 - **Sentry integration:** In `utils/sentry.ts` (initialized at startup)
 - **Missing translations:** Return key string in DEV, warn in console
 
 ### Testing Patterns
+
 **Location:** `components/__tests__/`, `hooks/__tests__/`
 
 ```typescript
@@ -286,6 +307,7 @@ describe('MyComponent', () => {
 ## Key Integration Points
 
 ### External Dependencies
+
 - **React Router:** Handles locale-based routing, URL parsing, navigation
 - **react-helmet-async:** Manages `<head>` SEO tags dynamically
 - **Sentry:** Error tracking (optional, configured in `utils/sentry.ts`)
@@ -293,11 +315,13 @@ describe('MyComponent', () => {
 - **TailwindCSS:** All styling (no CSS modules or styled-components)
 
 ### Build Pipeline Hooks
+
 - **Vite plugins:** `@vitejs/plugin-react`, `vite-imagetools`, `rollup-plugin-visualizer`
 - **Prerender hook:** Custom `prerender.mjs` runs after Vite build
 - **Bundle analysis:** `dist/stats.html` generated after each build
 
 ### Cross-Component Communication
+
 - **Global state:** i18n context via `useI18n()` hook
 - **Props drilling:** Minimal—most data comes from constants or i18n
 - **No Redux/Zustand:** Simple custom hooks are sufficient for current scope
@@ -369,14 +393,14 @@ web/
 
 ## Quick Reference: When to Edit What
 
-| Task | Files to Edit | Don't Touch |
-|------|---------------|------------|
-| Add new class page | `components/NewPage.tsx`, `App.tsx`, i18n files, images | Header, Footer, config |
-| Update texts | i18n locale files (`i18n/locales/*.ts`) | Component logic |
-| Add FAQ to page | Component JSX + i18n keys | Structure/layout |
-| Fix styling | TailwindCSS classes in component | `tailwind.config.js` (unless adding colors) |
-| Add image | `public/images/classes/{class}/raw/`, run `npm run build:images` | No manual HTML image tags |
-| Change URL structure | `App.tsx` routes + `prerender.mjs` routes | Already-published URLs (use redirects) |
+| Task                 | Files to Edit                                                    | Don't Touch                                 |
+| -------------------- | ---------------------------------------------------------------- | ------------------------------------------- |
+| Add new class page   | `components/NewPage.tsx`, `App.tsx`, i18n files, images          | Header, Footer, config                      |
+| Update texts         | i18n locale files (`i18n/locales/*.ts`)                          | Component logic                             |
+| Add FAQ to page      | Component JSX + i18n keys                                        | Structure/layout                            |
+| Fix styling          | TailwindCSS classes in component                                 | `tailwind.config.js` (unless adding colors) |
+| Add image            | `public/images/classes/{class}/raw/`, run `npm run build:images` | No manual HTML image tags                   |
+| Change URL structure | `App.tsx` routes + `prerender.mjs` routes                        | Already-published URLs (use redirects)      |
 
 ---
 

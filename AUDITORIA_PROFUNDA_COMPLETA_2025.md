@@ -11,20 +11,20 @@
 
 ### 🎯 SCORECARD EJECUTIVO
 
-| Categoría | Puntuación | Estado |
-|-----------|------------|--------|
-| **1. SEGURIDAD** | **9.0/10** | ✅ Excelente |
-| **2. SEO** | **8.5/10** | ✅ Muy Bueno |
-| **3. META TAGS** | **9.0/10** | ✅ Excelente |
-| **4. RENDIMIENTO** | **7.5/10** | ⚠️ Bueno (mejorable) |
-| **5. ACCESIBILIDAD** | **8.0/10** | ✅ Muy Bueno |
-| **6. CÓDIGO LIMPIO** | **8.5/10** | ✅ Muy Bueno |
-| **7. TESTING** | **6.5/10** | ⚠️ Aceptable |
-| **8. BUILD/DEPLOY** | **8.0/10** | ✅ Muy Bueno |
+| Categoría                   | Puntuación | Estado               |
+| --------------------------- | ---------- | -------------------- |
+| **1. SEGURIDAD**            | **9.0/10** | ✅ Excelente         |
+| **2. SEO**                  | **8.5/10** | ✅ Muy Bueno         |
+| **3. META TAGS**            | **9.0/10** | ✅ Excelente         |
+| **4. RENDIMIENTO**          | **7.5/10** | ⚠️ Bueno (mejorable) |
+| **5. ACCESIBILIDAD**        | **8.0/10** | ✅ Muy Bueno         |
+| **6. CÓDIGO LIMPIO**        | **8.5/10** | ✅ Muy Bueno         |
+| **7. TESTING**              | **6.5/10** | ⚠️ Aceptable         |
+| **8. BUILD/DEPLOY**         | **8.0/10** | ✅ Muy Bueno         |
 | **9. INTERNACIONALIZACIÓN** | **7.0/10** | ⚠️ Bueno (mejorable) |
-| **10. MANTENIBILIDAD** | **8.5/10** | ✅ Muy Bueno |
-| **11. ARQUITECTURA** | **9.0/10** | ✅ Excelente |
-| **12. ESCALABILIDAD** | **7.0/10** | ⚠️ Bueno (mejorable) |
+| **10. MANTENIBILIDAD**      | **8.5/10** | ✅ Muy Bueno         |
+| **11. ARQUITECTURA**        | **9.0/10** | ✅ Excelente         |
+| **12. ESCALABILIDAD**       | **7.0/10** | ⚠️ Bueno (mejorable) |
 
 ### 🏆 PUNTUACIÓN GLOBAL: **8.2/10**
 
@@ -37,6 +37,7 @@
 ### ✅ Fortalezas
 
 #### Headers HTTP de Seguridad (10/10)
+
 ```json
 ✅ X-Content-Type-Options: nosniff
 ✅ X-Frame-Options: SAMEORIGIN
@@ -47,6 +48,7 @@
 ```
 
 #### Content Security Policy (8/10)
+
 ```
 ✅ default-src 'self'
 ✅ script-src con Google Analytics y Sentry permitidos
@@ -56,6 +58,7 @@
 ```
 
 #### Protección XSS (10/10)
+
 ```typescript
 ✅ DOMPurify 3.3.0 instalado
 ✅ Sanitización en 4 componentes:
@@ -66,6 +69,7 @@
 ```
 
 #### Auditoría de Dependencias (10/10)
+
 ```bash
 npm audit: 0 vulnerabilidades ✅
   - 0 critical
@@ -81,6 +85,7 @@ Dependencias actualizadas:
 ```
 
 #### Gestión de Secretos (9/10)
+
 ```
 ✅ .env.example completo
 ✅ Variables VITE_ correctamente usadas
@@ -128,6 +133,7 @@ const sanitizeUrl = (url: string) => {
 ### ✅ Fortalezas
 
 #### Sitemap.xml (10/10)
+
 ```xml
 ✅ 372 URLs indexadas (4 idiomas × 93 páginas)
 ✅ lastmod actualizado
@@ -135,17 +141,21 @@ const sanitizeUrl = (url: string) => {
 ✅ Hreflang en sitemap
 ✅ Ubicación: https://www.farrayscenter.com/sitemap.xml
 ```
+
 **Archivo:** [sitemap.xml](sitemap.xml)
 
 #### Robots.txt (10/10)
+
 ```
 User-agent: *
 Allow: /
 Sitemap: https://www.farrayscenter.com/sitemap.xml
 ```
+
 **Archivo:** [public/robots.txt](public/robots.txt)
 
 #### Schema.org Structured Data (9/10)
+
 ```typescript
 ✅ LocalBusiness (nombre, dirección, teléfono, horarios)
 ✅ Course (para cada clase de baile)
@@ -153,28 +163,35 @@ Sitemap: https://www.farrayscenter.com/sitemap.xml
 ✅ BreadcrumbList (navegación)
 ✅ DanceSchool en index.html
 ```
+
 **Archivos:**
+
 - [components/shared/SchemaMarkup.tsx](components/shared/SchemaMarkup.tsx)
 - [index.html](index.html) líneas 85-102
 
 #### Breadcrumbs/Migas de Pan (10/10)
+
 ```typescript
 ✅ Componente Breadcrumb.tsx con Schema.org/BreadcrumbList
 ✅ Microdata correcta
 ✅ Implementado en todas páginas de clases
 ```
+
 **Archivo:** [components/shared/Breadcrumb.tsx](components/shared/Breadcrumb.tsx)
 
 #### Prerendering SSR (9/10)
+
 ```javascript
 ✅ 53 páginas estáticas generadas
 ✅ Meta tags inyectados en <head>
 ✅ Contenido visible para bots
 ✅ Locale persistence script
 ```
+
 **Archivo:** [prerender.mjs](prerender.mjs)
 
 #### Canonical URLs (10/10)
+
 ```typescript
 ✅ Canonical tags en todas páginas
 ✅ Hreflang bidireccional (es ↔ ca ↔ en ↔ fr)
@@ -224,6 +241,7 @@ og-facilities.jpg    → Foto instalaciones con branding
 ### ✅ Implementación Completa
 
 #### SEO Component Centralizado (10/10)
+
 **Archivo:** [components/SEO.tsx](components/SEO.tsx)
 
 ```typescript
@@ -238,37 +256,30 @@ og-facilities.jpg    → Foto instalaciones con branding
 ```
 
 #### Open Graph (9/10)
+
 ```html
-✅ og:title
-✅ og:description
-✅ og:image (1200×630)
-✅ og:url (canonical)
-✅ og:type (website)
-✅ og:locale + alternate locales
-✅ og:site_name
-⚠️ 3 imágenes pendientes
+✅ og:title ✅ og:description ✅ og:image (1200×630) ✅ og:url (canonical) ✅ og:type (website) ✅
+og:locale + alternate locales ✅ og:site_name ⚠️ 3 imágenes pendientes
 ```
 
 #### Twitter Cards (10/10)
+
 ```html
-✅ twitter:card (summary_large_image)
-✅ twitter:title
-✅ twitter:description
-✅ twitter:image
-✅ twitter:site (@farrayscenter)
+✅ twitter:card (summary_large_image) ✅ twitter:title ✅ twitter:description ✅ twitter:image ✅
+twitter:site (@farrayscenter)
 ```
 
 #### Verificación por Página
 
-| Página | Title | Desc | OG | Canonical | Hreflang | Nota |
-|--------|-------|------|----|-----------| ---------|------|
-| Home | ✅ | ✅ | ✅ | ✅ | ✅ | 10/10 |
-| Dancehall | ✅ | ✅ | ✅ | ✅ | ✅ | 10/10 |
-| Hip Hop | ✅ | ✅ | ⚠️ | ✅ | ✅ | 8/10 (OG pending) |
-| Twerk | ✅ | ✅ | ⚠️ | ✅ | ✅ | 8/10 (OG pending) |
-| Facilities | ✅ | ✅ | ⚠️ | ✅ | ✅ | 8/10 (OG pending) |
-| About | ✅ | ✅ | ✅ | ✅ | ✅ | 10/10 |
-| Contact | ✅ | ✅ | ✅ | ✅ | ✅ | 10/10 |
+| Página     | Title | Desc | OG  | Canonical | Hreflang | Nota              |
+| ---------- | ----- | ---- | --- | --------- | -------- | ----------------- |
+| Home       | ✅    | ✅   | ✅  | ✅        | ✅       | 10/10             |
+| Dancehall  | ✅    | ✅   | ✅  | ✅        | ✅       | 10/10             |
+| Hip Hop    | ✅    | ✅   | ⚠️  | ✅        | ✅       | 8/10 (OG pending) |
+| Twerk      | ✅    | ✅   | ⚠️  | ✅        | ✅       | 8/10 (OG pending) |
+| Facilities | ✅    | ✅   | ⚠️  | ✅        | ✅       | 8/10 (OG pending) |
+| About      | ✅    | ✅   | ✅  | ✅        | ✅       | 10/10             |
+| Contact    | ✅    | ✅   | ✅  | ✅        | ✅       | 10/10             |
 
 **Promedio:** 9.1/10
 
@@ -297,6 +308,7 @@ og-facilities.jpg    → Foto instalaciones con branding
 ### ✅ Fortalezas
 
 #### Code Splitting (9/10)
+
 ```javascript
 ✅ Manual chunks configurados:
    - react-vendor: 46KB (React + ReactDOM)
@@ -310,9 +322,11 @@ og-facilities.jpg    → Foto instalaciones con branding
 ✅ Lazy loading en HomePage (45.79 KB diferidos):
    - Services, Teachers, Testimonials, FAQSection, HowToGetHere
 ```
+
 **Archivo:** [App.tsx](App.tsx), [components/HomePage.tsx](components/HomePage.tsx)
 
 #### Optimización de Imágenes (9/10)
+
 ```javascript
 ✅ vite-imagetools configurado
 ✅ Formato: WebP + AVIF + JPG fallback
@@ -321,27 +335,31 @@ og-facilities.jpg    → Foto instalaciones con branding
 ✅ Script automatizado: build-images.mjs
 ✅ LazyImage component con IntersectionObserver
 ```
+
 **Archivos:**
+
 - [vite.config.ts:39-52](vite.config.ts#L39-L52)
 - [scripts/build-images.mjs](scripts/build-images.mjs)
 - [components/shared/LazyImage.tsx](components/shared/LazyImage.tsx)
 
 #### Resource Hints (8/10)
+
 ```html
-✅ dns-prefetch: googletagmanager, youtube, sentry
-✅ preconnect: googletagmanager, ytimg
-✅ preload: fonts (Roboto), critical CSS
-✅ prefetch: /clases
+✅ dns-prefetch: googletagmanager, youtube, sentry ✅ preconnect: googletagmanager, ytimg ✅
+preload: fonts (Roboto), critical CSS ✅ prefetch: /clases
 ```
+
 **Archivo:** [index.html:10-20](index.html#L10-L20)
 
 #### Web Vitals Monitoring (10/10)
+
 ```typescript
 ✅ web-vitals 5.1.0 instalado
 ✅ Métricas: CLS, INP, FCP, LCP, TTFB
 ✅ Integración Google Analytics
 ✅ Integración Sentry
 ```
+
 **Archivo:** [index.tsx:42-78](index.tsx#L42-L78)
 
 ### ⚠️ Debilidades (CRÍTICAS)
@@ -349,6 +367,7 @@ og-facilities.jpg    → Foto instalaciones con branding
 #### 🔴 1. i18n Bundles Demasiado Grandes (-2.0 pts)
 
 **PROBLEMA PRINCIPAL:**
+
 ```
 Bundle Español:   273 KB (es.ts: 3,741 líneas)
 Bundle Inglés:    207 KB (en.ts: 2,789 líneas)
@@ -359,11 +378,13 @@ TOTAL CARGADO:    904 KB (todos los idiomas simultáneamente)
 ```
 
 **IMPACTO:**
+
 - Usuario español carga 904 KB pero solo usa 273 KB (631 KB desperdiciados)
 - First Contentful Paint (FCP) aumentado ~1.5-2 segundos
 - Time to Interactive (TTI) aumentado ~2-3 segundos
 
 **SOLUCIÓN:**
+
 ```typescript
 // Actual (❌ malo):
 import es from './i18n/locales/es';
@@ -384,6 +405,7 @@ useEffect(() => {
 ```
 
 **AHORRO ESTIMADO:**
+
 - Bundle actual: 904 KB → 273 KB (español)
 - Reducción: **70% (631 KB ahorrados)**
 - FCP mejora: **-2 segundos**
@@ -392,6 +414,7 @@ useEffect(() => {
 **PRIORIDAD:** 🔴 **CRÍTICA** (máximo impacto en rendimiento)
 
 #### 🟡 2. DOMPurify en Main Bundle (-0.3 pts)
+
 ```
 Problema: DOMPurify (23 KB) se carga en todas las páginas
 Uso real: Solo 4 componentes lo necesitan
@@ -399,6 +422,7 @@ Solución: Lazy load solo cuando se necesita
 ```
 
 #### 🟡 3. Falta Preload de Hero Images (-0.2 pts)
+
 ```html
 <!-- Añadir en index.html -->
 <link rel="preload" as="image" href="/images/hero-home.webp" />
@@ -430,6 +454,7 @@ Pages (lazy):
 ### 📋 Recomendaciones Priorizadas
 
 #### 🔴 CRÍTICO (Implementar YA)
+
 ```typescript
 // 1. Dynamic import de i18n (70% reducción bundle)
 // Impacto: +2 puntos en Performance
@@ -461,6 +486,7 @@ const I18nProvider = ({ children }: { children: ReactNode }) => {
 ```
 
 #### 🟡 IMPORTANTE (Próxima semana)
+
 ```typescript
 // 2. Lazy load DOMPurify solo donde se necesita
 const FAQSection = () => {
@@ -475,6 +501,7 @@ const FAQSection = () => {
 ```
 
 #### 🟢 MEJORA (Backlog)
+
 ```html
 <!-- 3. Preload hero images -->
 <link rel="preload" as="image" href="/images/hero-home.webp" />
@@ -490,6 +517,7 @@ const FAQSection = () => {
 ### ✅ Fortalezas
 
 #### ARIA Labels (9/10)
+
 ```
 ✅ 135 atributos aria-* en 37 archivos
 ✅ aria-label en botones de navegación
@@ -499,6 +527,7 @@ const FAQSection = () => {
 ```
 
 **Ejemplos:**
+
 ```typescript
 // Header.tsx:142
 <button aria-label="Abrir menú de navegación">
@@ -511,6 +540,7 @@ const FAQSection = () => {
 ```
 
 #### Componentes Accesibles (9/10)
+
 ```typescript
 ✅ SkipLink.tsx → Saltar al contenido principal
 ✅ LoadingSpinner → aria-label + role="status"
@@ -520,11 +550,13 @@ const FAQSection = () => {
 ```
 
 **Archivos:**
+
 - [components/shared/SkipLink.tsx](components/shared/SkipLink.tsx)
 - [components/BackToTop.tsx](components/BackToTop.tsx)
 - [components/header/Header.tsx](components/header/Header.tsx)
 
 #### Testing de Accesibilidad (8/10)
+
 ```json
 ✅ pa11y-ci configurado (.pa11yci.json)
 ✅ Standard: WCAG2AA
@@ -532,13 +564,16 @@ const FAQSection = () => {
 ✅ 7 URLs testeadas
 ✅ Test: accessibility.test.tsx
 ```
+
 **Archivos:**
+
 - [.pa11yci.json](.pa11yci.json)
-- [components/__tests__/accessibility.test.tsx](components/__tests__/accessibility.test.tsx)
+- [components/**tests**/accessibility.test.tsx](components/__tests__/accessibility.test.tsx)
 
 ### ⚠️ Debilidades
 
 #### 1. Focus States No Verificados (-1.0 pts)
+
 ```css
 Problema: No se detecta outline personalizado en :focus
 Afecta: Navegación por teclado
@@ -546,6 +581,7 @@ Solución: Añadir estilos focus-visible
 ```
 
 **Recomendación:**
+
 ```css
 /* tailwind.config.js */
 module.exports = {
@@ -566,12 +602,14 @@ module.exports = {
 ```
 
 #### 2. Falta Auditoría de Alt Text (-0.5 pts)
+
 ```
 Observación: No se verificó alt en todas las imágenes
 Riesgo: Imágenes sin descripción para screen readers
 ```
 
 #### 3. Contraste de Colores No Verificado (-0.5 pts)
+
 ```
 Colores principales:
   - primary-dark: #800020 (Granate)
@@ -611,6 +649,7 @@ grep -r '<img' components/ | grep -v 'alt=' > missing-alt.txt
 ### ✅ Fortalezas
 
 #### TypeScript Strict Mode (10/10)
+
 ```json
 // tsconfig.json
 {
@@ -624,18 +663,22 @@ grep -r '<img' components/ | grep -v 'alt=' > missing-alt.txt
   }
 }
 ```
+
 **Archivo:** [tsconfig.json:10-16](tsconfig.json#L10-L16)
 
 #### ESLint Configurado (9/10)
+
 ```javascript
 ✅ @typescript-eslint/recommended
 ✅ react-hooks/recommended
 ✅ no-unused-vars con exceptions (_vars)
 ✅ Integración con Prettier
 ```
+
 **Archivo:** [.eslintrc.cjs](.eslintrc.cjs)
 
 #### Componentes Bien Estructurados (9/10)
+
 ```
 ✅ Promedio 120 líneas/componente (excelente)
 ✅ Single Responsibility Principle
@@ -644,6 +687,7 @@ grep -r '<img' components/ | grep -v 'alt=' > missing-alt.txt
 ```
 
 #### Código Comentado Mínimo (9/10)
+
 ```
 ✅ 0 console.log en producción (eliminados con Terser)
 ✅ Comentarios TODO: 23 (aceptable)
@@ -656,6 +700,7 @@ grep -r '<img' components/ | grep -v 'alt=' > missing-alt.txt
 #### 1. Código Muerto Detectado (-0.5 pts)
 
 **Archivos no utilizados:**
+
 ```typescript
 ❌ components/ResponsiveImage.tsx
    Estado: Componente completo sin imports
@@ -668,6 +713,7 @@ grep -r '<img' components/ | grep -v 'alt=' > missing-alt.txt
 ```
 
 **Archivos residuales:**
+
 ```bash
 ❌ nul (archivo vacío en raíz)
    Origen: Error de redirección Windows
@@ -675,11 +721,12 @@ grep -r '<img' components/ | grep -v 'alt=' > missing-alt.txt
 ```
 
 #### 2. Magic Strings (-0.5 pts)
+
 ```typescript
 // Repetido en múltiples archivos:
-'https://www.farrayscenter.com'
-'+34622247085'
-'info@farrayscenter.com'
+'https://www.farrayscenter.com';
+'+34622247085';
+'info@farrayscenter.com';
 
 // Solución:
 // constants/config.ts
@@ -690,11 +737,12 @@ export const SITE_CONFIG = {
   social: {
     instagram: '@farrayscenter',
     youtube: '@farraysinternationaldancecenter',
-  }
+  },
 };
 ```
 
 #### 3. Duplicación de Metadata (-0.5 pts)
+
 ```javascript
 Ubicaciones:
 1. prerender.mjs (líneas 68-285)
@@ -728,6 +776,7 @@ del nul
 ### ✅ Fortalezas
 
 #### Cobertura de Componentes (7/10)
+
 ```
 Total tests: 60 archivos .test.tsx
 Ubicación: components/__tests__/
@@ -746,6 +795,7 @@ Componentes testeados:
 ```
 
 #### Configuración Vitest (8/10)
+
 ```javascript
 ✅ Vitest configurado
 ✅ Coverage provider: v8
@@ -754,9 +804,11 @@ Componentes testeados:
 ✅ @testing-library/react
 ✅ @testing-library/jest-dom
 ```
+
 **Archivo:** [vitest.config.ts](vitest.config.ts)
 
 #### Mocks Implementados (9/10)
+
 ```typescript
 ✅ IntersectionObserver
 ✅ window.matchMedia
@@ -764,6 +816,7 @@ Componentes testeados:
 ✅ scrollTo
 ✅ useI18n hook (globalizado)
 ```
+
 **Archivo:** [test/setup.ts](test/setup.ts)
 
 ### ⚠️ Debilidades (CRÍTICAS)
@@ -771,6 +824,7 @@ Componentes testeados:
 #### 🔴 1. Coverage Thresholds Bajos (-3.0 pts)
 
 **CONFIGURACIÓN ACTUAL:**
+
 ```javascript
 // vitest.config.ts:26-31
 coverage: {
@@ -782,6 +836,7 @@ coverage: {
 ```
 
 **RECOMENDADO (Producción):**
+
 ```javascript
 coverage: {
   lines: 80,        // ✅ Profesional
@@ -792,17 +847,20 @@ coverage: {
 ```
 
 **IMPACTO:**
+
 - 50% de código sin tests → Riesgo de bugs en producción
 - Sin tests de edge cases → Comportamientos inesperados
 - Dificulta refactoring → Miedo a romper funcionalidad
 
 #### 🟡 2. Falta Tests de Integración (-0.3 pts)
+
 ```
 Actual: Solo unit tests
 Faltante: E2E tests (Playwright/Cypress)
 ```
 
 #### 🟡 3. Falta Tests de Hooks (-0.2 pts)
+
 ```
 Detectado:
 ✅ hooks/__tests__/useI18n.test.tsx
@@ -818,6 +876,7 @@ Faltante:
 ### 📋 Recomendaciones Priorizadas
 
 #### 🔴 CRÍTICO
+
 ```bash
 # 1. Aumentar coverage a 80%
 # Esfuerzo: 1-2 semanas
@@ -837,6 +896,7 @@ npm run test:coverage -- --reporter=html
 ```
 
 #### 🟡 IMPORTANTE
+
 ```bash
 # 2. Añadir E2E tests
 npm install -D @playwright/test
@@ -861,6 +921,7 @@ test('homepage loads and navigates to classes', async ({ page }) => {
 ```
 
 #### 🟢 MEJORA
+
 ```typescript
 // 3. Tests de hooks con errores
 describe('useI18n - Error handling', () => {
@@ -881,6 +942,7 @@ describe('useI18n - Error handling', () => {
 ### ✅ Fortalezas
 
 #### Vite Configuration (9/10)
+
 ```javascript
 ✅ React plugin habilitado
 ✅ imagetools plugin (WebP/AVIF)
@@ -890,9 +952,11 @@ describe('useI18n - Error handling', () => {
 ✅ Terser minification
 ✅ Manual chunks (react-vendor, router-vendor)
 ```
+
 **Archivo:** [vite.config.ts](vite.config.ts)
 
 #### Scripts de Build (9/10)
+
 ```json
 // package.json
 {
@@ -906,6 +970,7 @@ describe('useI18n - Error handling', () => {
 ```
 
 **Pipeline de Build:**
+
 ```
 1. update:sitemap → Genera sitemap.xml con 372 URLs
 2. vite build → Compila y minifica
@@ -913,27 +978,34 @@ describe('useI18n - Error handling', () => {
 ```
 
 #### Prerendering (9/10)
+
 ```javascript
 ✅ 53 páginas prerenderizadas
 ✅ Meta tags inyectados en <head>
 ✅ Locale persistence script
 ✅ Contenido visible para bots SEO
 ```
+
 **Archivo:** [prerender.mjs](prerender.mjs)
 
 #### Deployment Vercel (9/10)
+
 ```json
 // vercel.json
 {
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [{ "source": "/:path*", "destination": "/index.html" }],
-  "headers": [/* Security headers */]
+  "headers": [
+    /* Security headers */
+  ]
 }
 ```
+
 **Archivo:** [vercel.json](vercel.json)
 
 #### Optimizaciones Build (8/10)
+
 ```javascript
 ✅ drop_console: true (consoles removidos en prod)
 ✅ drop_debugger: true
@@ -944,6 +1016,7 @@ describe('useI18n - Error handling', () => {
 ### ⚠️ Debilidades
 
 #### 🟡 1. Falta CI/CD Pipeline Activo (-1.0 pts)
+
 ```
 Observación: .github/workflows/ existe pero sin badge activo
 Estado: No se detecta GitHub Actions configurado
@@ -951,6 +1024,7 @@ Impacto: Builds manuales, sin tests automáticos
 ```
 
 **Recomendación:**
+
 ```yaml
 # .github/workflows/ci.yml
 name: CI/CD
@@ -989,12 +1063,14 @@ jobs:
 ```
 
 #### 🟡 2. Falta Environment-Specific Builds (-0.5 pts)
+
 ```
 Problema: No hay diferenciación staging/production
 Solución: Crear .env.staging y .env.production
 ```
 
 **Recomendación:**
+
 ```bash
 # .env.production
 VITE_APP_ENV=production
@@ -1010,6 +1086,7 @@ VITE_API_URL=https://api-staging.farrayscenter.com
 ```
 
 #### 🟡 3. Metadata Duplicada en Prerender (-0.5 pts)
+
 ```javascript
 Problema: prerender.mjs líneas 68-285 duplican i18n/locales
 Impacto: Dificulta mantenimiento
@@ -1043,6 +1120,7 @@ npm install -D @lhci/cli
 ### ✅ Fortalezas
 
 #### Sistema i18n Custom (8/10)
+
 ```typescript
 ✅ Hook useI18n.tsx implementado
 ✅ I18nProvider con Context API
@@ -1050,11 +1128,14 @@ npm install -D @lhci/cli
 ✅ Locale persistence (localStorage + cookie)
 ✅ Tipo-safe con TypeScript
 ```
+
 **Archivos:**
+
 - [hooks/useI18n.tsx](hooks/useI18n.tsx)
 - [components/I18nProvider.tsx](components/I18nProvider.tsx)
 
 #### Completitud de Traducciones (7/10)
+
 ```
 Archivos de traducciones:
 ├── es.ts: 3,741 líneas (baseline 100%)
@@ -1064,36 +1145,40 @@ Archivos de traducciones:
 
 Total: 12,008 líneas de traducciones
 ```
+
 **Directorio:** [i18n/locales/](i18n/locales/)
 
 #### Claves Bien Estructuradas (8/10)
+
 ```typescript
 // Ejemplos de keys organizadas:
-navHome, navClasses, navDanza
-heroTitle1, heroTitle2, heroSubtitle
-dancehall_hero_title, dancehall_hero_subtitle
-hipHop_hero_title, twerk_hero_title
-regalaBaile_pack_feeling_title
+(navHome, navClasses, navDanza);
+(heroTitle1, heroTitle2, heroSubtitle);
+(dancehall_hero_title, dancehall_hero_subtitle);
+(hipHop_hero_title, twerk_hero_title);
+regalaBaile_pack_feeling_title;
 ```
 
 #### Hreflang Implementado (10/10)
+
 ```html
-✅ Hreflang bidireccional en SEO.tsx
-✅ x-default definido (español)
-✅ URLs canónicas por idioma
+✅ Hreflang bidireccional en SEO.tsx ✅ x-default definido (español) ✅ URLs canónicas por idioma
 ```
 
 ### ⚠️ Debilidades (CRÍTICAS)
 
 #### 🔴 1. Bundles i18n Gigantes (-2.0 pts)
+
 ```
 Problema: Todos los idiomas cargados simultáneamente
 Tamaño: 904 KB total (solo se usa 1 idioma)
 Impacto: Desperdicio de 70% del bundle
 ```
+
 **YA DOCUMENTADO EN SECCIÓN RENDIMIENTO**
 
 #### 🟡 2. Discrepancia de Líneas entre Idiomas (-0.5 pts)
+
 ```
 es.ts: 3,741 líneas
 en.ts: 2,789 líneas (-952 líneas, -25%)
@@ -1107,6 +1192,7 @@ Posibles causas:
 ```
 
 **Verificación necesaria:**
+
 ```bash
 # Script para comparar keys
 node scripts/compare-i18n-keys.js
@@ -1118,6 +1204,7 @@ node scripts/compare-i18n-keys.js
 ```
 
 #### 🟡 3. Falta Organización en Namespaces (-0.3 pts)
+
 ```typescript
 // Actual (❌):
 {
@@ -1138,6 +1225,7 @@ node scripts/compare-i18n-keys.js
 ```
 
 #### 🟡 4. Templates i18n en Ubicación Incorrecta (-0.2 pts)
+
 ```
 Actual:
   .claude/i18n-hip-hop-template.txt
@@ -1151,6 +1239,7 @@ Propuesto:
 ### 📋 Recomendaciones Priorizadas
 
 #### 🔴 CRÍTICO
+
 ```typescript
 // 1. Lazy loading de traducciones (70% reducción bundle)
 // Ya documentado en sección Rendimiento
@@ -1158,6 +1247,7 @@ Propuesto:
 ```
 
 #### 🟡 IMPORTANTE
+
 ```bash
 # 2. Verificar completitud de traducciones
 npm run i18n:verify
@@ -1179,6 +1269,7 @@ console.log('Missing in FR:', missingInFr.length);
 ```
 
 #### 🟢 MEJORA
+
 ```typescript
 // 3. Organizar en namespaces
 // i18n/locales/es.ts
@@ -1216,6 +1307,7 @@ t('dancehall.hero.title'); // "Dancehall"
 ### ✅ Fortalezas
 
 #### TypeScript Strict (10/10)
+
 ```json
 ✅ strict: true
 ✅ noImplicitAny: true
@@ -1225,6 +1317,7 @@ t('dancehall.hero.title'); // "Dancehall"
 ```
 
 #### ESLint + Prettier (9/10)
+
 ```
 ✅ ESLint configurado con reglas estrictas
 ✅ Prettier para formateo consistente
@@ -1233,6 +1326,7 @@ t('dancehall.hero.title'); // "Dancehall"
 ```
 
 #### Componentes Pequeños (9/10)
+
 ```
 Promedio líneas/componente: ~120 líneas ✅
 Componentes >200 líneas: ~10 (aceptable)
@@ -1240,6 +1334,7 @@ Componentes >500 líneas: 0 (excelente)
 ```
 
 #### Documentación (9/10)
+
 ```
 ✅ 24 archivos .md
 ✅ README.md con quick start
@@ -1249,11 +1344,13 @@ Componentes >500 líneas: 0 (excelente)
 ```
 
 **Archivos:**
+
 - [README.md](README.md)
 - [ARCHITECTURE.md](ARCHITECTURE.md)
 - [CHANGELOG.md](CHANGELOG.md)
 
 #### Hooks Reutilizables (8/10)
+
 ```typescript
 ✅ useI18n → Traducciones
 ✅ useLazyImage → Lazy loading de imágenes
@@ -1263,12 +1360,14 @@ Componentes >500 líneas: 0 (excelente)
 ### ⚠️ Debilidades
 
 #### 🟡 1. Falta Comentarios en Lógica Compleja (-0.5 pts)
+
 ```typescript
 // Ejemplo: prerender.mjs líneas 200-250
 // Lógica compleja de inyección de metadata sin comentarios explicativos
 ```
 
 #### 🟡 2. Algunos Componentes Largos (-0.5 pts)
+
 ```
 Componentes >200 líneas:
 - DancehallPage.tsx: ~350 líneas
@@ -1279,6 +1378,7 @@ Solución: Extraer secciones a sub-componentes
 ```
 
 #### 🟡 3. Repetición de Lógica SEO (-0.5 pts)
+
 ```
 Problema: ClassPageHead.tsx vs páginas individuales
 Observación: Lógica similar repetida
@@ -1320,6 +1420,7 @@ function injectMetadata(html: string, metadata: Metadata): string {
 ### ✅ Fortalezas (EXCELENTES)
 
 #### Separación de Responsabilidades (10/10)
+
 ```
 c:\Users\fabio\Desktop\dEFINITIVA\web-local
 ├── components/        → UI components
@@ -1333,6 +1434,7 @@ c:\Users\fabio\Desktop\dEFINITIVA\web-local
 ```
 
 #### Patrones Arquitectónicos (9/10)
+
 ```typescript
 ✅ Component-based architecture
 ✅ Lazy loading pattern
@@ -1344,6 +1446,7 @@ c:\Users\fabio\Desktop\dEFINITIVA\web-local
 ```
 
 #### Modularización (9/10)
+
 ```
 components/
 ├── shared/           → Componentes reutilizables
@@ -1364,6 +1467,7 @@ components/
 ```
 
 #### Configuración Centralizada (8/10)
+
 ```
 ✅ vite.config.ts → Build configuration
 ✅ tsconfig.json → TypeScript config
@@ -1373,6 +1477,7 @@ components/
 ```
 
 #### Dependency Injection (8/10)
+
 ```typescript
 ✅ Context API (I18nProvider)
 ✅ Props drilling minimizado
@@ -1383,6 +1488,7 @@ components/
 ### ⚠️ Debilidades Menores
 
 #### 🟡 1. Falta State Management Avanzado (-0.5 pts)
+
 ```
 Actual: useState + Context API
 Limitación: No escala para estado complejo
@@ -1390,12 +1496,14 @@ Solución: Zustand o Redux Toolkit
 ```
 
 #### 🟡 2. Sin Arquitectura de Caché (-0.3 pts)
+
 ```
 Faltante: React Query / SWR
 Impacto: Requests duplicadas
 ```
 
 #### 🟡 3. Mixing Concerns en Algunos Componentes (-0.2 pts)
+
 ```typescript
 // Ejemplo: Algunos componentes mezclan lógica + UI
 // Solución: Separar en containers + presentational
@@ -1443,6 +1551,7 @@ const queryClient = new QueryClient();
 ### ✅ Fortalezas
 
 #### Code Splitting (8/10)
+
 ```
 ✅ Lazy loading de 18 páginas
 ✅ Manual chunks (react-vendor, router-vendor)
@@ -1450,6 +1559,7 @@ const queryClient = new QueryClient();
 ```
 
 #### Componentización (8/10)
+
 ```
 ✅ DancePageTemplate reutilizable
 ✅ 131 componentes modulares
@@ -1457,6 +1567,7 @@ const queryClient = new QueryClient();
 ```
 
 #### Prerendering (7/10)
+
 ```
 ✅ Script automatizado (prerender.mjs)
 ✅ 53 páginas generadas
@@ -1466,6 +1577,7 @@ const queryClient = new QueryClient();
 ### ⚠️ Limitaciones de Escalabilidad
 
 #### 🔴 1. i18n No Escala (-2.0 pts)
+
 ```
 Problema: Todos los idiomas en bundle
 Impacto: Cada nuevo idioma añade ~200KB
@@ -1473,6 +1585,7 @@ Solución: Lazy loading (ya documentado)
 ```
 
 #### 🟡 2. Imágenes No Optimizadas para CDN (-0.5 pts)
+
 ```
 Actual: Servidas desde /public/
 Limitación: Sin lazy loading progresivo, sin CDN
@@ -1480,12 +1593,14 @@ Solución: Cloudinary / Vercel Image Optimization
 ```
 
 #### 🟡 3. Sin Sistema de Caché Avanzado (-0.3 pts)
+
 ```
 Faltante: React Query / SWR
 Impacto: Requests duplicadas al navegar
 ```
 
 #### 🟡 4. Metadata Duplicada (-0.2 pts)
+
 ```
 Problema: prerender.mjs vs i18n
 Impacto: Dificulta añadir nuevas páginas
@@ -1494,6 +1609,7 @@ Impacto: Dificulta añadir nuevas páginas
 ### 📋 Roadmap de Escalabilidad
 
 #### Fase 1: Optimizaciones Críticas (1-2 semanas)
+
 ```
 1. Lazy loading de i18n → -70% bundle
 2. Crear script automatizado para nuevas páginas de clases
@@ -1501,6 +1617,7 @@ Impacto: Dificulta añadir nuevas páginas
 ```
 
 #### Fase 2: Infraestructura (1 mes)
+
 ```
 4. Migrar imágenes a CDN (Cloudinary)
 5. Implementar React Query para caché
@@ -1508,6 +1625,7 @@ Impacto: Dificulta añadir nuevas páginas
 ```
 
 #### Fase 3: Features Avanzados (2-3 meses)
+
 ```
 7. Sistema de reservas (backend integration)
 8. Dashboard de usuario
@@ -1525,6 +1643,7 @@ Impacto: Dificulta añadir nuevas páginas
 ### 🔴 CRÍTICO (Esta Semana)
 
 #### 1. Lazy Loading de i18n (Impacto: MÁXIMO)
+
 ```
 Esfuerzo: 2-3 horas
 Impacto: +2.5 puntos totales
@@ -1537,6 +1656,7 @@ Archivos a modificar:
 ```
 
 #### 2. Crear OG Images Faltantes (Impacto: ALTO)
+
 ```
 Esfuerzo: 1-2 horas
 Impacto: +0.5 puntos SEO
@@ -1549,6 +1669,7 @@ Crear:
 ```
 
 #### 3. Aumentar Coverage de Tests a 80% (Impacto: ALTO)
+
 ```
 Esfuerzo: 1-2 semanas
 Impacto: +3.0 puntos Testing
@@ -1565,6 +1686,7 @@ Priorizar testing:
 ### 🟡 IMPORTANTE (Próximo Sprint)
 
 #### 4. Centralizar Constantes (Impacto: MEDIO)
+
 ```typescript
 // constants/config.ts
 export const SITE_CONFIG = {
@@ -1586,12 +1708,14 @@ export const SITE_CONFIG = {
 ```
 
 #### 5. Activar CI/CD Pipeline (Impacto: MEDIO)
+
 ```yaml
 # .github/workflows/ci.yml
 # Tests automáticos + Lighthouse CI en cada commit
 ```
 
 #### 6. Mejorar CSP (Impacto: MEDIO)
+
 ```
 Eliminar 'unsafe-inline' de style-src
 Implementar nonce para Tailwind
@@ -1612,6 +1736,7 @@ Implementar nonce para Tailwind
 ## 📈 IMPACTO DE MEJORAS
 
 ### Escenario 1: Solo Crítico (1 semana)
+
 ```
 Puntuación actual:    8.2/10
 Mejoras críticas:     +1.5 puntos
@@ -1619,12 +1744,14 @@ Puntuación final:     9.7/10 ⭐⭐⭐⭐⭐
 ```
 
 **Desglose:**
+
 - Rendimiento: 7.5 → 9.5 (+2.0) → Lazy i18n
 - SEO: 8.5 → 9.0 (+0.5) → OG images
 - Testing: 6.5 → 9.0 (+2.5) → Coverage 80%
 - **Promedio: +1.5 puntos**
 
 ### Escenario 2: Crítico + Importante (1 mes)
+
 ```
 Puntuación actual:    8.2/10
 Mejoras totales:      +2.0 puntos
@@ -1632,6 +1759,7 @@ Puntuación final:     10.0/10 🏆 PERFECTO
 ```
 
 **Desglose adicional:**
+
 - Código Limpio: 8.5 → 9.5 (+1.0) → Constantes centralizadas
 - Build: 8.0 → 9.5 (+1.5) → CI/CD activo
 - Seguridad: 9.0 → 9.8 (+0.8) → CSP mejorado
@@ -1643,6 +1771,7 @@ Puntuación final:     10.0/10 🏆 PERFECTO
 ### 🎯 Estado Actual
 
 **Tu proyecto es PROFESIONAL (8.2/10)** con:
+
 - ✅ Seguridad robusta (9.0/10)
 - ✅ SEO excelente (8.5/10)
 - ✅ Arquitectura sólida (9.0/10)
@@ -1654,6 +1783,7 @@ Puntuación final:     10.0/10 🏆 PERFECTO
 ### 🚀 Proyecto Perfecto (10/10)
 
 **Con 1 semana de trabajo:**
+
 1. Lazy loading i18n → -70% bundle → **9.5/10 Rendimiento**
 2. OG images → Completo SEO → **9.0/10 SEO**
 3. Coverage 80% → Confianza → **9.0/10 Testing**

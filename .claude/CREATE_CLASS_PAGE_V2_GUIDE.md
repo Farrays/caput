@@ -18,12 +18,14 @@ Generador avanzado de páginas de clases con validación exhaustiva, backups aut
 ## ✨ Características
 
 ### 🔒 Seguridad y Validación
+
 - ✅ Validación exhaustiva antes de ejecutar
 - 📦 Backups automáticos con rollback en caso de error
 - 🔍 Detección de conflictos (componentes/rutas existentes)
 - 🧪 Verificación de sintaxis post-generación
 
 ### 🎯 Funcionalidad Avanzada
+
 - 🎨 Clonación desde cualquier página existente (no solo Dancehall)
 - 📝 Actualización automática de archivos i18n (todos los locales)
 - 🖼️ Creación de estructura de directorios para imágenes
@@ -31,6 +33,7 @@ Generador avanzado de páginas de clases con validación exhaustiva, backups aut
 - 📊 Progress logging y modo verbose
 
 ### 🔧 Flexibilidad
+
 - 🌵 Dry-run mode para previsualizar cambios
 - 🎛️ Flags para personalizar qué se genera
 - 📚 Plantillas predefinidas para estilos comunes
@@ -57,6 +60,7 @@ npm run create:class:v2
 ```
 
 El script te preguntará:
+
 1. Nombre de la clase (ej: `bachata`, `salsa`, `kizomba`)
 2. Nombre del instructor (opcional)
 3. Especialidad del instructor (opcional)
@@ -87,20 +91,20 @@ Esto te mostrará **exactamente** qué archivos se crearían/modificarían sin h
 
 ### Flags Disponibles
 
-| Flag | Descripción | Ejemplo |
-|------|-------------|---------|
-| `--name` | Nombre de la clase **(obligatorio)** | `--name=bachata` |
-| `--from` | Página base para clonar (default: `dancehall`) | `--from=salsa` |
-| `--instructor` | Nombre del instructor | `--instructor="Carlos Martínez"` |
-| `--specialty` | Especialidad del instructor | `--specialty="Bachata Sensual"` |
-| `--dry-run` | Previsualizar cambios sin ejecutar | `--dry-run` |
-| `--verbose` | Logs detallados | `--verbose` |
-| `--auto-i18n` | Actualiza archivos i18n automáticamente | `--auto-i18n` |
-| `--force` | Sobrescribe claves i18n existentes | `--force` |
-| `--skip-backup` | No crear backups (¡cuidado!) | `--skip-backup` |
-| `--no-routes` | No actualizar App.tsx | `--no-routes` |
-| `--no-images` | No crear estructura de imágenes | `--no-images` |
-| `--typecheck` | Ejecutar typecheck después de generar | `--typecheck` |
+| Flag            | Descripción                                    | Ejemplo                          |
+| --------------- | ---------------------------------------------- | -------------------------------- |
+| `--name`        | Nombre de la clase **(obligatorio)**           | `--name=bachata`                 |
+| `--from`        | Página base para clonar (default: `dancehall`) | `--from=salsa`                   |
+| `--instructor`  | Nombre del instructor                          | `--instructor="Carlos Martínez"` |
+| `--specialty`   | Especialidad del instructor                    | `--specialty="Bachata Sensual"`  |
+| `--dry-run`     | Previsualizar cambios sin ejecutar             | `--dry-run`                      |
+| `--verbose`     | Logs detallados                                | `--verbose`                      |
+| `--auto-i18n`   | Actualiza archivos i18n automáticamente        | `--auto-i18n`                    |
+| `--force`       | Sobrescribe claves i18n existentes             | `--force`                        |
+| `--skip-backup` | No crear backups (¡cuidado!)                   | `--skip-backup`                  |
+| `--no-routes`   | No actualizar App.tsx                          | `--no-routes`                    |
+| `--no-images`   | No crear estructura de imágenes                | `--no-images`                    |
+| `--typecheck`   | Ejecutar typecheck después de generar          | `--typecheck`                    |
 
 ### Combinaciones Útiles
 
@@ -111,6 +115,7 @@ npm run create:class:v2 -- --name=salsa --auto-i18n --typecheck
 ```
 
 **Hace:**
+
 - Crea el componente `SalsaPage.tsx`
 - Actualiza `App.tsx` con las rutas
 - **Actualiza automáticamente** todos los archivos i18n (es, en, ca, fr)
@@ -125,6 +130,7 @@ npm run create:class:v2 -- --name=kizomba --dry-run --verbose
 ```
 
 **Muestra:**
+
 - Todos los archivos que se crearían
 - Preview del contenido generado
 - Cambios exactos en App.tsx e i18n
@@ -137,6 +143,7 @@ npm run create:class:v2 -- --name=tango --no-routes --no-images
 ```
 
 **Útil cuando:**
+
 - Quieres crear solo el componente
 - Vas a añadir las rutas manualmente
 - No necesitas imágenes aún
@@ -160,6 +167,7 @@ npm run create:class:v2 -- --name=bachata --instructor="Isabel López" --special
 ```
 
 **Resultado:**
+
 - Componente creado con 7 FAQs específicas de Bachata
 - Pilares: Sensualidad, Técnica, Musicalidad
 - i18n actualizado automáticamente en los 4 idiomas
@@ -173,6 +181,7 @@ npm run create:class:v2 -- --name=hip-hop --instructor="David Chen" --specialty=
 ```
 
 **Resultado:**
+
 - Plantilla con 7 FAQs de Hip Hop
 - Pilares: Flow, Técnica, Cultura
 - Todo configurado automáticamente
@@ -184,6 +193,7 @@ npm run create:class:v2 -- --name=tango --instructor="Roberto García" --special
 ```
 
 **Resultado:**
+
 - Componente creado con plantilla genérica
 - Template i18n guardado en `.claude/i18n-tango-template.txt`
 - Debes copiar manualmente las claves a los archivos i18n
@@ -219,6 +229,7 @@ npm run create:class:v2 -- --name=NUEVA_CLASE --auto-i18n
 ### 3️⃣ Personalizar
 
 1. **Traducciones i18n**:
+
    ```bash
    # Abre y personaliza:
    code i18n/locales/es.ts  # Busca las claves de tu clase
@@ -228,11 +239,13 @@ npm run create:class:v2 -- --name=NUEVA_CLASE --auto-i18n
    ```
 
 2. **Componente**:
+
    ```bash
    code components/NuevaClasePage.tsx  # Personaliza el contenido
    ```
 
 3. **Imágenes**:
+
    ```bash
    # Sube 3 imágenes JPG a:
    public/images/classes/nueva-clase/raw/
@@ -268,21 +281,25 @@ git push -u origin feat/nueva-clase-page
 El script incluye plantillas optimizadas para:
 
 ### 📍 Bachata
+
 - **Pilares**: Sensualidad, Técnica, Musicalidad
 - **FAQs**: 7 preguntas específicas sobre Bachata
 - **Categoría**: Bailes latinos
 
 ### 📍 Salsa
+
 - **Pilares**: Ritmo, Estilo, Shine
 - **FAQs**: 7 preguntas sobre On1, On2, Casino
 - **Categoría**: Bailes latinos
 
 ### 📍 Kizomba
+
 - **Pilares**: Conexión, Movimiento, Musicalidad
 - **FAQs**: 7 preguntas sobre Kizomba y Urban Kiz
 - **Categoría**: Bailes africanos
 
 ### 📍 Hip Hop
+
 - **Pilares**: Flow, Técnica, Cultura
 - **FAQs**: 7 preguntas sobre estilos de Hip Hop
 - **Categoría**: Urbano
@@ -340,6 +357,7 @@ Responde `y` para deshacer automáticamente todos los cambios.
 **Problema**: El componente ya fue creado.
 
 **Solución**:
+
 ```bash
 # Opción 1: Usa otro nombre
 npm run create:class:v2 -- --name=bachata-avanzada
@@ -354,6 +372,7 @@ npm run create:class:v2 -- --name=bachata
 **Problema**: La página base especificada en `--from` no existe.
 
 **Solución**:
+
 ```bash
 # Verifica qué páginas existen:
 ls components/*Page.tsx
@@ -379,6 +398,7 @@ npm run create:class:v2 -- --name=tango --from=salsa
 **Problema**: La estructura de App.tsx cambió y el script no puede encontrar dónde insertar.
 
 **Solución**:
+
 ```bash
 # Genera sin actualizar rutas:
 npm run create:class:v2 -- --name=nueva-clase --no-routes
@@ -409,18 +429,18 @@ El script escapa automáticamente las comillas simples. Si persiste el error:
 
 ## 📊 Comparación con v1
 
-| Característica | v1 (create:class) | v2 (create:class:v2) |
-|----------------|-------------------|----------------------|
-| Validación previa | ❌ | ✅ |
-| Backups automáticos | ❌ | ✅ |
-| Dry-run mode | ❌ | ✅ |
-| Auto-update i18n | ❌ | ✅ |
-| Rollback en error | ❌ | ✅ |
-| Verbose logging | ❌ | ✅ |
-| Clonar desde cualquier página | ❌ | ✅ |
-| Verificación post-gen | ❌ | ✅ |
-| Skip flags | ❌ | ✅ |
-| Typecheck integrado | ❌ | ✅ |
+| Característica                | v1 (create:class) | v2 (create:class:v2) |
+| ----------------------------- | ----------------- | -------------------- |
+| Validación previa             | ❌                | ✅                   |
+| Backups automáticos           | ❌                | ✅                   |
+| Dry-run mode                  | ❌                | ✅                   |
+| Auto-update i18n              | ❌                | ✅                   |
+| Rollback en error             | ❌                | ✅                   |
+| Verbose logging               | ❌                | ✅                   |
+| Clonar desde cualquier página | ❌                | ✅                   |
+| Verificación post-gen         | ❌                | ✅                   |
+| Skip flags                    | ❌                | ✅                   |
+| Typecheck integrado           | ❌                | ✅                   |
 
 **Recomendación**: Usa siempre v2 para nuevas clases. v1 se mantiene por compatibilidad.
 
@@ -447,7 +467,7 @@ const classTemplates = {
   'tu-nuevo-estilo': {
     displayName: 'Tu Nuevo Estilo',
     // ... tu configuración
-  }
+  },
 };
 ```
 
