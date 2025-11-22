@@ -62,13 +62,10 @@ jsFiles.forEach(file => {
   stats.files.push({ name: file, size: sizeKB });
   
   let status = '✅ OK';
-  let limitKB = null;
   
   // Check against limits
   for (const [pattern, limit] of Object.entries(LIMITS)) {
     if (file.includes(pattern)) {
-      limitKB = limit;
-      
       if (sizeKB > limit) {
         status = `🔴 EXCEEDS LIMIT (${limit}KB)`;
         hasError = true;
