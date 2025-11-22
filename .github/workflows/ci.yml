@@ -61,11 +61,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Ensure rollup optional deps are installed
-        run: |
-          npm install --no-save --force @rollup/rollup-linux-x64-gnu || true
-          npm rebuild rollup
-
       - name: Run unit tests
         run: npm run test:run
 
@@ -100,11 +95,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Ensure rollup optional deps are installed
-        run: |
-          npm install --no-save --force @rollup/rollup-linux-x64-gnu || true
-          npm rebuild rollup
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
@@ -168,11 +158,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Ensure rollup optional deps are installed
-        run: |
-          npm install --no-save --force @rollup/rollup-linux-x64-gnu || true
-          npm rebuild rollup
 
       - name: Build application
         run: npm run build
