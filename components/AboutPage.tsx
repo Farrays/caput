@@ -114,7 +114,7 @@ const AboutPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <section
           id="about-hero"
@@ -453,7 +453,7 @@ const AboutPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

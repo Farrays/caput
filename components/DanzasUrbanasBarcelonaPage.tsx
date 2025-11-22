@@ -183,7 +183,7 @@ const DanzasUrbanasBarcelonaPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(courseSchema)}</script>
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <section
           id="danzas-urbanas-hero"
@@ -588,7 +588,7 @@ const DanzasUrbanasBarcelonaPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

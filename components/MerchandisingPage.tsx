@@ -178,7 +178,7 @@ const MerchandisingPage: React.FC = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <section
           id="merchandising-hero"
@@ -340,7 +340,7 @@ const MerchandisingPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

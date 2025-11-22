@@ -141,7 +141,7 @@ const RegalaBailePage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section with Stellar Background */}
         <section className="relative min-h-[70vh] flex items-center justify-center bg-black overflow-hidden">
           {/* Stellar Background */}
@@ -428,7 +428,7 @@ const RegalaBailePage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

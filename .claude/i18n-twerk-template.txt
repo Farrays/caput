@@ -1,0 +1,173 @@
+# PLANTILLA i18n PARA TWERK (Español)
+# Basado en el texto SEO ya posicionado en Google
+# Copiar estas keys al archivo i18n/locales/es.ts
+
+## HERO SECTION
+twkHeroTitle: 'CLASES DE TWERKING DANCE EN BARCELONA'
+twkHeroSubtitle: 'Aprende a mover el culete con actitud y precisión'
+twkHeroDesc: 'El Twerking Dance o Twerk es uno de los bailes del momento. Aprende la técnica adecuada para controlar los movimientos más conocidos del bootydance con trap, hip hop y reggaeton.'
+twkHeroLocation: 'En Farray\'s International Dance Center - Barcelona'
+twkCTA1: '¡APÚNTATE HOY MISMO!'
+twkCTA1Subtext: 'Primera clase gratis'
+twkCTA2: 'Reserva tu clase de prueba'
+twkCTA2Subtext: 'Sin compromiso'
+
+## WHAT IS TWERK SECTION
+twkWhatIsTitle: '¿Qué es el Twerk?'
+twkWhatIsP1: 'El Twerking Dance o Twerk es uno de los bailes del momento.'
+twkWhatIsP2: 'El objetivo principal de las clases de Twerk es que aprendas a mover el "culete" de muchas formas diferentes. En nuestras clases de Twerking Dance aprenderás la técnica adecuada para controlar los movimientos más conocidos del bootydance, y realizarás un montón de coreografías diferentes.'
+twkWhatIsP3: 'Normalmente esta es una clase en que se usa principalmente músicas más estadounidense tipo trap o hip hop o música más latina tipo reggaeton.'
+twkWhatIsP4: 'El verdadero origen de estos movimientos de caderas y nalgas se encuentran en las danzas africanas, como en el \'baikoko mapouka\'. Los movimientos del Twerk existen en todo el mundo difuminados por la diáspora africana.'
+twkWhatIsQuestionTitle: '¿Qué consigues en nuestros cursos de Twerk en Barcelona?'
+twkWhatIsQuestionAnswer: 'Fortalecimiento, actitud y confianza en ti misma'
+
+## CULTURAL HISTORY SECTION
+twkCulturalTitle: 'Origen e Historia del Twerk'
+twkCulturalShortDesc: 'Los movimientos del Twerk tienen raíces profundas en las danzas africanas tradicionales y se han difundido por todo el mundo a través de la diáspora africana.'
+twkCulturalFullHistory: 'El verdadero origen de estos movimientos de caderas y glúteos se encuentra en las danzas africanas tradicionales, especialmente en el "baikoko mapouka" de Costa de Marfil. Estos movimientos ancestrales han viajado a través de los siglos y continentes, llegando al Caribe y posteriormente a Estados Unidos durante el período de esclavitud y la diáspora africana. En las décadas de 1980 y 1990, el Twerk comenzó a aparecer en videos musicales de hip-hop y bounce music de Nueva Orleans, popularizado por artistas como DJ Jubilee. El término "twerk" se popularizó masivamente en 2013 gracias a artistas como Miley Cyrus, pero el baile ya llevaba décadas siendo parte fundamental de la cultura del hip-hop y la música urbana. Hoy en día, el Twerk ha evolucionado como una forma de expresión artística que combina el poder ancestral de las danzas africanas con la actitud y energía de la música urbana contemporánea, siendo practicado por bailarines profesionales en todo el mundo como una disciplina que fortalece el cuerpo y la confianza personal.'
+
+## IDENTIFICATION SECTION (¿Te identificas?)
+twkIdentifyTitle: '¿Te identificas con alguna de estas situaciones?'
+twkIdentify1: 'Quieres aprender a bailar Twerk pero no sabes por dónde empezar'
+twkIdentify2: 'Quieres fortalecer tus glúteos, caderas y abdomen de forma divertida'
+twkIdentify3: 'Te encanta la música trap, hip-hop y reggaeton y quieres moverte con actitud'
+twkIdentify4: 'Quieres mejorar tu confianza y expresar tu lado más atrevido'
+twkIdentify5: 'Buscas una clase de baile que sea cardio, fortalecimiento y empoderamiento a la vez'
+twkIdentify6: 'Quieres aprender figuras provocativas como el body roll y el perreo con técnica'
+
+twkIdentifyTransition: 'Si te has sentido identificado/a con alguna de estas situaciones...'
+
+twkNeedEnrollTitle: '¡Necesitas apuntarte a nuestras clases de Twerk!'
+twkNeedEnrollP1: 'En Farray\'s International Dance Center te enseñaremos a mover tus glúteos de forma controlada y precisa, a colocar tu cuerpo correctamente, a bajar hasta el suelo y volver a subir con técnica.'
+twkNeedEnrollP2: 'Trabajarás la disociación corporal, aprenderás coreografías completas y descubrirás el potencial de tu cuerpo para bailar con sentimiento, actitud y precisión al ritmo de las músicas más atrevidas.'
+
+## TRANSFORMATION SECTION (¿Qué conseguirás?)
+twkTransformTitle: '¿Qué conseguirás en nuestras clases de Twerk?'
+twkTransform1Title: 'Fortalece tu cuerpo'
+twkTransform1Desc: 'Fortalecerás tus piernas, glúteos, caderas y abdomen con cada clase.'
+twkTransform2Title: 'Mejora tu flexibilidad'
+twkTransform2Desc: 'Trabajarás la flexibilidad y ganarás resistencia para que nada te pare cuando sientas el ritmo correr por tus venas.'
+twkTransform3Title: 'Domina figuras provocativas'
+twkTransform3Desc: 'Dominarás figuras tan provocativas como el body roll o el perreo con técnica y precisión.'
+twkTransform4Title: 'Aprende disociación corporal'
+twkTransform4Desc: 'Te enseñaremos a colocar tu cuerpo con precisión y a mover tus glúteos de forma controlada, a la vez que bajas hasta el suelo y vuelves a subir.'
+twkTransform5Title: 'Aumenta tu autoconfianza'
+twkTransform5Desc: 'Expresarás tu lado más atrevido, trabajarás la actitud y te sentirás con más confianza en ti misma.'
+twkTransform6Title: 'Mejora tu improvisación'
+twkTransform6Desc: 'Aprenderás a improvisar y a bailar Twerk con libertad al ritmo de trap, hip-hop y reggaeton.'
+
+twkTransformCTA: '¿Por qué elegir Farray\'s para aprender Twerk?'
+
+## WHY CHOOSE FARRAY'S
+twkWhyChoose1Title: 'Profesoras expertas en Twerk'
+twkWhyChoose1Desc: 'Aprende con profesoras certificadas y con años de experiencia en Twerking Dance y bootydance.'
+twkWhyChoose2Title: 'Técnica profesional'
+twkWhyChoose2Desc: 'Te enseñamos la técnica correcta desde el primer día para que desarrolles los movimientos con precisión y seguridad.'
+twkWhyChoose3Title: 'Ambiente inclusivo'
+twkWhyChoose3Desc: 'Clases para todos los niveles y cuerpos. Todas las personas son bienvenidas sin importar su experiencia previa.'
+twkWhyChoose4Title: 'Clases dinámicas y divertidas'
+twkWhyChoose4Desc: 'Combina cardio, fuerza y diversión en cada clase de 60 minutos con las mejores músicas urbanas.'
+twkWhyChoose5Title: 'Grupos reducidos'
+twkWhyChoose5Desc: 'Atención personalizada en grupos pequeños para que aprendas correctamente desde el inicio.'
+twkWhyChoose6Title: 'Horarios flexibles'
+twkWhyChoose6Desc: '5 clases semanales en diferentes horarios para que puedas entrenar cuando mejor te venga.'
+twkWhyChoose7Title: 'Instalaciones profesionales'
+twkWhyChoose7Desc: 'Salas amplias con suelos adecuados, espejos completos, equipo de sonido profesional y ambiente motivador.'
+
+## TEACHERS SECTION
+twkTeachersTitle: 'Conoce a tus profesoras de Twerk'
+twkTeachersSubtitle: 'Expertas en Twerking Dance y empoderamiento femenino'
+twkTeacher1Specialty: 'Especialista en Twerk & Bootydance'
+twkTeacher1Bio: 'Isabel es una de las mejores profesoras de Twerk en Barcelona. Con más de 8 años de experiencia, ha formado a cientos de alumnas en la técnica del Twerking Dance, combinando disociación corporal, fortalecimiento y actitud.'
+twkTeacher2Specialty: 'Experta en Twerk & Reggaeton'
+twkTeacher2Bio: 'Sandra combina el Twerk con ritmos latinos y urbanos, creando clases dinámicas y energéticas donde aprenderás a moverte con confianza y técnica en cada sesión.'
+twkTeachersClosing: 'Nuestras profesoras están aquí para guiarte en cada paso, para que ganes confianza, fuerza y domines el arte del Twerk.'
+
+## LOGOS SECTION
+twkLogosTitle: 'Nos has podido ver en'
+twkLogosIntlFestivalsText: 'Y en festivales internacionales de danza urbana'
+
+## SCHEDULE SECTION
+twkScheduleTitle: 'Horarios de Clases de Twerk'
+twkScheduleSubtitle: '5 clases semanales para todos los niveles'
+
+## VIDEO SECTION
+twkVideoTitle: '¿Quieres ver cómo son nuestras clases de Twerk?'
+twkVideoDesc: 'Mira estos videos de nuestras alumnas bailando Twerk en Farray\'s Center'
+
+## WHY TODAY SECTION
+twkWhyTodayFullTitle: '¿Por qué apuntarte hoy a clases de Twerk?'
+twkWhyToday1: 'Cada día que pasa es un día menos bailando, moviéndote y sintiéndote bien con tu cuerpo.'
+twkWhyToday2: 'El Twerk es una forma de expresión que te ayudará a ganar confianza, fuerza física y empoderamiento personal.'
+twkWhyToday3: 'No necesitas experiencia previa. Solo ganas de aprender, moverte y divertirte.'
+twkWhyTodayClosing1: 'La primera clase es GRATIS'
+twkWhyTodayClosing2: '¿A qué esperas para probar?'
+
+## FINAL CTA SECTION
+twkFinalCTATitle: '¿List@ para empezar tu viaje en el Twerk?'
+twkFinalCTASubtitle: '¡Ven a bailar con nosotras!'
+twkFinalCTADesc: 'Apúntate hoy mismo a nuestras clases de Twerk en Barcelona y descubre el poder de tu cuerpo al ritmo de trap, hip-hop y reggaeton.'
+twkFinalCTAFunny: 'Tus glúteos te lo agradecerán 🍑'
+
+## FAQ SECTION
+twkFaqTitle: 'Preguntas frecuentes sobre las clases de Twerk'
+
+# FAQs (16 preguntas adaptadas a Twerk)
+twkFaqQ1: '¿Qué es el Twerk o Twerking Dance?'
+twkFaqA1: 'El Twerking Dance o Twerk es un estilo de baile urbano que se centra en movimientos de caderas y glúteos al ritmo de música trap, hip-hop y reggaeton. Su origen se encuentra en las danzas africanas tradicionales y se ha popularizado mundialmente como una forma de expresión artística y empoderamiento.'
+
+twkFaqQ2: '¿Necesito experiencia previa para hacer Twerk?'
+twkFaqA2: 'No necesitas ninguna experiencia previa. Nuestras clases están diseñadas para todos los niveles, desde principiantes absolutos hasta bailarines avanzados. Te enseñaremos la técnica correcta desde cero.'
+
+twkFaqQ3: '¿Qué ropa debo llevar a las clases de Twerk?'
+twkFaqA3: 'Ropa cómoda y ajustada que te permita moverte libremente: leggings o shorts, top deportivo, zapatillas deportivas o puedes bailar descalza. Lo importante es que te sientas cómoda y puedas ver tus movimientos en el espejo.'
+
+twkFaqQ4: '¿El Twerk es solo para mujeres?'
+twkFaqA4: 'No, el Twerk es para todas las personas sin importar su género. Aunque tradicionalmente se ha asociado con mujeres, cada vez más hombres y personas de todos los géneros practican Twerk como forma de expresión y ejercicio.'
+
+twkFaqQ5: '¿Qué beneficios físicos tiene el Twerk?'
+twkFaqA5: 'El Twerk fortalece piernas, glúteos, caderas, abdomen y zona lumbar. Mejora la flexibilidad, la resistencia cardiovascular, la coordinación y la disociación corporal. Es un ejercicio completo que quema hasta 500 calorías por clase.'
+
+twkFaqQ6: '¿Cómo funciona una clase de Twerk en Farray\'s?'
+twkFaqA6: 'La clase dura 60 minutos y comienza con un calentamiento, seguido de ejercicios de disociación corporal para aprender a independizar los movimientos. Después practicamos técnica específica de Twerk y terminamos con coreografías completas al ritmo de trap, hip-hop o reggaeton.'
+
+twkFaqQ7: '¿Puedo hacer Twerk si no estoy en forma?'
+twkFaqA7: 'Sí, absolutamente. El Twerk es precisamente una excelente manera de ponerte en forma mientras te diviertes. Irás mejorando tu condición física progresivamente con cada clase.'
+
+twkFaqQ8: '¿Qué música se usa en las clases de Twerk?'
+twkFaqA8: 'Usamos principalmente música trap, hip-hop estadounidense y reggaeton latino. También incorporamos otros ritmos urbanos que se adapten bien a los movimientos del Twerk y bootydance.'
+
+twkFaqQ9: '¿Cuánto tiempo tarda en aprender Twerk?'
+twkFaqA9: 'Desde la primera clase ya empezarás a aprender movimientos básicos. En 2-3 meses de práctica regular notarás una mejora significativa en tu técnica, control corporal y confianza. El aprendizaje es continuo y cada nivel tiene nuevos retos.'
+
+twkFaqQ10: '¿Hay límite de edad para hacer Twerk?'
+twkFaqA10: 'Las clases de Twerk en Farray\'s son para adultos (mayores de 16 años). No hay límite de edad superior, solo ganas de bailar y moverte.'
+
+twkFaqQ11: '¿Qué es la disociación corporal en el Twerk?'
+twkFaqA11: 'La disociación corporal es la capacidad de mover independientemente diferentes partes del cuerpo. En el Twerk, aprendes a mover tus glúteos y caderas de forma aislada mientras el resto del cuerpo permanece estable. Es la base técnica fundamental del Twerking Dance.'
+
+twkFaqQ12: '¿Las clases de Twerk son un buen ejercicio?'
+twkFaqA12: 'Sí, el Twerk es un ejercicio cardiovascular completo que quema aproximadamente 400-500 calorías por clase de 60 minutos. Fortalece especialmente glúteos, piernas, abdomen y espalda baja, además de mejorar flexibilidad y resistencia.'
+
+twkFaqQ13: '¿Ofrecéis clases de Twerk para principiantes?'
+twkFaqA13: 'Sí, tenemos clases específicas para principiantes donde enseñamos los fundamentos del Twerk desde cero: postura correcta, movimientos básicos, disociación corporal y primeras coreografías sencillas.'
+
+twkFaqQ14: '¿Puedo probar una clase antes de apuntarme?'
+twkFaqA14: 'Sí, la primera clase es totalmente GRATIS y sin compromiso. Puedes venir a probar, conocer a las profesoras y ver si las clases de Twerk son para ti.'
+
+twkFaqQ15: '¿Qué diferencia hay entre Twerk y Reggaeton?'
+twkFaqA15: 'El Twerk se enfoca específicamente en movimientos de glúteos y caderas con técnica precisa y control, mientras que el Reggaeton es un estilo de baile más amplio que incluye movimientos de todo el cuerpo. En nuestras clases a veces combinamos ambos estilos.'
+
+twkFaqQ16: '¿Dónde están ubicadas las clases de Twerk en Barcelona?'
+twkFaqA16: 'Nuestras clases de Twerk se imparten en Farray\'s International Dance Center, ubicado en Calle Entença 100, Barcelona. Muy bien conectado con metro (líneas L1, L3, L5) y bus.'
+
+## META & SEO
+twkPageTitle: 'Clases de Twerking Dance en Barcelona'
+twkMetaDescription: 'Clases de Twerk en Barcelona ⭐ Aprende bootydance, fortalece glúteos y caderas con música trap y reggaeton. Primera clase GRATIS. Todos los niveles.'
+twkCourseSchemaName: 'Curso de Twerking Dance en Barcelona - Farray\'s Center'
+twkCourseSchemaDesc: 'Aprende Twerk con profesoras expertas. Técnica de bootydance, disociación corporal, fortalecimiento y empoderamiento. Clases para todos los niveles en Barcelona.'
+
+## BREADCRUMBS
+twkBreadcrumbHome: 'Inicio'
+twkBreadcrumbClasses: 'Clases de Baile'
+twkBreadcrumbCurrent: 'Twerk Barcelona'

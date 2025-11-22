@@ -84,7 +84,7 @@ const YunaisyFarrayPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section - Stellar Background */}
         <section
           id="yunaisy-hero"
@@ -427,7 +427,7 @@ const YunaisyFarrayPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

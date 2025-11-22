@@ -178,7 +178,7 @@ const SalsaBachataPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(courseSchema)}</script>
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <section
           id="salsa-bachata-barcelona-hero"
@@ -597,7 +597,7 @@ const SalsaBachataPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

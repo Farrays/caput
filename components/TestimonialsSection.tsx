@@ -4,11 +4,11 @@ import AnimateOnScroll from './AnimateOnScroll';
 import type { Testimonial } from '../types';
 
 interface TestimonialsSectionProps {
-  titleKey: string;
+  titleKey?: string;
   testimonials: Testimonial[];
 }
 
-const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ titleKey, testimonials }) => {
+const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ titleKey = 'testimonialsTitle', testimonials }) => {
   const { t, locale } = useI18n();
 
   return (
@@ -79,4 +79,4 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ titleKey, tes
   );
 };
 
-export default TestimonialsSection;
+export default React.memo(TestimonialsSection);

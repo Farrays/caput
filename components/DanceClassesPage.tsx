@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../hooks/useI18n';
@@ -16,7 +16,7 @@ const DanceClassesPage: React.FC = () => {
   const baseUrl = 'https://www.farrayscenter.com';
 
   // FAQ data (EXPANDIDO para mejor SEO en motores de IA)
-  const classesFaqs = [
+  const classesFaqs = useMemo(() => [
     { id: 'cl-1', question: t('classesFaqQ1'), answer: t('classesFaqA1') },
     { id: 'cl-2', question: t('classesFaqQ2'), answer: t('classesFaqA2') },
     { id: 'cl-3', question: t('classesFaqQ3'), answer: t('classesFaqA3') },
@@ -25,10 +25,10 @@ const DanceClassesPage: React.FC = () => {
     { id: 'cl-6', question: t('classesFaqQ6'), answer: t('classesFaqA6') },
     { id: 'cl-7', question: t('classesFaqQ7'), answer: t('classesFaqA7') },
     { id: 'cl-8', question: t('classesFaqQ8'), answer: t('classesFaqA8') },
-  ];
+  ], [t]);
 
   // Schema Markup - BreadcrumbList
-  const breadcrumbSchema = {
+  const breadcrumbSchema = useMemo(() => ({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
@@ -45,20 +45,20 @@ const DanceClassesPage: React.FC = () => {
         item: `${baseUrl}/${locale}/clases/baile-barcelona`,
       },
     ],
-  };
+  }), [t, baseUrl, locale]);
 
   // Breadcrumb items for visual navigation with microdata
-  const breadcrumbItems = [
+  const breadcrumbItems = useMemo(() => [
     { name: t('danceClassesHub_breadcrumb_home'), url: `/${locale}` },
     {
       name: t('danceClassesHub_breadcrumb_current'),
       url: `/${locale}/clases/baile-barcelona`,
       isActive: true,
     },
-  ];
+  ], [t, locale]);
 
   // Schema Markup - ItemList (Categories)
-  const itemListSchema = {
+  const itemListSchema = useMemo(() => ({
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Categorías de clases de baile en Barcelona',
@@ -68,10 +68,10 @@ const DanceClassesPage: React.FC = () => {
       name: t(cat.titleKey),
       url: `${baseUrl}/${locale}${cat.pillarUrl}`,
     })),
-  };
+  }), [t, baseUrl, locale]);
 
   // Schema Markup - FAQPage
-  const faqSchema = {
+  const faqSchema = useMemo(() => ({
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: classesFaqs.map(faq => ({
@@ -82,7 +82,7 @@ const DanceClassesPage: React.FC = () => {
         text: faq.answer,
       },
     })),
-  };
+  }), [classesFaqs]);
 
   return (
     <>

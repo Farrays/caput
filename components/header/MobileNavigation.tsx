@@ -88,6 +88,9 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({
         document.body.style.overflow = '';
       };
     }
+
+    // Cleanup when menu closes
+    return undefined;
   }, [isMenuOpen, setIsMenuOpen]);
 
   return (

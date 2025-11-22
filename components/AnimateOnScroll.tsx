@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
+import React from 'react';
 
 interface AnimateOnScrollProps {
   children: ReactNode;
@@ -55,4 +56,4 @@ const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
   );
 };
 
-export default AnimateOnScroll;
+export default React.memo(AnimateOnScroll);

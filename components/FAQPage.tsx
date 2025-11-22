@@ -260,7 +260,7 @@ const FAQPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
-      <div className="min-h-screen bg-black pt-20 md:pt-24">
+      <main className="min-h-screen bg-black pt-20 md:pt-24">
         {/* Hero Section */}
         <section className="relative py-20 md:py-32 bg-gradient-to-b from-black via-primary-dark/10 to-black">
           <div className="container mx-auto px-6">
@@ -373,7 +373,7 @@ const FAQPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

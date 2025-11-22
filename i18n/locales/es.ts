@@ -1056,6 +1056,10 @@ Los pasos tienen nombres con significado: "Log On" (conectarse), "Willie Bounce"
   dhV3IdentifyClosing: 'Déjate seducir por la energía y el feeling del Dancehall.',
 
   dhV3NeedEnrollTitle: 'Necesitas apuntarte a clases de Dancehall en una academia de baile',
+  dhV3NeedEnrollP1:
+    'Si te has sentido identificado/a con alguna de estas situaciones, las clases de Dancehall en Barcelona de Farray\'s Center son exactamente lo que necesitas.',
+  dhV3NeedEnrollP2:
+    'No importa tu nivel, edad o experiencia previa. Aquí encontrarás un espacio seguro para aprender, crecer y conectar con la auténtica cultura del Dancehall jamaicano.',
 
   dhV3TransformTitle: 'Imagina tu antes y después',
   dhV3Transform1Title: 'Vuelves a tener energía y ganas',
@@ -3369,4 +3373,369 @@ Los pasos tienen nombres con significado: "Log On" (conectarse), "Willie Bounce"
   // Breadcrumb
   facilitiesBreadcrumbHome: 'Inicio',
   facilitiesBreadcrumbCurrent: 'Instalaciones',
+
+  // ===== HipHop Page =====
+  // ====================
+  // HIP HOP PAGE V2
+  // ====================
+
+  hipHopPageTitle: "Clases de Hip Hop en Barcelona | Academia Farray's Center",
+  hipHopMetaDescription:
+    'Aprende Hip Hop urbano auténtico en Barcelona. Clases desde iniciación hasta avanzado. Profesores expertos. Entre Plaza España y Sants. ¡Prueba gratis!',
+
+  hipHopBreadcrumbHome: 'Inicio',
+  hipHopBreadcrumbClasses: 'Clases de Baile Barcelona',
+  hipHopBreadcrumbUrban: 'Clases de Danzas Urbanas',
+  hipHopBreadcrumbCurrent: 'Clases de Hip Hop',
+
+  hipHopHeroTitle: 'Clases de Hip Hop en Barcelona',
+  hipHopHeroSubtitle: "Puro Hip Hop Urbano en Farray's Center",
+  hipHopHeroDesc: 'Mucho más que baile, una actitud de vida.',
+  hipHopHeroLocation:
+    'Vive la cultura del Bronx sin salir de Barcelona | Clases desde iniciación hasta avanzado, entre Plaza España y Sants',
+
+  hipHopCTA1: 'Hazte Socio Ahora',
+  hipHopCTA1Subtext: 'Quedan pocas plazas este mes',
+  hipHopCTA2: 'Reserva tu Clase de Prueba',
+  hipHopCTA2Subtext: 'Válido por tiempo limitado',
+
+  hipHopWhatIsTitle: '¿Qué es el Hip Hop y por qué está arrasando en Barcelona?',
+  hipHopWhatIsP1:
+    'El Hip Hop es una cultura urbana nacida en las calles del Bronx en los años 70 que revolucionó la música, el arte y el movimiento. Es una forma de expresión que combina groove, actitud y creatividad con raíces profundas en la comunidad afroamericana y latina.',
+  hipHopWhatIsP2:
+    'El Hip Hop es mucho más que un baile: es una forma de caminar, de hablar y de ver el mundo; una declaración de quién eres. Es expresión pura, es ritmo, actitud y flow. En el Hip Hop no hay que ser perfecto, hay que ser real.',
+  hipHopWhatIsP3:
+    'Los beats contagiosos del Hip Hop se difundieron rápidamente por todo el mundo, junto con un estilo de baile auténtico, enérgico y lleno de personalidad.',
+  hipHopWhatIsP4:
+    'Barcelona se ha convertido en uno de los focos de Hip Hop más activos de Europa, donde la cultura urbana y la diversidad se viven en cada barrio.',
+  hipHopWhatIsQuestionTitle: '¿Te preguntas si es para ti?',
+  hipHopWhatIsQuestionAnswer: 'Sí, lo es.',
+
+  hipHopCulturalTitle: 'Historia y cultura del Hip Hop',
+  hipHopCulturalShort:
+    'El Hip Hop nació en el sur del Bronx a mediados de los años 70 como una respuesta creativa de las comunidades marginadas.',
+  hipHopCulturalFull:
+    '### Los orígenes: El Bronx, Nueva York (1970s)\n\nEl Hip Hop nació en el sur del Bronx a mediados de los años 70. Surgió en las block parties (fiestas callejeras) organizadas por DJ Kool Herc, Afrika Bambaataa y Grandmaster Flash. Estos pioneros crearon el "breakbeat" (repetir la parte más bailable de una canción) y dieron vida a una cultura que transformaría el mundo. El Hip Hop nació de cuatro elementos: el MC (el rapero), el DJ (quien controla la música), el Breaking (el baile) y el Graffiti (el arte visual).\n\n### Los fundadores: De las calles a la revolución global\n\nDJ Kool Herc es considerado el padre del Hip Hop. Con sus dos tornamesas y su sistema de sonido, creó el concepto del "merry-go-round" (repetir breaks instrumentales). Afrika Bambaataa fundó la Zulu Nation, promoviendo paz, unidad y creatividad. Grandmaster Flash perfeccionó técnicas como el scratching y el punch phrasing. Los Rock Steady Crew llevaron el breaking a nivel mundial. Crews como New York City Breakers, Electric Boogaloos y The Lockers definieron estilos que aún se enseñan hoy.\n\n### La expansión global (1980s–presente)\n\nEn los años 80, el Hip Hop explotó globalmente gracias a películas como Beat Street, Wild Style y Breakin\'. La música rap cruzó fronteras con artistas como Run-DMC, Public Enemy, N.W.A y Tupac. En los 90 y 2000, el New Style trajo coreografías más elaboradas gracias a videoclips de artistas como Missy Elliott, Aaliyah y Chris Brown. Hoy, el Hip Hop es un fenómeno mundial con comunidades activas en todos los continentes; Barcelona es uno de sus epicentros europeos.\n\n### La música: Beats, samples y cultura de DJ\n\nEl Hip Hop se baila sobre beats creados por productores que samplear (tomar fragmentos de) discos de funk, soul, jazz y R&B. Productores legendarios como J Dilla, Dr. Dre, DJ Premier y Timbaland definieron épocas enteras. La cultura del DJ —con sus scratches, samples y el arte de mezclar— es esencial para entender el Hip Hop.\n\n### Más que baile: identidad y empoderamiento\n\nEl Hip Hop ha sido siempre una forma de empoderamiento cultural y expresión de identidad para las comunidades marginadas. Es la voz de las calles, una celebración de la creatividad a pesar de las dificultades. Cada estilo tiene un mensaje: el Breaking muestra fuerza y resistencia, el Popping es control y precisión, el Locking es celebración y diversión. Cada movimiento cuenta una historia.',
+
+  hipHopIdentifyTitle: '¿Te identificas con alguna de estas situaciones?',
+  hipHopIdentify1:
+    'Estás tan cansado/a de la rutina que ya ni el café te anima. Necesitas algo que te active de verdad.',
+  hipHopIdentify2:
+    'Quieres mirarte al espejo y ver confianza pura, flow auténtico y cero miedo al qué dirán.',
+  hipHopIdentify3:
+    'Odias el gimnasio... y el gimnasio también te odia. No os lleváis bien. Nunca funcionó.',
+  hipHopIdentify4:
+    'Te hace falta gente real, buen ambiente, risas y un lugar donde ser tú sin filtros ni falsedades.',
+  hipHopIdentify5:
+    'La cultura urbana te mueve por dentro, pero tu vida parece más un día gris que una fiesta en el barrio.',
+  hipHopIdentify6:
+    'Te gusta bailar, pero necesitas más actitud, más groove y menos coreografías sin alma.',
+  hipHopIdentifyTransition: 'Si has dicho "sí" a alguno de estos puntos, ya sabes lo que necesitas.',
+  hipHopIdentifyAgitate1:
+    'Sientes que tu cuerpo te pide algo diferente… ¿pero haces algo para sentirte mejor?',
+  hipHopIdentifySolution:
+    'Si quieres salir de la rutina, sentirte mejor contigo mismo/a, conocer gente nueva y ponerte en forma mientras te diviertes, la cultura Hip Hop es para ti.',
+  hipHopIdentifyClosing: 'Déjate llevar por el groove y la actitud del Hip Hop.',
+
+  hipHopNeedEnrollTitle: 'Necesitas apuntarte a clases de Hip Hop en una academia de baile',
+  hipHopNeedEnrollP1:
+    'Si te has sentido identificado/a con alguna de estas situaciones, las clases de Hip Hop en Barcelona de Farray\'s Center son exactamente lo que necesitas.',
+  hipHopNeedEnrollP2:
+    'No importa tu nivel, edad o experiencia previa. Aquí encontrarás un espacio seguro para aprender, crecer y conectar con la auténtica cultura del Hip Hop urbano.',
+
+  hipHopTransformTitle: 'Imagina tu antes y después',
+  hipHopTransform1Title: 'Vuelves a tener energía y motivación',
+  hipHopTransform1Desc: 'Las clases te sacan de la rutina y te dan vida nueva.',
+  hipHopTransform2Title: 'Ganas confianza sin forzar nada',
+  hipHopTransform2Desc: 'Te sueltas, te expresas y empiezas a sentirte bien contigo mismo/a.',
+  hipHopTransform3Title: 'Te pones en forma sin que parezca ejercicio',
+  hipHopTransform3Desc: 'Cada clase es diferente. Te mueves, sudas y disfrutas.',
+  hipHopTransform4Title: 'Conoces gente auténtica',
+  hipHopTransform4Desc: 'Ambiente real: buena energía, comunidad y gente como tú.',
+  hipHopTransform5Title: 'Vives la cultura urbana sin salir de Barcelona',
+  hipHopTransform5Desc: 'Beats, energía y esencia Hip Hop en cada clase.',
+  hipHopTransform6Title: 'Aprendes movimientos nuevos cada semana',
+  hipHopTransform6Desc: 'Más groove, más estilo, más tú.',
+  hipHopTransformClosing1:
+    "Decenas de personas ya lo viven cada semana en nuestras clases de Hip Hop en Farray's Center, a solo 5 minutos de Plaza España y Estación de Sants. Y cuando salen… ya no son los mismos.",
+  hipHopTransformClosing2:
+    'Si todavía no bailas Hip Hop, estás perdiendo una oportunidad de mejorar tu vida. ¡Nosotros te ayudamos!',
+  hipHopTransformCTA: "¿Por qué elegir Farray's Center como tu academia de Hip Hop en Barcelona?",
+
+  hipHopWhyChooseTitle: "¿Por qué elegir Farray's Center?",
+  hipHopWhyChooseSubtitle:
+    "En Barcelona existen muchas escuelas de Hip Hop, pero pocas con verdadera trayectoria. En Farray's International Dance Center llevamos más de 8 años enseñando Hip Hop auténtico.",
+  hipHopWhyChoose1Title: 'Academia reconocida por el CID UNESCO',
+  hipHopWhyChoose1Desc:
+    'Dirigida por Yunaisy Farray, actriz de Street Dance 2 y una de las maestras más reconocidas del mundo.',
+  hipHopWhyChoose2Title: 'Profesores formados en cultura urbana auténtica',
+  hipHopWhyChoose2Desc:
+    'Expertos en Old School, New Style y cultura Hip Hop. Clases con flow, técnica y autenticidad.',
+  hipHopWhyChoose3Title: 'Ubicación inmejorable',
+  hipHopWhyChoose3Desc:
+    'Calle Entença 100, entre Plaza España y Sants, a 5 minutos de Plaça Espanya y Sants. Metro, buses y tren a la puerta. Fácil llegar. Fácil volver.',
+  hipHopWhyChoose4Title: 'Ambiente familiar, con la profesionalidad que necesitas',
+  hipHopWhyChoose4Desc:
+    'Cercano, inclusivo y sin juicios ni comparaciones, pero con la profesionalidad que necesitas para evolucionar de verdad.',
+  hipHopWhyChoose5Title: 'Instalaciones preparadas de verdad',
+  hipHopWhyChoose5Desc:
+    'Más de 700 m², salas amplias, espejos, sonido profesional, aire acondicionado y ventilación centralizada para entrenar a gusto todo el año.',
+  hipHopWhyChoose6Title: 'Academia multidisciplinar',
+  hipHopWhyChoose6Desc:
+    'Más de 25 estilos para que nunca te aburras y puedas crecer a tu ritmo: urbanos, bailes latinos, contemporáneo, técnica, estiramiento y mucho más.',
+  hipHopWhyChoose7Title: 'Gala anual + workshops potentes',
+  hipHopWhyChoose7Desc:
+    'Brilla en un teatro profesional, participa en workshops internacionales y vive experiencias que no encontrarás en ninguna otra escuela.',
+
+  hipHopLogosTitle: 'Nos has podido ver en…',
+  hipHopLogosIntlFestivals: 'Festivales Internacionales de Danza',
+  hipHopLogosIntlFestivalsText: 'y en los mejores festivales de danza de todo el mundo',
+
+  hipHopTeachersTitle: 'Conoce a nuestros profesores de Hip Hop',
+  hipHopTeachersSubtitle: 'Expertos en Hip Hop con años de experiencia',
+  hipHopTeacher1Specialty: '+5 años enseñando Hip Hop Old School y New Style',
+  hipHopTeacher1Bio: 'Técnica impecable, energía contagiosa y estilo urbano auténtico.',
+  hipHopTeacher2Specialty: '+6 años como referente en Hip Hop y Commercial Dance',
+  hipHopTeacher2Bio: 'Carisma, creatividad y flow urbano en cada clase.',
+  hipHopTeachersClosing:
+    "En Farray's Center cada profe enseña con pasión, conocimiento y respeto por la cultura.",
+
+  hipHopScheduleTitle: 'Horarios de nuestras clases de Hip Hop',
+  hipHopScheduleSubtitle: 'Disponibles prácticamente todos los días de la semana',
+
+  hipHopTestimonialsTitle: 'Testimonios de nuestros estudiantes',
+
+  hipHopVideoTitle: 'Ven a descubrir nuestras clases de Hip Hop',
+  hipHopVideoDesc:
+    "Conoce de primera mano cómo es vivir la experiencia Farray's. Aprenderás los movimientos auténticos del Hip Hop urbano con nuestros profesores expertos.",
+
+  hipHopWhyTodayTitle: '¿Por qué hoy es el mejor momento para empezar?',
+  hipHopWhyTodayFullTitle:
+    '¿Por qué hoy es el mejor momento para empezar a bailar Hip Hop con nosotros?',
+  hipHopWhyToday1:
+    'Porque sigues esperando "el momento perfecto" pero lo único perfecto es empezar hoy.',
+  hipHopWhyToday2:
+    'Porque estás a tan solo UNA clase de cambiar tu rutina y sentirte mejor que ayer.',
+  hipHopWhyToday3: 'Porque esto no va de bailar perfecto, sino de sentirte bien bailando.',
+  hipHopWhyTodayClosing1: "En Farray's no vendemos clases. Creamos experiencias.",
+  hipHopWhyTodayClosing2:
+    'Te esperamos con beats potentes, profesores con actitud y una energía única en Barcelona.',
+
+  hipHopFaqTitle: 'Preguntas frecuentes sobre nuestra escuela de Hip Hop en Barcelona',
+  hipHopFaqQ1: '¿Cómo funcionan nuestras clases de Hip Hop en Barcelona?',
+  hipHopFaqA1:
+    'En nuestras clases de Hip Hop en Barcelona generalmente se enseña una secuencia coreografiada combinada con fundamentos técnicos. Cada sesión dura 1 hora e incluye: Calentamiento (preparación del cuerpo con ejercicios específicos de groove y bounce), Fundamentos (trabajo de técnica, footwork y musicalidad) y Coreografía/Freestyle (secuencias urbanas y trabajo de creatividad para desarrollar tu estilo personal).',
+  hipHopFaqQ2: '¿Puedo empezar desde cero si nunca he bailado Hip Hop?',
+  hipHopFaqA2:
+    'Claro. Los alumnos que nunca han bailado antes eligen los cursos de nivel principiante y quienes tienen algo de experiencia en algún tipo de baile eligen el nivel básico. Nuestras clases están diseñadas para que cualquiera pueda seguir el ritmo desde el primer día.',
+  hipHopFaqQ3: '¿Qué pasa si no tengo buena coordinación?',
+  hipHopFaqA3:
+    'No te preocupes, la coordinación se desarrolla con la práctica. Nuestros profesores te guiarán paso a paso y el ambiente es muy acogedor. Lo importante es ser constante y disfrutar del proceso.',
+  hipHopFaqQ4: '¿Qué necesito traer para las clases de Hip Hop en Barcelona?',
+  hipHopFaqA4:
+    'Ropa cómoda y urbana que permita moverte con libertad (pantalones anchos, sudaderas, etc.), zapatillas de suela plana limpias de uso exclusivo dentro del estudio, toalla y agua, porque bailarás intensamente y necesitas hidratarte.',
+  hipHopFaqQ5: '¿Qué estilos de Hip Hop enseñamos en nuestra escuela de Barcelona?',
+  hipHopFaqA5:
+    'Hip Hop Old School: Fundamentos clásicos de los años 80-90. Groove, bounce y flow auténtico. Hip Hop New Style: Coreografías urbanas modernas. Estilo de videoclips y commercial dance.',
+  hipHopFaqQ6: '¿Qué niveles de Hip Hop tenemos en nuestra escuela de Barcelona?',
+  hipHopFaqA6:
+    'Principiantes: Para empezar desde cero, aprender paso a paso y con buen ambiente. Básico: Para quienes ya tienen algo de experiencia en Hip Hop u otras danzas urbanas. Intermedio: Para mejorar técnica, coordinación y musicalidad con movimientos más complejos. Avanzado: Para llevar tu nivel al máximo y consolidar tu estilo.',
+  hipHopFaqQ7: '¿Puedo unirme en cualquier momento del año?',
+  hipHopFaqA7:
+    'Sí. Puedes empezar cuando quieras. Consulta nuestro calendario para ver las próximas clases disponibles. Si tienes dudas sobre el nivel o el grupo, escríbenos y te orientamos.',
+  hipHopFaqQ8: '¿Tenéis algún descuento especial?',
+  hipHopFaqA8:
+    'Sí. Ofrecemos descuentos si te apuntas a más de un curso. Consulta la web o pregúntanos directamente para más detalles.',
+  hipHopFaqQ9: '¿Puedo probar una clase de Hip Hop antes de inscribirme?',
+  hipHopFaqA9:
+    'Según la temporada, la clase de prueba para residentes puede ser gratuita o tener un precio simbólico de bienvenida. La idea es que puedas probar la experiencia sin compromiso. Reserva tu plaza pulsando el botón "Reserva tu Clase de Prueba" en la parte superior de esta página.',
+  hipHopFaqQ10: '¿Y si falto a una clase por trabajo o compromisos?',
+  hipHopFaqA10:
+    'Si tienes una membresía y cancelas una clase, dispones de 30 días para recuperarla desde la fecha de la clase cancelada. Si tienes un abono de horas, gestionas tus clases de forma flexible: cancela y reserva otro día dentro del periodo de caducidad. Todas las gestiones se realizan exclusivamente desde la aplicación digital de la academia.',
+  hipHopFaqQ11:
+    'Si falto a una clase, ¿debo recuperarla haciendo el mismo estilo o puedo hacer otro diferente?',
+  hipHopFaqA11:
+    'Puedes recuperarla haciendo la misma clase otro día o seleccionar otro estilo, siempre que respetes el nivel de la clase y gestiones la recuperación desde la aplicación de la escuela.',
+  hipHopFaqQ12: '¿Organizáis eventos o talleres especiales?',
+  hipHopFaqA12:
+    'Sí. Organizamos talleres, masterclasses, cypher sessions y eventos sociales durante el año. Síguenos en redes o consulta la web para estar al día.',
+  hipHopFaqQ13: '¿Las clases son solo para mujeres o también para hombres?',
+  hipHopFaqA13:
+    'Nuestras clases están abiertas a todas las personas, sin importar el género o la experiencia previa. El Hip Hop es para todos.',
+  hipHopFaqQ14: '¿Qué diferencia el Hip Hop de otros estilos de baile urbano?',
+  hipHopFaqA14:
+    'El Hip Hop es un estilo originario del Bronx con raíces profundas en la cultura afroamericana y latina. Combina groove, bounce, actitud y creatividad, con énfasis en el freestyle y la expresión personal. Es ideal si buscas algo más que pasos mecánicos: buscas autenticidad.',
+  hipHopFaqQ15: '¿Dónde puedo encontrar clases de Hip Hop cerca de Plaza España en Barcelona?',
+  hipHopFaqA15:
+    "Farray's Center está ubicado en Calle Entença 100, 08015 Barcelona, a solo 5 minutos de Plaza España y Estación de Sants. Contamos con profesores con amplia experiencia y un ambiente familiar para todos los niveles.",
+  hipHopFaqQ16: '¿Qué hago si tengo dudas o necesito más información?',
+  hipHopFaqA16:
+    'Teléfono: <a href="tel:+34622247085" class="text-primary-accent hover:underline">+34 622 247 085</a> | Email: <a href="mailto:info@farrayscenter.com" class="text-primary-accent hover:underline">info@farrayscenter.com</a> | Web: <a href="https://www.farrayscenter.com/contacto" class="text-primary-accent hover:underline" target="_blank" rel="noopener noreferrer">www.farrayscenter.com/contacto</a> | Dirección: <a href="https://maps.google.com/?q=Calle+Entença+100,+08015+Barcelona" class="text-primary-accent hover:underline" target="_blank" rel="noopener noreferrer">Calle Entença 100, 08015 Barcelona</a>',
+
+  hipHopFinalCTATitle: 'Únete a la comunidad de Hip Hop más activa de Barcelona',
+  hipHopFinalCTASubtitle: 'Da el paso.',
+  hipHopFinalCTADesc: 'Reserva tu plaza ahora y no dejes que te lo cuenten… vívelo tú mismo.',
+  hipHopFinalCTAFunny: 'Las plazas vuelan más rápido que un "b-boy freeze" en una battle.',
+
+  hipHopCourseSchemaName: 'Clases de Hip Hop Urbano en Barcelona',
+  hipHopCourseSchemaDesc:
+    'Aprende Hip Hop auténtico del Bronx con profesores expertos. Clases para todos los niveles desde principiantes hasta avanzados.',
+
+  hipHopImage1Alt: 'Clases de Hip Hop en Barcelona - Farray\'s Center',
+  hipHopImage2Alt: 'Estudiantes practicando Hip Hop',
+  hipHopImage3Alt: 'Equipo Farray\'s - Instructor de Hip Hop',
+
+  // ========================================
+  // TWERK PAGE
+  // ========================================
+
+  // Hero Section
+  twkHeroTitle: 'CLASES DE TWERKING DANCE EN BARCELONA',
+  twkHeroSubtitle: 'Aprende a mover el culete con actitud y precisión',
+  twkHeroDesc: 'El Twerking Dance o Twerk es uno de los bailes del momento. Aprende la técnica adecuada para controlar los movimientos más conocidos del bootydance con trap, hip hop y reggaeton.',
+  twkHeroLocation: 'En Farray\'s International Dance Center - Barcelona',
+  twkCTA1: '¡APÚNTATE HOY MISMO!',
+  twkCTA1Subtext: 'Primera clase gratis',
+  twkCTA2: 'Reserva tu clase de prueba',
+  twkCTA2Subtext: 'Sin compromiso',
+
+  // What is Twerk Section
+  twkWhatIsTitle: '¿Qué es el Twerk?',
+  twkWhatIsP1: 'El Twerking Dance o Twerk es uno de los bailes del momento.',
+  twkWhatIsP2: 'El objetivo principal de las clases de Twerk es que aprendas a mover el "culete" de muchas formas diferentes. En nuestras clases de Twerking Dance aprenderás la técnica adecuada para controlar los movimientos más conocidos del bootydance, y realizarás un montón de coreografías diferentes.',
+  twkWhatIsP3: 'Normalmente esta es una clase en que se usa principalmente músicas más estadounidense tipo trap o hip hop o música más latina tipo reggaeton.',
+  twkWhatIsP4: 'El verdadero origen de estos movimientos de caderas y nalgas se encuentran en las danzas africanas, como en el \'baikoko mapouka\'. Los movimientos del Twerk existen en todo el mundo difuminados por la diáspora africana.',
+  twkWhatIsQuestionTitle: '¿Qué consigues en nuestros cursos de Twerk en Barcelona?',
+  twkWhatIsQuestionAnswer: 'Fortalecimiento, actitud y confianza en ti misma',
+
+  // Cultural History Section
+  twkCulturalTitle: 'Origen e Historia del Twerk',
+  twkCulturalShortDesc: 'Los movimientos del Twerk tienen raíces profundas en las danzas africanas tradicionales y se han difundido por todo el mundo a través de la diáspora africana.',
+  twkCulturalFullHistory: 'El verdadero origen de estos movimientos de caderas y glúteos se encuentra en las danzas africanas tradicionales, especialmente en el "baikoko mapouka" de Costa de Marfil. Estos movimientos ancestrales han viajado a través de los siglos y continentes, llegando al Caribe y posteriormente a Estados Unidos durante el período de esclavitud y la diáspora africana. En las décadas de 1980 y 1990, el Twerk comenzó a aparecer en videos musicales de hip-hop y bounce music de Nueva Orleans, popularizado por artistas como DJ Jubilee. El término "twerk" se popularizó masivamente en 2013 gracias a artistas como Miley Cyrus, pero el baile ya llevaba décadas siendo parte fundamental de la cultura del hip-hop y la música urbana. Hoy en día, el Twerk ha evolucionado como una forma de expresión artística que combina el poder ancestral de las danzas africanas con la actitud y energía de la música urbana contemporánea, siendo practicado por bailarines profesionales en todo el mundo como una disciplina que fortalece el cuerpo y la confianza personal.',
+
+  // Identification Section
+  twkIdentifyTitle: '¿Te identificas con alguna de estas situaciones?',
+  twkIdentify1: 'Quieres aprender a bailar Twerk pero no sabes por dónde empezar',
+  twkIdentify2: 'Quieres fortalecer tus glúteos, caderas y abdomen de forma divertida',
+  twkIdentify3: 'Te encanta la música trap, hip-hop y reggaeton y quieres moverte con actitud',
+  twkIdentify4: 'Quieres mejorar tu confianza y expresar tu lado más atrevido',
+  twkIdentify5: 'Buscas una clase de baile que sea cardio, fortalecimiento y empoderamiento a la vez',
+  twkIdentify6: 'Quieres aprender figuras provocativas como el body roll y el perreo con técnica',
+  twkIdentifyTransition: 'Si te has sentido identificado/a con alguna de estas situaciones...',
+  twkNeedEnrollTitle: '¡Necesitas apuntarte a nuestras clases de Twerk!',
+  twkNeedEnrollP1: 'En Farray\'s International Dance Center te enseñaremos a mover tus glúteos de forma controlada y precisa, a colocar tu cuerpo correctamente, a bajar hasta el suelo y volver a subir con técnica.',
+  twkNeedEnrollP2: 'Trabajarás la disociación corporal, aprenderás coreografías completas y descubrirás el potencial de tu cuerpo para bailar con sentimiento, actitud y precisión al ritmo de las músicas más atrevidas.',
+
+  // Transformation Section
+  twkTransformTitle: '¿Qué conseguirás en nuestras clases de Twerk?',
+  twkTransform1Title: 'Fortalece tu cuerpo',
+  twkTransform1Desc: 'Fortalecerás tus piernas, glúteos, caderas y abdomen con cada clase.',
+  twkTransform2Title: 'Mejora tu flexibilidad',
+  twkTransform2Desc: 'Trabajarás la flexibilidad y ganarás resistencia para que nada te pare cuando sientas el ritmo correr por tus venas.',
+  twkTransform3Title: 'Domina figuras provocativas',
+  twkTransform3Desc: 'Dominarás figuras tan provocativas como el body roll o el perreo con técnica y precisión.',
+  twkTransform4Title: 'Aprende disociación corporal',
+  twkTransform4Desc: 'Te enseñaremos a colocar tu cuerpo con precisión y a mover tus glúteos de forma controlada, a la vez que bajas hasta el suelo y vuelves a subir.',
+  twkTransform5Title: 'Aumenta tu autoconfianza',
+  twkTransform5Desc: 'Expresarás tu lado más atrevido, trabajarás la actitud y te sentirás con más confianza en ti misma.',
+  twkTransform6Title: 'Mejora tu improvisación',
+  twkTransform6Desc: 'Aprenderás a improvisar y a bailar Twerk con libertad al ritmo de trap, hip-hop y reggaeton.',
+  twkTransformCTA: '¿Por qué elegir Farray\'s para aprender Twerk?',
+
+  // Why Choose Farray's
+  twkWhyChoose1Title: 'Profesoras expertas en Twerk',
+  twkWhyChoose1Desc: 'Aprende con profesoras certificadas y con años de experiencia en Twerking Dance y bootydance.',
+  twkWhyChoose2Title: 'Técnica profesional',
+  twkWhyChoose2Desc: 'Te enseñamos la técnica correcta desde el primer día para que desarrolles los movimientos con precisión y seguridad.',
+  twkWhyChoose3Title: 'Ambiente inclusivo',
+  twkWhyChoose3Desc: 'Clases para todos los niveles y cuerpos. Todas las personas son bienvenidas sin importar su experiencia previa.',
+  twkWhyChoose4Title: 'Clases dinámicas y divertidas',
+  twkWhyChoose4Desc: 'Combina cardio, fuerza y diversión en cada clase de 60 minutos con las mejores músicas urbanas.',
+  twkWhyChoose5Title: 'Grupos reducidos',
+  twkWhyChoose5Desc: 'Atención personalizada en grupos pequeños para que aprendas correctamente desde el inicio.',
+  twkWhyChoose6Title: 'Horarios flexibles',
+  twkWhyChoose6Desc: '5 clases semanales en diferentes horarios para que puedas entrenar cuando mejor te venga.',
+  twkWhyChoose7Title: 'Instalaciones profesionales',
+  twkWhyChoose7Desc: 'Salas amplias con suelos adecuados, espejos completos, equipo de sonido profesional y ambiente motivador.',
+
+  // Teachers Section
+  twkTeachersTitle: 'Conoce a tus profesoras de Twerk',
+  twkTeachersSubtitle: 'Expertas en Twerking Dance y empoderamiento femenino',
+  twkTeacher1Specialty: 'Especialista en Twerk & Bootydance',
+  twkTeacher1Bio: 'Isabel es una de las mejores profesoras de Twerk en Barcelona. Con más de 8 años de experiencia, ha formado a cientos de alumnas en la técnica del Twerking Dance, combinando disociación corporal, fortalecimiento y actitud.',
+  twkTeacher2Specialty: 'Experta en Twerk & Reggaeton',
+  twkTeacher2Bio: 'Sandra combina el Twerk con ritmos latinos y urbanos, creando clases dinámicas y energéticas donde aprenderás a moverte con confianza y técnica en cada sesión.',
+  twkTeachersClosing: 'Nuestras profesoras están aquí para guiarte en cada paso, para que ganes confianza, fuerza y domines el arte del Twerk.',
+
+  // Logos Section
+  twkLogosTitle: 'Nos has podido ver en',
+  twkLogosIntlFestivalsText: 'Y en festivales internacionales de danza urbana',
+
+  // Schedule Section
+  twkScheduleTitle: 'Horarios de Clases de Twerk',
+  twkScheduleSubtitle: '5 clases semanales para todos los niveles',
+
+  // Video Section
+  twkVideoTitle: '¿Quieres ver cómo son nuestras clases de Twerk?',
+  twkVideoDesc: 'Mira estos videos de nuestras alumnas bailando Twerk en Farray\'s Center',
+
+  // Why Today Section
+  twkWhyTodayFullTitle: '¿Por qué apuntarte hoy a clases de Twerk?',
+  twkWhyToday1: 'Cada día que pasa es un día menos bailando, moviéndote y sintiéndote bien con tu cuerpo.',
+  twkWhyToday2: 'El Twerk es una forma de expresión que te ayudará a ganar confianza, fuerza física y empoderamiento personal.',
+  twkWhyToday3: 'No necesitas experiencia previa. Solo ganas de aprender, moverte y divertirte.',
+  twkWhyTodayClosing1: 'La primera clase es GRATIS',
+  twkWhyTodayClosing2: '¿A qué esperas para probar?',
+
+  // Final CTA Section
+  twkFinalCTATitle: '¿List@ para empezar tu viaje en el Twerk?',
+  twkFinalCTASubtitle: '¡Ven a bailar con nosotras!',
+  twkFinalCTADesc: 'Apúntate hoy mismo a nuestras clases de Twerk en Barcelona y descubre el poder de tu cuerpo al ritmo de trap, hip-hop y reggaeton.',
+  twkFinalCTAFunny: 'Tus glúteos te lo agradecerán 🍑',
+
+  // FAQ Section
+  twkFaqTitle: 'Preguntas frecuentes sobre las clases de Twerk',
+  twkFaqQ1: '¿Qué es el Twerk o Twerking Dance?',
+  twkFaqA1: 'El Twerking Dance o Twerk es un estilo de baile urbano que se centra en movimientos de caderas y glúteos al ritmo de música trap, hip-hop y reggaeton. Su origen se encuentra en las danzas africanas tradicionales y se ha popularizado mundialmente como una forma de expresión artística y empoderamiento.',
+  twkFaqQ2: '¿Necesito experiencia previa para hacer Twerk?',
+  twkFaqA2: 'No necesitas ninguna experiencia previa. Nuestras clases están diseñadas para todos los niveles, desde principiantes absolutos hasta bailarines avanzados. Te enseñaremos la técnica correcta desde cero.',
+  twkFaqQ3: '¿Qué ropa debo llevar a las clases de Twerk?',
+  twkFaqA3: 'Ropa cómoda y ajustada que te permita moverte libremente: leggings o shorts, top deportivo, zapatillas deportivas o puedes bailar descalza. Lo importante es que te sientas cómoda y puedas ver tus movimientos en el espejo.',
+  twkFaqQ4: '¿El Twerk es solo para mujeres?',
+  twkFaqA4: 'No, el Twerk es para todas las personas sin importar su género. Aunque tradicionalmente se ha asociado con mujeres, cada vez más hombres y personas de todos los géneros practican Twerk como forma de expresión y ejercicio.',
+  twkFaqQ5: '¿Qué beneficios físicos tiene el Twerk?',
+  twkFaqA5: 'El Twerk fortalece piernas, glúteos, caderas, abdomen y zona lumbar. Mejora la flexibilidad, la resistencia cardiovascular, la coordinación y la disociación corporal. Es un ejercicio completo que quema hasta 500 calorías por clase.',
+  twkFaqQ6: '¿Cómo funciona una clase de Twerk en Farray\'s?',
+  twkFaqA6: 'La clase dura 60 minutos y comienza con un calentamiento, seguido de ejercicios de disociación corporal para aprender a independizar los movimientos. Después practicamos técnica específica de Twerk y terminamos con coreografías completas al ritmo de trap, hip-hop o reggaeton.',
+  twkFaqQ7: '¿Puedo hacer Twerk si no estoy en forma?',
+  twkFaqA7: 'Sí, absolutamente. El Twerk es precisamente una excelente manera de ponerte en forma mientras te diviertes. Irás mejorando tu condición física progresivamente con cada clase.',
+  twkFaqQ8: '¿Qué música se usa en las clases de Twerk?',
+  twkFaqA8: 'Usamos principalmente música trap, hip-hop estadounidense y reggaeton latino. También incorporamos otros ritmos urbanos que se adapten bien a los movimientos del Twerk y bootydance.',
+  twkFaqQ9: '¿Cuánto tiempo tarda en aprender Twerk?',
+  twkFaqA9: 'Desde la primera clase ya empezarás a aprender movimientos básicos. En 2-3 meses de práctica regular notarás una mejora significativa en tu técnica, control corporal y confianza. El aprendizaje es continuo y cada nivel tiene nuevos retos.',
+  twkFaqQ10: '¿Hay límite de edad para hacer Twerk?',
+  twkFaqA10: 'Las clases de Twerk en Farray\'s son para adultos (mayores de 16 años). No hay límite de edad superior, solo ganas de bailar y moverte.',
+  twkFaqQ11: '¿Qué es la disociación corporal en el Twerk?',
+  twkFaqA11: 'La disociación corporal es la capacidad de mover independientemente diferentes partes del cuerpo. En el Twerk, aprendes a mover tus glúteos y caderas de forma aislada mientras el resto del cuerpo permanece estable. Es la base técnica fundamental del Twerking Dance.',
+  twkFaqQ12: '¿Las clases de Twerk son un buen ejercicio?',
+  twkFaqA12: 'Sí, el Twerk es un ejercicio cardiovascular completo que quema aproximadamente 400-500 calorías por clase de 60 minutos. Fortalece especialmente glúteos, piernas, abdomen y espalda baja, además de mejorar flexibilidad y resistencia.',
+  twkFaqQ13: '¿Ofrecéis clases de Twerk para principiantes?',
+  twkFaqA13: 'Sí, tenemos clases específicas para principiantes donde enseñamos los fundamentos del Twerk desde cero: postura correcta, movimientos básicos, disociación corporal y primeras coreografías sencillas.',
+  twkFaqQ14: '¿Puedo probar una clase antes de apuntarme?',
+  twkFaqA14: 'Sí, la primera clase es totalmente GRATIS y sin compromiso. Puedes venir a probar, conocer a las profesoras y ver si las clases de Twerk son para ti.',
+  twkFaqQ15: '¿Qué diferencia hay entre Twerk y Reggaeton?',
+  twkFaqA15: 'El Twerk se enfoca específicamente en movimientos de glúteos y caderas con técnica precisa y control, mientras que el Reggaeton es un estilo de baile más amplio que incluye movimientos de todo el cuerpo. En nuestras clases a veces combinamos ambos estilos.',
+  twkFaqQ16: '¿Dónde están ubicadas las clases de Twerk en Barcelona?',
+  twkFaqA16: 'Nuestras clases de Twerk se imparten en Farray\'s International Dance Center, ubicado en Calle Entença 100, Barcelona. Muy bien conectado con metro (líneas L1, L3, L5) y bus.',
+
+  // Meta & SEO
+  twkPageTitle: 'Clases de Twerking Dance en Barcelona',
+  twkMetaDescription: 'Clases de Twerk en Barcelona ⭐ Aprende bootydance, fortalece glúteos y caderas con música trap y reggaeton. Primera clase GRATIS. Todos los niveles.',
+  twkCourseSchemaName: 'Curso de Twerking Dance en Barcelona - Farray\'s Center',
+  twkCourseSchemaDesc: 'Aprende Twerk con profesoras expertas. Técnica de bootydance, disociación corporal, fortalecimiento y empoderamiento. Clases para todos los niveles en Barcelona.',
+
+  // Breadcrumbs
+  twkBreadcrumbHome: 'Inicio',
+  twkBreadcrumbClasses: 'Clases de Baile',
+  twkBreadcrumbCurrent: 'Twerk Barcelona',
 };

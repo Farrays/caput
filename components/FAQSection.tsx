@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import DOMPurify from 'dompurify';
 import AnimateOnScroll from './AnimateOnScroll';
@@ -10,9 +11,9 @@ interface FAQ {
 }
 
 interface FAQSectionProps {
-  title: string;
+  title?: string;
   faqs: FAQ[];
-  pageUrl: string;
+  pageUrl?: string;
 }
 
 const ChevronDownIcon: React.FC<React.SVGProps<SVGSVGElement>> = props => (
@@ -116,4 +117,4 @@ const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
   );
 };
 
-export default FAQSection;
+export default React.memo(FAQSection);

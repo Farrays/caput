@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useI18n } from '../hooks/useI18n';
 import { debounce } from '../utils/debounce';
@@ -7,6 +7,7 @@ import DesktopNavigation from './header/DesktopNavigation';
 import MobileNavigation from './header/MobileNavigation';
 import LanguageSelector from './header/LanguageSelector';
 import type { Locale } from '../types';
+import React from 'react';
 
 const Header: React.FC = () => {
   const { t, locale } = useI18n();
@@ -55,7 +56,7 @@ const Header: React.FC = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const getCurrentPath = (): string => {
+  const getCurrentPath = useCallback((): string => {
     const pathParts = location.pathname.split('/').filter(Boolean);
     if (pathParts.length > 0 && pathParts[0] && ['es', 'en', 'ca', 'fr'].includes(pathParts[0])) {
       pathParts.shift();
@@ -64,29 +65,29 @@ const Header: React.FC = () => {
     const query = location.search;
     const hash = location.hash;
     return path + query + hash;
-  };
+  }, [location.pathname, location.search, location.hash]);
 
-  const handleLanguageChange = (lang: Locale) => {
+  const handleLanguageChange = useCallback((lang: Locale) => {
     const currentPath = getCurrentPath();
     const newPath = `/${lang}${currentPath === '/' ? '' : currentPath}`;
     navigate(newPath);
     setIsLangDropdownOpen(false);
-  };
+  }, [getCurrentPath, navigate]);
 
-  const languageNames: Record<Locale, string> = {
+  const languageNames: Record<Locale, string> = useMemo(() => ({
     es: 'Español',
     ca: 'Català',
     en: 'English',
     fr: 'Français',
-  };
+  }), []);
 
-  const handleEnrollClick = () => {
+  const handleEnrollClick = useCallback(() => {
     if (location.pathname !== `/${locale}`) {
       setIsMenuOpen(false);
     }
-  };
+  }, [location.pathname, locale]);
 
-  const menuStructure = {
+  const menuStructure = useMemo(() => ({
     home: { path: `/${locale}`, textKey: 'navHome' },
     classes: {
       path: `/${locale}/clases/baile-barcelona`,
@@ -102,7 +103,7 @@ const Header: React.FC = () => {
         { path: `/${locale}/clases/entrenamiento-bailarines-barcelona`, textKey: 'navPrepFisica' },
       ],
     },
-  };
+  }), [locale]);
 
   return (
     <>
@@ -219,4 +220,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default React.memo(Header);

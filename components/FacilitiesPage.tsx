@@ -247,7 +247,7 @@ const FacilitiesPage: React.FC = () => {
         }}
       />
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <FacilitiesHero t={t} locale={locale} />
 
@@ -472,7 +472,7 @@ const FacilitiesPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

@@ -190,7 +190,7 @@ const EstudioGrabacionPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <section
           id="estudio-hero"
@@ -629,7 +629,7 @@ const EstudioGrabacionPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

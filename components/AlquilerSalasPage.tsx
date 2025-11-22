@@ -82,11 +82,15 @@ const RoomGallery: React.FC<{ images: string[]; roomName: string; t: (key: strin
 
   const onTouchStart = (e: React.TouchEvent) => {
     setTouchEnd(0); // Reset
-    setTouchStart(e.targetTouches[0].clientX);
+    if (e.targetTouches[0]) {
+      setTouchStart(e.targetTouches[0].clientX);
+    }
   };
 
   const onTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
+    if (e.targetTouches[0]) {
+      setTouchEnd(e.targetTouches[0].clientX);
+    }
   };
 
   const onTouchEnd = () => {
@@ -296,7 +300,7 @@ const AlquilerSalasPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <section
           id="alquiler-hero"
@@ -682,7 +686,7 @@ const AlquilerSalasPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };

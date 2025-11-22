@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import React from 'react';
 
 interface AnimatedCounterProps {
   target: number;
@@ -70,4 +71,4 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
   );
 };
 
-export default AnimatedCounter;
+export default React.memo(AnimatedCounter);

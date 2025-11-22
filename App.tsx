@@ -41,6 +41,8 @@ const AlquilerSalasPage = lazy(() => import('./components/AlquilerSalasPage'));
 const ServiciosBailePage = lazy(() => import('./components/ServiciosBailePage'));
 const EstudioGrabacionPage = lazy(() => import('./components/EstudioGrabacionPage'));
 const FacilitiesPage = lazy(() => import('./components/FacilitiesPage'));
+const HipHopPage = lazy(() => import('./components/HipHopPage'));
+const TwerkPage = lazy(() => import('./components/TwerkPage'));
 
 // Valid locales
 const VALID_LOCALES: Locale[] = ['es', 'en', 'ca', 'fr'];
@@ -278,6 +280,26 @@ const AppContent: React.FC = () => {
                 <>
                   <LocaleSync />
                   <FacilitiesPage />
+                </>
+              }
+            />
+
+            <Route
+              path="/:locale/clases/hip-hop-barcelona"
+              element={
+                <>
+                  <LocaleSync />
+                  <HipHopPage />
+                </>
+              }
+            />
+
+            <Route
+              path="/:locale/clases/twerk-barcelona"
+              element={
+                <>
+                  <LocaleSync />
+                  <TwerkPage />
                 </>
               }
             />

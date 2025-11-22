@@ -268,7 +268,7 @@ const ClasesParticularesPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
-      <div className="pt-20 md:pt-24">
+      <main className="pt-20 md:pt-24">
         {/* Hero Section */}
         <section className="relative text-center py-32 md:py-40 overflow-hidden flex items-center justify-center min-h-[600px]">
           {/* Background */}
@@ -656,7 +656,7 @@ const ClasesParticularesPage: React.FC = () => {
             </AnimateOnScroll>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 };
