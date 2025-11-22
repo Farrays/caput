@@ -1,0 +1,9 @@
+Contact: mailto:info@farrayscenter.com
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: es, en, ca, fr
+Canonical: https://www.farrayscenter.com/.well-known/security.txt
+Acknowledgments: https://www.farrayscenter.com/security-acknowledgments
+
+# Security Policy
+# If you discover a security vulnerability, please report it via email.
+# We appreciate responsible disclosure and will respond within 48 hours.

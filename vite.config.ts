@@ -7,12 +7,12 @@ import { imagetools } from 'vite-imagetools';
 export default defineConfig({
   plugins: [
     react(),
-    // Image optimization - automatically generates WebP/AVIF
+    // Image optimization - automatically generates WebP/AVIF/JPG
     imagetools({
       defaultDirectives: (url) => {
         if (url.searchParams.has('optimize')) {
           return new URLSearchParams({
-            format: 'webp;avif;jpg',
+            format: 'avif;webp;jpg', // AVIF first for best compression, fallback to WebP then JPG
             quality: '80',
           });
         }

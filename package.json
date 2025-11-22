@@ -24,6 +24,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,json,md}\"",
     "typecheck": "tsc --noEmit",
+    "check:bundle-size": "node scripts/check-bundle-size.mjs",
+    "check:og-images": "node scripts/check-og-images.mjs",
+    "check:all": "npm run lint && npm run typecheck && npm run check:og-images",
     "prepare": "husky"
   },
   "dependencies": {
