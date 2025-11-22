@@ -9,6 +9,7 @@ describe('DanceTestimonialsFAQSection', () => {
     videoId: 'test123',
     testimonials: [],
     faqs: [],
+    pageUrl: '/en/test-page',
     keys: {
       videoTitle: 'videoTitle',
       videoDesc: 'videoDesc',

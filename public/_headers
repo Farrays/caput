@@ -1,10 +1,15 @@
-# Security Headers for Production
-# This file is used by Netlify and other hosting providers
-# For other hosts, configure these headers in your hosting settings
+# ============================================================================
+# SECURITY HEADERS FOR PRODUCTION
+# ============================================================================
+# Optimized for Farray's International Dance Center
+# Compatible with: Netlify, Vercel, and other modern hosting providers
+# Last updated: 2025-11-22
+# ============================================================================
 
 /*
-  # Content Security Policy
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  # Content Security Policy (CSP) - Enhanced
+  # Allows: Self-hosted assets, Google Analytics, Sentry, YouTube embeds, Unsplash images
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://browser.sentry-cdn.com https://*.sentry.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob: https://images.unsplash.com https://i.ytimg.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.sentry.io https://sentry.io; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; media-src 'self' data: blob:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content
 
   # Prevent clickjacking
   X-Frame-Options: DENY
@@ -12,20 +17,20 @@
   # Prevent MIME type sniffing
   X-Content-Type-Options: nosniff
 
-  # Enable XSS protection
+  # Enable XSS protection (legacy browsers)
   X-XSS-Protection: 1; mode=block
 
-  # Referrer policy
+  # Referrer policy for privacy
   Referrer-Policy: strict-origin-when-cross-origin
 
-  # Permissions policy
-  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+  # Permissions policy - Disable unnecessary browser features
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
 
-  # Strict Transport Security (HSTS) - 1 year
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  # Strict Transport Security (HSTS) - Force HTTPS for 2 years
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 
-  # Cache control for assets
-  Cache-Control: public, max-age=31536000, immutable
+  # Cache control for HTML pages (no cache)
+  Cache-Control: public, max-age=0, must-revalidate
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable

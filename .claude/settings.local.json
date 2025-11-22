@@ -85,7 +85,18 @@
       "Bash(npx playwright:*)",
       "Bash(git fsck:*)",
       "Bash(git cherry-pick:*)",
-      "Bash(npx prettier --write \"i18n/locales/**/*.ts\")"
+      "Bash(npx prettier --write \"i18n/locales/**/*.ts\")",
+      "Bash(if [ -f \"dist/stats.html\" ])",
+      "Bash(then echo \"Stats file exists\")",
+      "Bash(else echo \"No stats file - need to build first\")",
+      "Bash(findstr:*)",
+      "Bash(npm update:*)",
+      "Bash(npm view:*)",
+      "Bash(npm outdated:*)",
+      "Bash(2)",
+      "Bash(sed:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx eslint:*)"
     ],
     "deny": [],
     "ask": []

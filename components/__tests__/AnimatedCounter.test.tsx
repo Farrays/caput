@@ -4,25 +4,25 @@ import AnimatedCounter from '../AnimatedCounter';
 
 describe('AnimatedCounter', () => {
   it('renders counter', () => {
-    const { container } = render(<AnimatedCounter end={100} duration={1000} />);
+    const { container } = render(<AnimatedCounter target={100} duration={1000} />);
     expect(container.firstChild).toBeInTheDocument();
   });
 
   it('displays initial value', () => {
-    const { container } = render(<AnimatedCounter end={100} duration={1000} />);
+    const { container } = render(<AnimatedCounter target={100} duration={1000} />);
     expect(container.textContent).toBeDefined();
   });
 
   it('accepts different end values', () => {
-    const { rerender, container } = render(<AnimatedCounter end={50} duration={1000} />);
+    const { rerender, container } = render(<AnimatedCounter target={50} duration={1000} />);
     expect(container.firstChild).toBeInTheDocument();
 
-    rerender(<AnimatedCounter end={200} duration={1000} />);
+    rerender(<AnimatedCounter target={200} duration={1000} />);
     expect(container.firstChild).toBeInTheDocument();
   });
 
   it('handles suffix prop', () => {
-    const { container } = render(<AnimatedCounter end={100} duration={1000} suffix="+" />);
+    const { container } = render(<AnimatedCounter target={100} duration={1000} suffix="+" />);
     expect(container.textContent).toBeDefined();
   });
 });

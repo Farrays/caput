@@ -31,26 +31,78 @@ export default defineConfig({
   build: {
     // Enable source maps for Sentry error tracking
     sourcemap: true,
-    // Single CSS file for better caching
-    cssCodeSplit: false,
+    // Split CSS per component for better caching
+    cssCodeSplit: true,
     // Minification with Terser for better compression
     minify: 'terser',
     terserOptions: {
       compress: {
         drop_console: true,
         drop_debugger: true,
+        passes: 2,
+        pure_funcs: ['console.log', 'console.debug', 'console.info'],
+      },
+      mangle: {
+        safari10: true,
       },
     },
     // Optimize chunk splitting
     rollupOptions: {
       output: {
-        manualChunks: {
+        manualChunks: (id) => {
           // Vendor chunks
-          'react-vendor': ['react', 'react-dom'],
-          'router-vendor': ['react-router-dom', 'react-helmet-async'],
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'react-vendor';
+            }
+            if (id.includes('react-router-dom') || id.includes('react-helmet-async')) {
+              return 'router-vendor';
+            }
+            if (id.includes('dompurify')) {
+              return 'dompurify-vendor';
+            }
+            if (id.includes('@sentry')) {
+              return 'sentry-vendor';
+            }
+            // Other node_modules in a common vendor chunk
+            return 'vendor';
+          }
+
+          // Split translations by locale
+          if (id.includes('i18n/locales/es/')) {
+            return 'locale-es';
+          }
+          if (id.includes('i18n/locales/en/')) {
+            return 'locale-en';
+          }
+          if (id.includes('i18n/locales/ca/')) {
+            return 'locale-ca';
+          }
+          if (id.includes('i18n/locales/fr/')) {
+            return 'locale-fr';
+          }
+
+          // Split dance configs
+          if (id.includes('config/dance-configs/')) {
+            return 'dance-configs';
+          }
+
+          // Split components into chunks
+          if (id.includes('components/shared/')) {
+            return 'shared-components';
+          }
+
+          // Return undefined for default Vite chunking
+          return undefined;
         },
+        // Optimize chunk size
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
+    // Increase chunk size warning limit
+    chunkSizeWarningLimit: 1000,
   },
   css: {
     // Ensure CSS is processed correctly

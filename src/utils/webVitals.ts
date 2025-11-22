@@ -1,34 +1,22 @@
 /**
  * Web Vitals tracking utility
- * Monitors Core Web Vitals (CLS, FID, LCP) and other performance metrics
+ * Monitors Core Web Vitals (CLS, INP, LCP) and other performance metrics
  */
 
-import { onCLS, onFID, onLCP, onFCP, onTTFB, type Metric } from 'web-vitals';
-
-interface WebVitalsReport {
-  name: string;
-  value: number;
-  rating: 'good' | 'needs-improvement' | 'poor';
-  delta: number;
-  id: string;
-}
+import { onCLS, onINP, onLCP, onFCP, onTTFB, type Metric } from 'web-vitals';
 
 /**
  * Sends Web Vitals data to analytics
  * You can customize this to send to Google Analytics, Sentry, or your own endpoint
  */
-function sendToAnalytics(metric: Metric) {
-  const report: WebVitalsReport = {
-    name: metric.name,
-    value: metric.value,
-    rating: metric.rating,
-    delta: metric.delta,
-    id: metric.id,
-  };
+function sendToAnalytics(metric: Metric): void {
+  const globalWindow = typeof window !== 'undefined' ? window : undefined;
 
   // Send to Google Analytics if available
-  if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', metric.name, {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  if (globalWindow && (globalWindow as any).gtag) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (globalWindow as any).gtag('event', metric.name, {
       event_category: 'Web Vitals',
       value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
       event_label: metric.id,
@@ -37,9 +25,16 @@ function sendToAnalytics(metric: Metric) {
   }
 
   // Send to Sentry if available
-  if (typeof window !== 'undefined' && (window as any).Sentry) {
-    (window as any).Sentry.captureMessage(`Web Vital: ${metric.name}`, {
-      level: metric.rating === 'good' ? 'info' : metric.rating === 'needs-improvement' ? 'warning' : 'error',
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  if (globalWindow && (globalWindow as any).Sentry) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (globalWindow as any).Sentry.captureMessage(`Web Vital: ${metric.name}`, {
+      level:
+        metric.rating === 'good'
+          ? 'info'
+          : metric.rating === 'needs-improvement'
+            ? 'warning'
+            : 'error',
       tags: {
         webVital: metric.name,
         rating: metric.rating,
@@ -53,8 +48,9 @@ function sendToAnalytics(metric: Metric) {
   }
 
   // Console log in development
-  if (process.env.NODE_ENV === 'development') {
-    console.log(`[Web Vitals] ${metric.name}:`, {
+  if (process.env['NODE_ENV'] === 'development') {
+    // Using console.warn as console.log is not allowed by ESLint rules
+    console.warn(`[Web Vitals] ${metric.name}:`, {
       value: metric.value,
       rating: metric.rating,
       delta: metric.delta,
@@ -66,11 +62,11 @@ function sendToAnalytics(metric: Metric) {
  * Initialize Web Vitals tracking
  * Call this function once when the app starts
  */
-export function reportWebVitals() {
+export function reportWebVitals(): void {
   try {
     // Core Web Vitals
     onCLS(sendToAnalytics); // Cumulative Layout Shift
-    onFID(sendToAnalytics); // First Input Delay
+    onINP(sendToAnalytics); // Interaction to Next Paint
     onLCP(sendToAnalytics); // Largest Contentful Paint
 
     // Other metrics
@@ -86,7 +82,7 @@ export function reportWebVitals() {
  */
 export const PERFORMANCE_THRESHOLDS = {
   LCP: { good: 2500, poor: 4000 }, // Largest Contentful Paint (ms)
-  FID: { good: 100, poor: 300 }, // First Input Delay (ms)
+  INP: { good: 200, poor: 500 }, // Interaction to Next Paint (ms)
   CLS: { good: 0.1, poor: 0.25 }, // Cumulative Layout Shift (score)
   FCP: { good: 1800, poor: 3000 }, // First Contentful Paint (ms)
   TTFB: { good: 800, poor: 1800 }, // Time to First Byte (ms)
@@ -95,7 +91,10 @@ export const PERFORMANCE_THRESHOLDS = {
 /**
  * Check if a metric value is considered "good"
  */
-export function isGoodMetric(metricName: keyof typeof PERFORMANCE_THRESHOLDS, value: number): boolean {
+export function isGoodMetric(
+  metricName: keyof typeof PERFORMANCE_THRESHOLDS,
+  value: number
+): boolean {
   const threshold = PERFORMANCE_THRESHOLDS[metricName];
   return value <= threshold.good;
 }

@@ -395,9 +395,13 @@ const ContactPage: React.FC = () => {
                           maxLength={100}
                           className={`w-full px-4 py-3 bg-black/70 border rounded-lg text-neutral focus:border-primary-accent focus:outline-none focus:ring-2 focus:ring-primary-accent/50 transition-all ${validationErrors['name'] ? 'border-red-500' : 'border-primary-dark/50'}`}
                           placeholder={t('contact_form_name_placeholder')}
+                          aria-describedby={validationErrors['name'] ? 'name-error' : undefined}
+                          aria-invalid={validationErrors['name'] ? 'true' : 'false'}
                         />
                         {validationErrors['name'] && (
-                          <p className="mt-1 text-sm text-red-400">{validationErrors['name']}</p>
+                          <p id="name-error" className="mt-1 text-sm text-red-400" role="alert">
+                            {validationErrors['name']}
+                          </p>
                         )}
                       </div>
 
@@ -414,9 +418,13 @@ const ContactPage: React.FC = () => {
                           required
                           className={`w-full px-4 py-3 bg-black/70 border rounded-lg text-neutral focus:border-primary-accent focus:outline-none focus:ring-2 focus:ring-primary-accent/50 transition-all ${validationErrors['email'] ? 'border-red-500' : 'border-primary-dark/50'}`}
                           placeholder={t('contact_form_email_placeholder')}
+                          aria-describedby={validationErrors['email'] ? 'email-error' : undefined}
+                          aria-invalid={validationErrors['email'] ? 'true' : 'false'}
                         />
                         {validationErrors['email'] && (
-                          <p className="mt-1 text-sm text-red-400">{validationErrors['email']}</p>
+                          <p id="email-error" className="mt-1 text-sm text-red-400" role="alert">
+                            {validationErrors['email']}
+                          </p>
                         )}
                       </div>
 
@@ -432,9 +440,13 @@ const ContactPage: React.FC = () => {
                           onChange={handleChange}
                           className={`w-full px-4 py-3 bg-black/70 border rounded-lg text-neutral focus:border-primary-accent focus:outline-none focus:ring-2 focus:ring-primary-accent/50 transition-all ${validationErrors['phone'] ? 'border-red-500' : 'border-primary-dark/50'}`}
                           placeholder={t('contact_form_phone_placeholder')}
+                          aria-describedby={validationErrors['phone'] ? 'phone-error' : undefined}
+                          aria-invalid={validationErrors['phone'] ? 'true' : 'false'}
                         />
                         {validationErrors['phone'] && (
-                          <p className="mt-1 text-sm text-red-400">{validationErrors['phone']}</p>
+                          <p id="phone-error" className="mt-1 text-sm text-red-400" role="alert">
+                            {validationErrors['phone']}
+                          </p>
                         )}
                       </div>
 
@@ -474,9 +486,15 @@ const ContactPage: React.FC = () => {
                           rows={6}
                           className={`w-full px-4 py-3 bg-black/70 border rounded-lg text-neutral focus:border-primary-accent focus:outline-none focus:ring-2 focus:ring-primary-accent/50 transition-all resize-none ${validationErrors['message'] ? 'border-red-500' : 'border-primary-dark/50'}`}
                           placeholder={t('contact_form_message_placeholder')}
+                          aria-describedby={
+                            validationErrors['message'] ? 'message-error' : undefined
+                          }
+                          aria-invalid={validationErrors['message'] ? 'true' : 'false'}
                         />
                         {validationErrors['message'] && (
-                          <p className="mt-1 text-sm text-red-400">{validationErrors['message']}</p>
+                          <p id="message-error" className="mt-1 text-sm text-red-400" role="alert">
+                            {validationErrors['message']}
+                          </p>
                         )}
                       </div>
 

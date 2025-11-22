@@ -8,11 +8,11 @@ describe('DanceScheduleSection', () => {
     schedules: [
       {
         id: '1',
-        dayKey: 'monday',
+        day: 'Monday',
         className: 'Test Class',
         time: '10:00 AM',
         teacher: 'Test Teacher',
-        levelKey: 'beginner',
+        level: 'Beginner',
       },
     ],
     logosTitleKey: 'logosTitleKey',

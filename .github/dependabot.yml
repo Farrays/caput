@@ -1,78 +1,51 @@
-# Dependabot configuration for automated dependency updates
-# This will create PRs to update dependencies on a regular schedule
-# See: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 updates:
-  # Monitor npm dependencies
+  # Enable version updates for npm
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      # Check for updates quarterly (every 3 months)
-      # Options: daily, weekly, monthly
-      interval: "monthly"
-      # Run at 06:00 UTC (07:00 CET / 08:00 CEST Spain time)
-      time: "06:00"
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
       timezone: "Europe/Madrid"
-
-    # Limit the number of open PRs to avoid spam
     open-pull-requests-limit: 5
-
-    # Group updates by type
-    groups:
-      # Group production dependencies
-      production-dependencies:
-        dependency-type: "production"
-        update-types:
-          - "minor"
-          - "patch"
-
-      # Group development dependencies
-      development-dependencies:
-        dependency-type: "development"
-        update-types:
-          - "minor"
-          - "patch"
-
-    # Automatically rebase PRs when conflicts occur
-    rebase-strategy: "auto"
-
-    # Labels to add to PRs
+    reviewers:
+      - "fabio"
+    assignees:
+      - "fabio"
+    commit-message:
+      prefix: "chore(deps):"
+      prefix-development: "chore(deps-dev):"
+      include: "scope"
     labels:
       - "dependencies"
       - "automated"
+    milestone: 1
+    # Group dependencies by type
+    groups:
+      development-dependencies:
+        dependency-type: "development"
+        patterns:
+          - "*"
+      production-dependencies:
+        dependency-type: "production"
+        patterns:
+          - "*"
+    # Ignore specific packages if needed
+    ignore:
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
 
-    # Commit message prefix
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-
-    # Ignore specific dependencies (if needed)
-    # ignore:
-    #   - dependency-name: "react"
-    #     versions: ["19.x"]
-
-    # Auto-approve and merge minor/patch updates (optional)
-    # Requires GitHub Actions workflow with auto-merge
-    reviewers:
-      - "" # Add your GitHub username if you want to be notified
-
-    # Allow Dependabot to update the lockfile
-    versioning-strategy: "increase"
-
-  # Monitor GitHub Actions versions
+  # Enable version updates for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "monthly"
-      time: "06:00"
-      timezone: "Europe/Madrid"
-
-    open-pull-requests-limit: 3
-
-    labels:
-      - "dependencies"
-      - "github-actions"
-
+      interval: "weekly"
+      day: "monday"
     commit-message:
-      prefix: "ci"
+      prefix: "ci:"
+    labels:
+      - "ci"
+      - "automated"

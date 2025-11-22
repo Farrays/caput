@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest';
 import { render } from '../../test/test-utils';
-import { BrowserRouter } from 'react-router-dom';
 import HipHopPage from '../HipHopPage';
 
 describe('HipHopPage', () => {

@@ -16,73 +16,88 @@ const DanceClassesPage: React.FC = () => {
   const baseUrl = 'https://www.farrayscenter.com';
 
   // FAQ data (EXPANDIDO para mejor SEO en motores de IA)
-  const classesFaqs = useMemo(() => [
-    { id: 'cl-1', question: t('classesFaqQ1'), answer: t('classesFaqA1') },
-    { id: 'cl-2', question: t('classesFaqQ2'), answer: t('classesFaqA2') },
-    { id: 'cl-3', question: t('classesFaqQ3'), answer: t('classesFaqA3') },
-    { id: 'cl-4', question: t('classesFaqQ4'), answer: t('classesFaqA4') },
-    { id: 'cl-5', question: t('classesFaqQ5'), answer: t('classesFaqA5') },
-    { id: 'cl-6', question: t('classesFaqQ6'), answer: t('classesFaqA6') },
-    { id: 'cl-7', question: t('classesFaqQ7'), answer: t('classesFaqA7') },
-    { id: 'cl-8', question: t('classesFaqQ8'), answer: t('classesFaqA8') },
-  ], [t]);
+  const classesFaqs = useMemo(
+    () => [
+      { id: 'cl-1', question: t('classesFaqQ1'), answer: t('classesFaqA1') },
+      { id: 'cl-2', question: t('classesFaqQ2'), answer: t('classesFaqA2') },
+      { id: 'cl-3', question: t('classesFaqQ3'), answer: t('classesFaqA3') },
+      { id: 'cl-4', question: t('classesFaqQ4'), answer: t('classesFaqA4') },
+      { id: 'cl-5', question: t('classesFaqQ5'), answer: t('classesFaqA5') },
+      { id: 'cl-6', question: t('classesFaqQ6'), answer: t('classesFaqA6') },
+      { id: 'cl-7', question: t('classesFaqQ7'), answer: t('classesFaqA7') },
+      { id: 'cl-8', question: t('classesFaqQ8'), answer: t('classesFaqA8') },
+    ],
+    [t]
+  );
 
   // Schema Markup - BreadcrumbList
-  const breadcrumbSchema = useMemo(() => ({
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: t('danceClassesHub_breadcrumb_home'),
-        item: `${baseUrl}/${locale}`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: t('danceClassesHub_breadcrumb_current'),
-        item: `${baseUrl}/${locale}/clases/baile-barcelona`,
-      },
-    ],
-  }), [t, baseUrl, locale]);
+  const breadcrumbSchema = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: t('danceClassesHub_breadcrumb_home'),
+          item: `${baseUrl}/${locale}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: t('danceClassesHub_breadcrumb_current'),
+          item: `${baseUrl}/${locale}/clases/baile-barcelona`,
+        },
+      ],
+    }),
+    [t, baseUrl, locale]
+  );
 
   // Breadcrumb items for visual navigation with microdata
-  const breadcrumbItems = useMemo(() => [
-    { name: t('danceClassesHub_breadcrumb_home'), url: `/${locale}` },
-    {
-      name: t('danceClassesHub_breadcrumb_current'),
-      url: `/${locale}/clases/baile-barcelona`,
-      isActive: true,
-    },
-  ], [t, locale]);
+  const breadcrumbItems = useMemo(
+    () => [
+      { name: t('danceClassesHub_breadcrumb_home'), url: `/${locale}` },
+      {
+        name: t('danceClassesHub_breadcrumb_current'),
+        url: `/${locale}/clases/baile-barcelona`,
+        isActive: true,
+      },
+    ],
+    [t, locale]
+  );
 
   // Schema Markup - ItemList (Categories)
-  const itemListSchema = useMemo(() => ({
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Categorías de clases de baile en Barcelona',
-    itemListElement: HUB_CATEGORIES.map((cat, idx) => ({
-      '@type': 'ListItem',
-      position: idx + 1,
-      name: t(cat.titleKey),
-      url: `${baseUrl}/${locale}${cat.pillarUrl}`,
-    })),
-  }), [t, baseUrl, locale]);
+  const itemListSchema = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Categorías de clases de baile en Barcelona',
+      itemListElement: HUB_CATEGORIES.map((cat, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: t(cat.titleKey),
+        url: `${baseUrl}/${locale}${cat.pillarUrl}`,
+      })),
+    }),
+    [t, baseUrl, locale]
+  );
 
   // Schema Markup - FAQPage
-  const faqSchema = useMemo(() => ({
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: classesFaqs.map(faq => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  }), [classesFaqs]);
+  const faqSchema = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: classesFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    }),
+    [classesFaqs]
+  );
 
   return (
     <>
@@ -132,6 +147,7 @@ const DanceClassesPage: React.FC = () => {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -740,6 +756,7 @@ const DanceClassesPage: React.FC = () => {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"

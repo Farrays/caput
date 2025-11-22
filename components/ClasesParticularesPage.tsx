@@ -562,6 +562,7 @@ const ClasesParticularesPage: React.FC = () => {
                               className="w-5 h-5 text-primary-accent flex-shrink-0 mt-0.5"
                               fill="currentColor"
                               viewBox="0 0 20 20"
+                              aria-hidden="true"
                             >
                               <path
                                 fillRule="evenodd"
@@ -637,6 +638,7 @@ const ClasesParticularesPage: React.FC = () => {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"

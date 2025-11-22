@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '../../test/test-utils';
-import { BrowserRouter } from 'react-router-dom';
 import Services from '../Services';
 
 describe('Services', () => {
