@@ -1,5 +1,12 @@
 import { describe, it, expect } from 'vitest';
-import { sanitizeString, sanitizeEmail, sanitizePhone, sanitizeTextarea, sanitizeUrl, sanitizeName } from '../inputSanitization';
+import {
+  sanitizeString,
+  sanitizeEmail,
+  sanitizePhone,
+  sanitizeTextarea,
+  sanitizeUrl,
+  sanitizeName,
+} from '../inputSanitization';
 
 describe('inputSanitization', () => {
   describe('sanitizeString', () => {

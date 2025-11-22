@@ -41,12 +41,14 @@ npm run lighthouse:upload
 ## What Gets Tested
 
 ### Pages Audited
+
 - Homepage (all languages)
 - Class pages (Dancehall, Hip Hop, Twerk)
 - About page
 - Contact page
 
 ### Categories
+
 - **Performance** (target: 85+)
   - First Contentful Paint < 2s
   - Largest Contentful Paint < 2.5s
@@ -75,6 +77,7 @@ npm run lighthouse:upload
 ## CI/CD Integration
 
 Lighthouse CI runs automatically on:
+
 - Every push to `main`, `master`, or `develop` branches
 - Every pull request to these branches
 
@@ -106,6 +109,7 @@ assertions: {
 ### Tests Failing Locally But Passing in CI
 
 Make sure you're running on a consistent network:
+
 ```bash
 # Use the same throttling settings as CI
 npm run lighthouse
@@ -114,6 +118,7 @@ npm run lighthouse
 ### High Variability in Results
 
 Lighthouse runs 3 times and takes the median. If results vary:
+
 - Close other applications
 - Disable browser extensions
 - Use incognito/private mode
@@ -121,6 +126,7 @@ Lighthouse runs 3 times and takes the median. If results vary:
 ### Performance Issues
 
 Common fixes:
+
 1. **Large images**: Run `npm run build:images` to optimize
 2. **Large bundles**: Check bundle analyzer at `dist/stats.html`
 3. **Render blocking**: Review CSS/JS loading in network tab

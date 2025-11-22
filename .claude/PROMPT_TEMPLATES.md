@@ -19,6 +19,7 @@ npm run create:class
 ```
 
 Esto generará automáticamente:
+
 - Componente de página
 - Rutas en App.tsx
 - Estructura de directorios para imágenes
@@ -35,17 +36,20 @@ Esto generará automáticamente:
 **Tarea:** Mejorar textos de la página de Bachata
 
 **Archivos a modificar:**
+
 - i18n/locales/es.ts (sección Bachata)
 - i18n/locales/en.ts (sección Bachata)
 - i18n/locales/ca.ts (sección Bachata)
 - i18n/locales/fr.ts (sección Bachata)
 
 **NO TOCAR:**
-- Componentes (components/*.tsx)
+
+- Componentes (components/\*.tsx)
 - Configuración (vite.config.ts, tailwind.config.js, package.json)
 - Otras páginas
 
 **Requisitos:**
+
 1. **Hero Title:** Debe ser impactante, máximo 4 palabras
 2. **Hero Subtitle:** Descripción breve (1 línea, máximo 100 caracteres)
 3. **About Desc1:** Párrafo introductorio sobre qué es Bachata (2-3 líneas)
@@ -59,11 +63,13 @@ Esto generará automáticamente:
 **Tono:** Cercano, motivador, profesional. Sin exageraciones. Enfocado en resultados concretos.
 
 **SEO:**
+
 - Meta description entre 140-160 caracteres
 - Incluir "Barcelona" y el nombre del baile
 - Evitar keyword stuffing
 
 **Traducciones:**
+
 - Mantén la misma estructura en los 4 idiomas
 - Adapta culturalmente cuando sea necesario (no traduzcas literalmente)
 - En inglés: tono ligeramente más informal
@@ -75,7 +81,7 @@ Esto generará automáticamente:
 
 ### 2.2 Cambiar Imágenes
 
-```markdown
+````markdown
 **Tarea:** Actualizar las imágenes de la página de Bachata
 
 **Pasos:**
@@ -89,6 +95,7 @@ Esto generará automáticamente:
    ```bash
    npm run build:images
    ```
+````
 
 3. **Verifica que se generaron** en `public/images/classes/bachata/img/`
 
@@ -98,6 +105,7 @@ Esto generará automáticamente:
    - `bachataImage3Alt`
 
 **Requisitos de las imágenes:**
+
 - Hero: 1920x1080 mínimo (horizontal)
 - Clase: 1200x1500 mínimo (vertical, 4:5)
 - Profesor: 800x800 mínimo (cuadrado)
@@ -105,9 +113,11 @@ Esto generará automáticamente:
 - Peso máximo original: 5MB por imagen
 
 **NO TOCAR:**
+
 - Componentes (ResponsiveImage sigue igual)
 - Scripts (ya está configurado)
-```
+
+````
 
 ---
 
@@ -140,7 +150,7 @@ Esto generará automáticamente:
 **Traducciones:**
 - Mantén la misma estructura
 - Adapta culturalmente (ej: en inglés "Do I need..." vs español "¿Necesito...")
-```
+````
 
 ---
 
@@ -150,6 +160,7 @@ Esto generará automáticamente:
 **Tarea:** Actualizar información del instructor de Kizomba
 
 **Archivos a modificar:**
+
 - i18n/locales/es.ts (kizombaInstructorName, kizombaInstructorSpecialty, kizombaInstructorBio)
 - i18n/locales/en.ts (mismas claves)
 - i18n/locales/ca.ts (mismas claves)
@@ -157,9 +168,11 @@ Esto generará automáticamente:
 - public/images/teachers/ (añadir foto del instructor si es nueva)
 
 **NO TOCAR:**
+
 - components/KizombaPage.tsx (ya está configurado)
 
 **Requisitos:**
+
 1. **Nombre completo** del instructor
 2. **Especialidad** (ej: "Especialista en Kizomba Angoleña")
 3. **Biografía** (3-5 líneas):
@@ -170,6 +183,7 @@ Esto generará automáticamente:
    - Por qué es un gran instructor (sin exagerar)
 
 **Foto del instructor:**
+
 - Nombre de archivo: `nombre-apellido.jpg` (kebab-case)
 - Tamaño: 800x800 mínimo
 - Formato: JPG
@@ -177,6 +191,7 @@ Esto generará automáticamente:
 - Subir a: `public/images/teachers/`
 
 **Actualizar referencia en el componente:**
+
 - Busca `<img src="/images/teachers/...` en `KizombaPage.tsx`
 - Cambia el nombre del archivo
 ```
@@ -194,13 +209,16 @@ Esto generará automáticamente:
 [Describe el error que ves en la terminal o en VSCode]
 
 **Archivos a modificar:**
+
 - [archivo específico donde está el error]
 
 **NO TOCAR:**
+
 - Otros archivos sin errores
 - Configuración de TypeScript (tsconfig.json)
 
 **Requisitos:**
+
 - Corregir el error sin cambiar la funcionalidad
 - Mantener tipos estrictos
 - No usar `any` a menos que sea absolutamente necesario
@@ -217,13 +235,16 @@ Esto generará automáticamente:
 [Describe qué está mal: canonical incorrecto, meta description muy larga, etc.]
 
 **Archivos a modificar:**
+
 - components/BachataPage.tsx (sección Helmet)
 
 **NO TOCAR:**
+
 - i18n (traducciones están bien)
 - Otros componentes
 
 **Requisitos:**
+
 - Canonical URL: https://www.farrayscenter.com/{locale}/bachata
 - Meta description: 140-160 caracteres
 - OG image: debe existir en /public/images/
@@ -241,14 +262,17 @@ Esto generará automáticamente:
 [Describe el problema: textos se cortan, imágenes desalineadas, menú no funciona, etc.]
 
 **Archivos a modificar:**
+
 - components/SalsaPage.tsx (sección con el problema)
 
 **NO TOCAR:**
+
 - Estilos globales (index.css)
 - Tailwind config
 - Otros componentes
 
 **Requisitos:**
+
 - Usar breakpoints de Tailwind: sm:, md:, lg:, xl:
 - Probar en:
   - Mobile: 375px (iPhone SE)
@@ -266,9 +290,11 @@ Esto generará automáticamente:
 **Tarea:** Añadir enlaces internos en la página de Afrobeats
 
 **Archivos a modificar:**
+
 - components/AfrobeatsPage.tsx
 
 **NO TOCAR:**
+
 - Otras páginas
 - Header/Footer (ya tienen navegación)
 
@@ -286,6 +312,7 @@ Esto generará automáticamente:
 4. **En el CTA final** → Ya está (no tocar)
 
 **Estilo de los enlaces:**
+
 - Clase CSS: `text-primary-accent hover:text-white underline transition-colors`
 - Siempre en el mismo idioma que la página (usar `locale` del hook useI18n)
 ```
@@ -296,19 +323,22 @@ Esto generará automáticamente:
 
 ### 5.1 Añadir Datos Estructurados (Schema.org)
 
-```markdown
+````markdown
 **Tarea:** Añadir datos estructurados JSON-LD a la página de Bachata
 
 **Archivos a modificar:**
+
 - components/BachataPage.tsx (dentro del <Helmet>)
 
 **NO TOCAR:**
+
 - FAQSection (ya tiene FAQPage schema automático)
 - Otras páginas
 
 **Schemas a añadir:**
 
 1. **WebPage**
+
 ```json
 {
   "@context": "https://schema.org",
@@ -324,8 +354,10 @@ Esto generará automáticamente:
   }
 }
 ```
+````
 
 2. **Course**
+
 ```json
 {
   "@context": "https://schema.org",
@@ -349,6 +381,7 @@ Esto generará automáticamente:
 ```
 
 3. **Person (Instructor)** - Solo si el instructor es público
+
 ```json
 {
   "@context": "https://schema.org",
@@ -364,17 +397,18 @@ Esto generará automáticamente:
 ```
 
 **Implementación:**
+
 ```tsx
-<script type="application/ld+json">
-  {JSON.stringify(schemaObject)}
-</script>
+<script type="application/ld+json">{JSON.stringify(schemaObject)}</script>
 ```
 
 **Validación:**
+
 - Usa: https://search.google.com/test/rich-results
 - Pega la URL de Vercel Preview
 - Verifica que no haya errores
-```
+
+````
 
 ---
 
@@ -418,12 +452,14 @@ Desde cada página de clase, añadir enlaces a:
     Bachata
   </a>.
 </p>
-```
+````
 
 **Posición:**
+
 - Al final de la sección "About" (antes de los Pillars)
 - Texto natural, no forzado
-```
+
+````
 
 ---
 
@@ -486,13 +522,13 @@ Desde cada página de clase, añadir enlaces a:
 - Lighthouse: Chrome DevTools > Lighthouse
 - Responsive: Chrome DevTools > Device Toolbar
 - Network: Chrome DevTools > Network (filtrar WebP)
-```
+````
 
 ---
 
 ### 6.2 Probar Build de Producción
 
-```markdown
+````markdown
 **Tarea:** Verificar que el build de producción funciona correctamente
 
 **Pasos:**
@@ -501,6 +537,7 @@ Desde cada página de clase, añadir enlaces a:
    ```bash
    npm run build
    ```
+````
 
 2. **Verificar que no hay errores:**
    - No debe haber errores de TypeScript
@@ -508,11 +545,13 @@ Desde cada página de clase, añadir enlaces a:
    - El prerender debe completarse sin errores
 
 3. **Probar preview:**
+
    ```bash
    npm run preview
    ```
 
 4. **Abrir en navegador:**
+
    ```
    http://localhost:4173/es/bachata
    ```
@@ -525,17 +564,21 @@ Desde cada página de clase, añadir enlaces a:
    - [ ] No hay errores en la consola del navegador
 
 6. **Verificar prerender (SSG):**
+
    ```bash
    ls dist/es/bachata/index.html
    ```
+
    - Debe existir el archivo HTML prerenderizado
    - Abrir el archivo y verificar que tiene el contenido completo (no solo el shell)
 
 **Si hay errores:**
+
 - Leer el error completo en la terminal
 - Buscar el archivo y línea donde falla
 - Corregir antes de pushear
-```
+
+````
 
 ---
 
@@ -555,9 +598,11 @@ Desde cada página de clase, añadir enlaces a:
 **Información del PR:**
 
 **Título:**
-```
+````
+
 feat: Add Bachata class page with full SEO and i18n
-```
+
+````
 
 **Descripción:**
 ```markdown
@@ -602,20 +647,24 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
 (Opcional: añadir capturas de Desktop + Mobile)
 
 🤖 Generated with Claude Code
-```
+````
 
 **Labels:**
+
 - `enhancement`
 - `SEO`
 - `i18n`
 
 **Reviewers:**
+
 - Asignarte a ti mismo
 
 **Draft:**
+
 - Marcar como "Draft" si aún quieres hacer cambios
 - Cambiar a "Ready for review" cuando esté listo para producción
-```
+
+````
 
 ---
 
@@ -653,8 +702,9 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
   git pull
   git revert <commit-hash>
   git push
-  ```
-```
+````
+
+````
 
 ---
 
@@ -688,13 +738,13 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
 5. Abrir PR
 6. Revisar preview de Vercel
 7. Mergear
-```
+````
 
 ---
 
 ### 8.2 Añadir Nueva Clase (Rápido)
 
-```markdown
+````markdown
 **Tarea:** Añadir página de Kizomba
 
 **Método rápido (usar el generador):**
@@ -703,6 +753,7 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
    ```bash
    npm run create:class -- --name=kizomba --instructor="Ana Silva" --specialty="Especialista en Kizomba Angoleña"
    ```
+````
 
 2. **Seguir los pasos del output:**
    - Copiar claves i18n a `i18n/locales/*.ts`
@@ -711,12 +762,14 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
    - Personalizar textos (reemplazar [TODO])
 
 3. **Probar localmente:**
+
    ```bash
    npm run dev
    # Abrir: http://localhost:5173/es/kizomba
    ```
 
 4. **Crear PR:**
+
    ```bash
    git checkout -b feat/kizomba-page
    git add .
@@ -725,7 +778,8 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
    ```
 
 5. **Revisar preview de Vercel → Mergear**
-```
+
+````
 
 ---
 
@@ -742,9 +796,10 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
    ```bash
    git status
    git diff
-   ```
+````
 
 2. **Revertir archivos no deseados:**
+
    ```bash
    # Revertir UN archivo específico
    git checkout -- package.json
@@ -754,6 +809,7 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
    ```
 
 3. **Mantener solo los cambios buenos:**
+
    ```bash
    # Resetear todo
    git reset --hard HEAD
@@ -766,7 +822,8 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
    - Sé MUY específico en las instrucciones
    - Lista exactamente los archivos permitidos
    - Lista explícitamente los archivos NO permitidos
-```
+
+````
 
 ---
 
@@ -780,9 +837,10 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
 1. **Verificar que el build local funciona:**
    ```bash
    npm run build
-   ```
-   - Si falla aquí, el problema es tu código (no Vercel)
-   - Leer el error y corregir
+````
+
+- Si falla aquí, el problema es tu código (no Vercel)
+- Leer el error y corregir
 
 2. **Verificar logs de Vercel:**
    - En el PR de GitHub, click en "Details" del check de Vercel
@@ -798,7 +856,8 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
 4. **Forzar redeploy:**
    - Hacer un commit vacío: `git commit --allow-empty -m "chore: trigger redeploy"`
    - Push: `git push`
-```
+
+````
 
 ---
 
@@ -812,20 +871,23 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
 1. **Verificar que existen:**
    ```bash
    ls public/images/classes/bachata/img
-   ```
-   - Debe haber archivos `*_640.webp`, `*_960.webp`, `*_1440.webp` (y `.jpg`)
+````
+
+- Debe haber archivos `*_640.webp`, `*_960.webp`, `*_1440.webp` (y `.jpg`)
 
 2. **Verificar el path en el componente:**
+
    ```tsx
    <ResponsiveImage
-     basePath="/images/classes/bachata/img/bachata-hero"  // ✅ Correcto (sin /public)
+     basePath="/images/classes/bachata/img/bachata-hero" // ✅ Correcto (sin /public)
      // NO:
      // basePath="/public/images/..."  // ❌ Incorrecto
-     alt={t("bachataImage1Alt")}
+     alt={t('bachataImage1Alt')}
    />
    ```
 
 3. **Verificar que el script corrió:**
+
    ```bash
    npm run build:images
    ```
@@ -840,6 +902,7 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
 5. **Verificar aspect ratio CSS:**
    - Si la imagen "existe" pero no se ve, puede ser un problema de `aspectRatio`
    - Verificar que el aspect ratio CSS coincide con la imagen real
+
 ```
 
 ---
@@ -857,3 +920,4 @@ Nueva página de Bachata con SEO completo, datos estructurados y soporte multiid
 ---
 
 🎉 **¡Ya tienes todas las herramientas para trabajar como un pro!**
+```

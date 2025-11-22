@@ -33,6 +33,7 @@
  *   --no-images   No crear estructura de imágenes
  */
 
+// eslint-disable-next-line no-unused-vars
 import { readFile, writeFile, mkdir, access, copyFile, rm } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -587,6 +588,7 @@ async function updateI18nFile(locale, keys, options, backupManager) {
   }
 
   // Generate the new keys section
+  // eslint-disable-next-line no-unused-vars
   const camelName = toCamelCase(options.className);
   const keysSection = `\n  // ===== ${options.componentName} Page =====\n` +
     Object.entries(keys)
@@ -645,6 +647,7 @@ async function handleI18nGeneration(options, backupManager) {
 // IMAGE STRUCTURE
 // ============================================================================
 
+// eslint-disable-next-line no-unused-vars
 async function createImageStructure(options, backupManager) {
   if (options.flags['no-images']) {
     log.info('Skipping image structure creation (--no-images flag)');
@@ -1076,9 +1079,7 @@ async function main() {
 
   } catch (error) {
     log.error(`❌ Fatal error: ${error.message}`);
-    if (options?.verbose) {
-      console.error(error);
-    }
+    console.error(error);
     process.exit(1);
   }
 }

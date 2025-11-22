@@ -1,6 +1,7 @@
 # 🚀 Guía Completa: Workflow Seguro para Desarrollo
 
 ## 🎯 Objetivo
+
 Trabajar de forma **100% segura** sin tocar producción, usando **ramas**, **Pull Requests** y **Vercel Previews** para revisar cambios antes de desplegarlos.
 
 ---
@@ -38,25 +39,28 @@ git checkout -b content/dancehall-texts
 "Crea una nueva página de Bachata basada en DancehallPage.tsx.
 
 **Archivos a modificar/crear:**
+
 - components/BachataPage.tsx (nuevo, clonar de DancehallPage)
 - App.tsx (añadir ruta /bachata)
-- i18n/locales/*.ts (añadir traducciones)
+- i18n/locales/\*.ts (añadir traducciones)
 - public/images/classes/bachata/ (preparar estructura)
 
 **NO TOCAR:**
+
 - Estilos globales (index.css, tailwind.config.js)
 - Configuración (vite.config.ts, package.json)
 - Otras páginas
 - Componentes compartidos (Header, Footer, etc.)
 
 **Requisitos:**
+
 - SEO completo (title, meta, canonical, hreflang)
 - Datos estructurados (WebPage + Course + FAQPage)
 - 3 imágenes optimizadas (hero, clase, profesor)
 - 4 FAQs con schema
 - Enlaces internos a /clases y /profesores
 - Responsive y accesible
-"
+  "
 ```
 
 **✅ Ventaja:** Claude sabe exactamente qué puede y qué NO puede tocar.
@@ -79,6 +83,7 @@ git diff components/BachataPage.tsx
 ```
 
 **✅ Qué verificar:**
+
 - ✅ Solo cambió los archivos que debía
 - ✅ No tocó config, package.json, estilos globales
 - ✅ No añadió dependencias nuevas sin avisar
@@ -121,16 +126,20 @@ git push -u origin feat/bachata-page
 3. Rellena el PR:
 
 **Título:**
+
 ```
 feat: Add Bachata class page with full SEO
 ```
 
 **Descripción:**
+
 ```markdown
 ## 📄 Summary
+
 Nueva página de Bachata basada en la estructura de Dancehall.
 
 ## ✅ Changes
+
 - ✅ BachataPage.tsx component
 - ✅ i18n translations (es, en, ca, fr)
 - ✅ SEO metadata (title, description, canonical, hreflang)
@@ -141,6 +150,7 @@ Nueva página de Bachata basada en la estructura de Dancehall.
 - ✅ Responsive design
 
 ## 🧪 Test Plan
+
 - [ ] Desktop: Chrome, Firefox, Safari
 - [ ] Mobile: iOS Safari, Android Chrome
 - [ ] SEO: Google Rich Results Test
@@ -150,6 +160,7 @@ Nueva página de Bachata basada en la estructura de Dancehall.
 - [ ] Images: Load correctly, responsive
 
 ## 🔗 Preview URL
+
 (Vercel añadirá aquí la URL automáticamente)
 
 🤖 Generated with Claude Code
@@ -165,6 +176,7 @@ Nueva página de Bachata basada en la estructura de Dancehall.
 ### 6️⃣ **Revisar la Preview de Vercel**
 
 **Vercel creará un deployment temporal con una URL tipo:**
+
 ```
 https://web-abc123xyz.vercel.app/es/bachata
 ```
@@ -172,6 +184,7 @@ https://web-abc123xyz.vercel.app/es/bachata
 **🔍 Qué revisar:**
 
 #### **Desktop (Chrome/Firefox/Safari):**
+
 - [ ] Textos correctos en los 4 idiomas
 - [ ] Imágenes cargan correctamente
 - [ ] Hero video funciona
@@ -180,17 +193,20 @@ https://web-abc123xyz.vercel.app/es/bachata
 - [ ] CTA lleva a contacto/clases
 
 #### **Mobile (iOS/Android):**
+
 - [ ] Layout responsive perfecto
 - [ ] Imágenes adaptadas
 - [ ] Menú móvil funciona
 - [ ] Touch interactions
 
 #### **SEO (Google Rich Results Test):**
+
 - [ ] Ir a: https://search.google.com/test/rich-results
 - [ ] Pegar la URL de Vercel Preview
 - [ ] Verificar: WebPage, Course, FAQPage schemas válidos
 
 #### **Performance (Lighthouse):**
+
 - [ ] Chrome DevTools > Lighthouse
 - [ ] Performance > 90
 - [ ] Accessibility > 95
@@ -198,6 +214,7 @@ https://web-abc123xyz.vercel.app/es/bachata
 - [ ] SEO > 95
 
 #### **i18n:**
+
 - [ ] Cambiar idioma en el selector
 - [ ] Verificar que todos los textos cambian
 - [ ] URLs tienen el prefijo correcto (/es/, /en/, /ca/, /fr/)
@@ -240,6 +257,7 @@ git push
 **✅ Vercel desplegará a producción automáticamente en ~3 minutos.**
 
 **🌐 URL de producción:**
+
 ```
 https://www.farrayscenter.com/es/bachata
 ```
@@ -293,6 +311,7 @@ git push
    - ❌ No permitir push directo a `main`
 
 2. **CODEOWNERS (opcional):**
+
 ```bash
 # .github/CODEOWNERS
 * @tu-usuario
@@ -310,6 +329,7 @@ git push
 ### **Añadir imágenes nuevas (ej: Bachata):**
 
 1. **Sube las originales:**
+
 ```bash
 public/images/classes/bachata/raw/
   bachata-hero.jpg
@@ -318,23 +338,27 @@ public/images/classes/bachata/raw/
 ```
 
 2. **Actualiza el script:**
+
 ```javascript
 // scripts/build-images.mjs
-const classes = ["dancehall", "bachata"];  // añade "bachata"
+const classes = ['dancehall', 'bachata']; // añade "bachata"
 ```
 
 3. **Ejecuta optimización:**
+
 ```bash
 npm run build:images
 ```
 
 4. **Verifica que se generaron:**
+
 ```bash
 ls public/images/classes/bachata/img
 # Deberías ver: bachata-hero_640.webp, bachata-hero_960.webp, etc.
 ```
 
 5. **Añade traducciones de alt text:**
+
 ```typescript
 // i18n/locales/es.ts
 bachataImage1Alt: "Clases de Bachata en Barcelona - Farray's Center",
@@ -343,6 +367,7 @@ bachataImage3Alt: "Profesor de Bachata - Carlos Martínez",
 ```
 
 6. **Commitear:**
+
 ```bash
 git add public/images/classes/bachata i18n/locales scripts/build-images.mjs
 git commit -m "feat: Add optimized Bachata images (3 images, 3 sizes, WebP+JPG)"
@@ -354,6 +379,7 @@ git push
 ## 🚨 Troubleshooting
 
 ### **❌ La preview de Vercel no funciona**
+
 ```bash
 # Verifica que el build local funciona
 npm run build
@@ -362,6 +388,7 @@ npm run preview
 ```
 
 ### **❌ Claude cambió archivos que no debía**
+
 ```bash
 # Revierte los cambios
 git checkout -- archivo-no-deseado.ts
@@ -372,6 +399,7 @@ git commit -m "fix: Revert unwanted changes"
 ```
 
 ### **❌ El PR tiene conflictos con main**
+
 ```bash
 # Actualiza tu rama con los cambios de main
 git checkout feat/bachata-page
@@ -384,6 +412,7 @@ git push
 ```
 
 ### **❌ Quiero empezar desde cero**
+
 ```bash
 # Opción 1: Borrar la rama local y remota
 git checkout main

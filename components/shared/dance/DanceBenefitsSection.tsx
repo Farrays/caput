@@ -15,7 +15,12 @@ interface DanceBenefitsSectionProps {
   imageAlt: string;
 }
 
-const DanceBenefitsSection: React.FC<DanceBenefitsSectionProps> = ({ t, keys, image, imageAlt }) => {
+const DanceBenefitsSection: React.FC<DanceBenefitsSectionProps> = ({
+  t,
+  keys,
+  image,
+  imageAlt,
+}) => {
   return (
     <section className="py-20 md:py-32 bg-primary-dark/10">
       <div className="container mx-auto px-6">
@@ -33,9 +38,7 @@ const DanceBenefitsSection: React.FC<DanceBenefitsSectionProps> = ({ t, keys, im
                 <p className="text-center text-2xl font-bold mt-8 holographic-text">
                   {t(keys.whatIsQuestionTitle)}
                 </p>
-                <p className="text-center text-xl font-semibold">
-                  {t(keys.whatIsQuestionAnswer)}
-                </p>
+                <p className="text-center text-xl font-semibold">{t(keys.whatIsQuestionAnswer)}</p>
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img

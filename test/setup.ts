@@ -81,7 +81,7 @@ vi.mock('../hooks/useI18n', () => {
 
   return {
     useI18n: () => ({
-      locale: 'en',
+      locale: 'es',
       setLocale: vi.fn(),
       t: (key: string) => mockTranslations[key] || key,
       isLoading: false,

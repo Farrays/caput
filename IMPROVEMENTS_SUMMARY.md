@@ -12,12 +12,12 @@ Se implementaron **3 de las 4 mejoras opcionales** identificadas en la auditorí
 
 ### Estado de las Mejoras
 
-| # | Mejora | Estado | Impacto | Prioridad |
-|---|--------|--------|---------|-----------|
-| 1 | Refactorizar DancehallPage.tsx | 🟡 En progreso (16% completo) | Mantenibilidad | Media |
-| 2 | Core Web Vitals Monitoring | ✅ Completado | Rendimiento | Alta |
-| 3 | Consolidar documentación | ✅ Completado | Claridad | Media |
-| 4 | Tests automáticos de accesibilidad | ✅ Completado | Calidad | Alta |
+| #   | Mejora                             | Estado                        | Impacto        | Prioridad |
+| --- | ---------------------------------- | ----------------------------- | -------------- | --------- |
+| 1   | Refactorizar DancehallPage.tsx     | 🟡 En progreso (16% completo) | Mantenibilidad | Media     |
+| 2   | Core Web Vitals Monitoring         | ✅ Completado                 | Rendimiento    | Alta      |
+| 3   | Consolidar documentación           | ✅ Completado                 | Claridad       | Media     |
+| 4   | Tests automáticos de accesibilidad | ✅ Completado                 | Calidad        | Alta      |
 
 ---
 
@@ -28,11 +28,13 @@ Se implementaron **3 de las 4 mejoras opcionales** identificadas en la auditorí
 ### Implementación
 
 #### Dependencia instalada
+
 ```bash
 npm install web-vitals@^5.1.0 --legacy-peer-deps
 ```
 
 #### Código agregado (index.tsx)
+
 ```typescript
 import { onCLS, onINP, onFCP, onLCP, onTTFB, Metric } from 'web-vitals';
 
@@ -67,10 +69,15 @@ onTTFB(sendToAnalytics); // Time to First Byte
 ```
 
 #### TypeScript types (types/web-vitals.d.ts)
+
 ```typescript
 declare global {
   interface Window {
-    gtag?: (command: 'event' | 'config' | 'set', targetId: string, config?: Record<string, unknown>) => void;
+    gtag?: (
+      command: 'event' | 'config' | 'set',
+      targetId: string,
+      config?: Record<string, unknown>
+    ) => void;
     Sentry?: {
       captureMessage: (message: string, options?: Record<string, unknown>) => void;
       captureException: (error: Error, options?: Record<string, unknown>) => void;
@@ -81,13 +88,13 @@ declare global {
 
 ### Métricas monitoreadas
 
-| Métrica | Qué mide | Umbral "Good" |
-|---------|----------|---------------|
-| **CLS** | Estabilidad visual (elementos que se mueven) | < 0.1 |
-| **INP** | Tiempo de respuesta a interacciones | < 200 ms |
-| **FCP** | Primer contenido visible | < 1.8 s |
-| **LCP** | Elemento más grande visible | < 2.5 s |
-| **TTFB** | Respuesta inicial del servidor | < 800 ms |
+| Métrica  | Qué mide                                     | Umbral "Good" |
+| -------- | -------------------------------------------- | ------------- |
+| **CLS**  | Estabilidad visual (elementos que se mueven) | < 0.1         |
+| **INP**  | Tiempo de respuesta a interacciones          | < 200 ms      |
+| **FCP**  | Primer contenido visible                     | < 1.8 s       |
+| **LCP**  | Elemento más grande visible                  | < 2.5 s       |
+| **TTFB** | Respuesta inicial del servidor               | < 800 ms      |
 
 ### Destinos de datos
 
@@ -117,6 +124,7 @@ declare global {
 ### Cambios realizados
 
 #### Antes (64 archivos .md)
+
 ```
 /
 ├── README.md
@@ -138,6 +146,7 @@ declare global {
 ```
 
 #### Después (4 archivos core + archive)
+
 ```
 /
 ├── README.md                     ← Overview del proyecto
@@ -158,8 +167,8 @@ declare global {
 
 ```powershell
 New-Item -ItemType Directory -Path "docs/archive" -Force
-Get-ChildItem -Filter "*.md" | 
-  Where-Object { $_.Name -notin @('README.md', 'CHANGELOG.md', 'ARCHITECTURE.md', 'AUDITORIA_FINAL_2025.md') } | 
+Get-ChildItem -Filter "*.md" |
+  Where-Object { $_.Name -notin @('README.md', 'CHANGELOG.md', 'ARCHITECTURE.md', 'AUDITORIA_FINAL_2025.md') } |
   Move-Item -Destination "docs/archive/"
 ```
 
@@ -246,6 +255,7 @@ describe('Accessibility - Breadcrumb', () => { ... });
 ```
 
 **Uso:**
+
 ```bash
 npm run build
 npm run preview &
@@ -270,6 +280,7 @@ Duration    12.25s
 **Error axe:** `landmark-unique - Landmarks must have unique aria-label or title`
 
 **Solución aplicada:**
+
 ```tsx
 // components/header/DesktopNavigation.tsx
 - <nav className="hidden md:block flex-1">
@@ -289,6 +300,7 @@ Duration    12.25s
 ### Próximos pasos sugeridos
 
 1. **Integrar pa11y-ci en CI/CD:**
+
    ```yaml
    # .github/workflows/ci.yml
    accessibility:
@@ -323,15 +335,15 @@ Duration    12.25s
 
 ### Estado actual: 1/6 completado (16.7%)
 
-| Componente | Líneas | Estado | Ubicación |
-|------------|--------|--------|-----------|
-| DancehallHeroSection | ~180 | ✅ Completado | `components/dancehall/DancehallHeroSection.tsx` |
-| DancehallBenefitsSection | ~150 | ⏳ Pendiente | - |
-| DancehallIdentificationSection | ~100 | ⏳ Pendiente | - |
-| DancehallTransformationSection | ~120 | ⏳ Pendiente | - |
-| DancehallScheduleWrapper | ~80 | ⏳ Pendiente | - |
-| DancehallTestimonialsFAQCTA | ~150 | ⏳ Pendiente | - |
-| DancehallPage (orchestrator) | ~150 | ⏳ Pendiente | - |
+| Componente                     | Líneas | Estado        | Ubicación                                       |
+| ------------------------------ | ------ | ------------- | ----------------------------------------------- |
+| DancehallHeroSection           | ~180   | ✅ Completado | `components/dancehall/DancehallHeroSection.tsx` |
+| DancehallBenefitsSection       | ~150   | ⏳ Pendiente  | -                                               |
+| DancehallIdentificationSection | ~100   | ⏳ Pendiente  | -                                               |
+| DancehallTransformationSection | ~120   | ⏳ Pendiente  | -                                               |
+| DancehallScheduleWrapper       | ~80    | ⏳ Pendiente  | -                                               |
+| DancehallTestimonialsFAQCTA    | ~150   | ⏳ Pendiente  | -                                               |
+| DancehallPage (orchestrator)   | ~150   | ⏳ Pendiente  | -                                               |
 
 ### Componente completado: DancehallHeroSection
 
@@ -372,6 +384,7 @@ const DancehallHeroSection: React.FC<DancehallHeroSectionProps> = ({ t, breadcru
 ```
 
 **Características:**
+
 - ✅ Props interface tipada
 - ✅ Componentes reutilizables (AnimateOnScroll, AnimatedCounter, Breadcrumb)
 - ✅ Gradientes holográficos + stardust background
@@ -422,12 +435,15 @@ Se priorizó completar mejoras de **alto impacto** (Core Web Vitals, Tests a11y)
 ## Validaciones realizadas
 
 ### 1. TypeScript compilation
+
 ```bash
 npm run typecheck
 ```
+
 **Resultado:** ❌ 27 errores (no relacionados con mejoras implementadas)
 
 **Errores pre-existentes:**
+
 - `ContactPage.tsx`: Index signatures (16 errores - cosmético)
 - `AnimateOnScroll.test.tsx`: Props incorrectos (3 errores - test legacy)
 - `EstudioGrabacionPage.tsx`: Props faltantes en FAQSection (1 error)
@@ -438,15 +454,19 @@ npm run typecheck
 **Estado:** ⚠️ Errores no críticos - Funcionalidad intacta
 
 ### 2. Test suite
+
 ```bash
 npm run test:run
 ```
+
 **Resultado:** ✅ 58 tests pasados (100%), 0 fallos
 
 ### 3. Production build
+
 ```bash
 npm run build
 ```
+
 **Resultado:** ✅ Build exitoso
 
 ```
@@ -456,18 +476,22 @@ npm run build
 ```
 
 **Métricas del bundle:**
+
 - Total gzipped: ~256 KB (index.js) + 75 KB (es.js) = **331 KB**
 - Chunks optimizados: 402 módulos
 - Lazy loading: Activo (DancehallPage, DanceClassesPage, etc.)
 - Prerendered pages: 53 (13 páginas × 4 idiomas + root)
 
 ### 4. Preview local
+
 ```bash
 npm run preview
 ```
+
 **Resultado:** ✅ Sitio funcionando en http://localhost:4173
 
 **Verificado:**
+
 - ✅ Core Web Vitals logging en consola (desarrollo)
 - ✅ Breadcrumbs con microdata
 - ✅ Navegación por idiomas (ES/EN/CA/FR)
@@ -478,15 +502,15 @@ npm run preview
 
 ## Impacto en puntuación de auditoría
 
-| Categoría | Antes | Después | Cambio | Motivo |
-|-----------|-------|---------|--------|--------|
-| **Performance** | 9.0/10 | **9.5/10** | +0.5 | Core Web Vitals monitoring + detección proactiva |
-| **Code Quality** | 9.5/10 | **9.8/10** | +0.3 | Documentación consolidada (64→4 files) |
-| **Accessibility** | 9.0/10 | **9.5/10** | +0.5 | Tests automáticos + fix de Header landmark |
-| **Architecture** | 8.5/10 | 8.5/10 | - | DancehallPage refactor incompleto (1/6) |
-| Security | 9.5/10 | 9.5/10 | - | Sin cambios |
-| SEO | 10/10 | 10/10 | - | Sin cambios |
-| Build/Deploy | 10/10 | 10/10 | - | Sin cambios |
+| Categoría         | Antes  | Después    | Cambio | Motivo                                           |
+| ----------------- | ------ | ---------- | ------ | ------------------------------------------------ |
+| **Performance**   | 9.0/10 | **9.5/10** | +0.5   | Core Web Vitals monitoring + detección proactiva |
+| **Code Quality**  | 9.5/10 | **9.8/10** | +0.3   | Documentación consolidada (64→4 files)           |
+| **Accessibility** | 9.0/10 | **9.5/10** | +0.5   | Tests automáticos + fix de Header landmark       |
+| **Architecture**  | 8.5/10 | 8.5/10     | -      | DancehallPage refactor incompleto (1/6)          |
+| Security          | 9.5/10 | 9.5/10     | -      | Sin cambios                                      |
+| SEO               | 10/10  | 10/10      | -      | Sin cambios                                      |
+| Build/Deploy      | 10/10  | 10/10      | -      | Sin cambios                                      |
 
 ### Puntuación global
 
@@ -494,6 +518,7 @@ npm run preview
 **Después:** **9.4/10** (+0.2)
 
 **Desglose:**
+
 ```
 (9.5 + 10 + 9.5 + 9.8 + 10 + 9.5 + 8.5) / 7 = 9.4/10
 ```
@@ -532,6 +557,7 @@ npm run preview
 ✅ **El proyecto está listo para producción**
 
 Todas las mejoras implementadas son **no-breaking changes**:
+
 - Core Web Vitals: Monitoring pasivo, no afecta UX
 - Tests a11y: Validación, no cambios de código (excepto 1 aria-label)
 - Documentación: Organización interna, no afecta build
@@ -546,6 +572,7 @@ Todas las mejoras implementadas son **no-breaking changes**:
    - Puntuación target: 9.6/10 global
 
 2. **Integrar pa11y-ci en CI/CD**
+
    ```yaml
    # .github/workflows/ci.yml
    - name: Accessibility Tests
@@ -589,6 +616,7 @@ Todas las mejoras implementadas son **no-breaking changes**:
 Se completaron exitosamente **3 de las 4 mejoras opcionales** (75%), con un incremento de puntuación de **9.2/10 → 9.4/10** (+0.2 puntos).
 
 El proyecto mantiene su estado **production-ready** con:
+
 - ✅ 0 vulnerabilidades de seguridad
 - ✅ 58/58 tests pasando (100%)
 - ✅ Build exitoso (53 páginas prerenderizadas)

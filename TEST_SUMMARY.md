@@ -10,6 +10,7 @@
 ## Archivos de Test Creados
 
 ### Páginas Principales (13 nuevos tests):
+
 - ✅ NotFoundPage.test.tsx
 - ✅ AboutPage.test.tsx
 - ✅ FAQPage.test.tsx
@@ -30,6 +31,7 @@
 - ✅ MerchandisingPage.test.tsx
 
 ### Componentes Compartidos (20+ nuevos tests):
+
 - ✅ BackToTop.test.tsx
 - ✅ LazyImage.test.tsx
 - ✅ YouTubeEmbed.test.tsx
@@ -47,16 +49,19 @@
 - ✅ ClassPageHead.test.tsx
 
 ### Componentes de Header (3 nuevos):
+
 - ✅ DesktopNavigation.test.tsx
 - ✅ MobileNavigation.test.tsx
 - ✅ LanguageSelector.test.tsx
 
 ### Componentes Home (3 nuevos):
+
 - ✅ CategoriesSection.test.tsx
 - ✅ CategoryCard.test.tsx
 - ✅ CategoriesSchemaMarkup.test.tsx
 
 ### Componentes Dance (6 nuevos):
+
 - ✅ DanceBenefitsSection.test.tsx
 - ✅ DanceHeroSection.test.tsx
 - ✅ DanceScheduleSection.test.tsx
@@ -65,21 +70,25 @@
 - ✅ DanceTestimonialsFAQSection.test.tsx
 
 ### Templates (1 nuevo):
+
 - ✅ DancePageTemplate.test.tsx
 
 ### Utils (4 nuevos):
+
 - ✅ debounce.test.ts
 - ✅ imageConfig.test.ts
 - ✅ inputSanitization.test.ts (con 6 suites completas)
 - ✅ sentry.test.ts
 
 ### Hooks (1 nuevo):
+
 - ✅ useI18n-extended.test.tsx
 
 ## Configuración de Coverage
 
 ✅ Instalado `@vitest/coverage-v8`  
 ✅ Configurado threshold realista:
+
 - Lines: 50%
 - Functions: 40%
 - Branches: 35%
@@ -102,4 +111,3 @@ npm run test:run          # Ejecutar todos los tests una vez
 npm run test:coverage     # Generar reporte de coverage
 npm run test:ui           # Interfaz visual de Vitest
 ```
-

@@ -31,7 +31,7 @@ export const HIP_HOP_SCHEDULE_KEYS = [
     dayKey: 'monday',
     className: 'Hip Hop Principiantes',
     time: '19:00 - 20:00',
-    teacher: 'Equipo Farray\'s',
+    teacher: "Equipo Farray's",
     levelKey: 'beginnerLevel',
   },
   {
@@ -39,7 +39,7 @@ export const HIP_HOP_SCHEDULE_KEYS = [
     dayKey: 'wednesday',
     className: 'Hip Hop Intermedio',
     time: '20:00 - 21:00',
-    teacher: 'Equipo Farray\'s',
+    teacher: "Equipo Farray's",
     levelKey: 'intermediateLevel',
   },
   {
@@ -47,7 +47,7 @@ export const HIP_HOP_SCHEDULE_KEYS = [
     dayKey: 'friday',
     className: 'Hip Hop Avanzado',
     time: '21:00 - 22:00',
-    teacher: 'Equipo Farray\'s',
+    teacher: "Equipo Farray's",
     levelKey: 'advancedLevel',
   },
 ];

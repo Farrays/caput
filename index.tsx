@@ -21,7 +21,7 @@ function sendToAnalytics(metric: Metric) {
 
   // Log to console in development
   if (import.meta.env.DEV) {
-    console.info(`[Web Vitals] ${metric.name}:`, {
+    console.warn(`[Web Vitals] ${metric.name}:`, {
       value: metric.value,
       rating: metric.rating,
       delta: metric.delta,

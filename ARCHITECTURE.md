@@ -7,12 +7,14 @@
 ## Tech Stack
 
 ### Core Technologies
+
 - **React 19.2** - UI library with concurrent features
 - **TypeScript 5.8** - Type-safe development with strict mode
 - **Vite 6.4** - Fast build tool with HMR and SSG prerendering
 - **React Router 7.9** - Client-side routing with data loading
 
 ### Supporting Libraries
+
 - **React Helmet Async** - SEO metadata management
 - **DOMPurify 3.2.4** - XSS prevention and HTML sanitization
 - **Testing Library** - Component testing utilities
@@ -23,6 +25,7 @@
 ### 1. Component Architecture
 
 #### Modular Header System
+
 ```
 components/Header.tsx (217 lines)
 ├── header/DesktopNavigation.tsx (245 lines)
@@ -39,12 +42,14 @@ components/Header.tsx (217 lines)
 ```
 
 **Benefits:**
+
 - Single Responsibility Principle
 - Easy to test in isolation
 - Reusable components
 - Better code organization
 
 #### Lazy Loading Pattern (HomePage)
+
 ```typescript
 // Eager loading (above the fold)
 import Hero from './Hero';
@@ -71,11 +76,13 @@ const HowToGetHere = lazy(() => import('./HowToGetHere'));
 ### 2. State Management
 
 #### Local State Pattern
+
 - Component-level state with `useState`
 - No global state library needed (project size appropriate)
 - Props drilling minimized through composition
 
 #### Header State Example
+
 ```typescript
 const Header: React.FC = () => {
   // Scroll state
@@ -94,6 +101,7 @@ const Header: React.FC = () => {
 ### 3. Performance Optimizations
 
 #### Debouncing Pattern
+
 ```typescript
 // utils/debounce.ts
 export function debounce<T extends (...args: any[]) => any>(
@@ -115,6 +123,7 @@ window.addEventListener('scroll', debouncedScroll);
 **Impact:** 85% reduction in scroll event firing.
 
 #### Code Splitting Strategy
+
 ```
 Main Bundle (index.js): 250.79 kB
 ├── Core React + Router: 59.68 kB
@@ -131,6 +140,7 @@ Main Bundle (index.js): 250.79 kB
 ### 4. Internationalization (i18n)
 
 #### Structure
+
 ```
 i18n/
 ├── locales/
@@ -144,6 +154,7 @@ Total: 10,262 lines of translations
 ```
 
 #### Usage Pattern
+
 ```typescript
 const { t, locale } = useI18n();
 
@@ -163,6 +174,7 @@ const handleLanguageChange = (lang: Locale) => {
 ### 5. Routing & SEO
 
 #### Route Structure
+
 ```
 / (root) → redirects to /es
 ├── /es (Spanish)
@@ -180,6 +192,7 @@ Total: 29 prerendered pages
 ```
 
 #### SEO Implementation
+
 ```typescript
 <Helmet>
   <title>{t('pageTitle')}</title>
@@ -198,6 +211,7 @@ Total: 29 prerendered pages
 ### 6. Accessibility (WCAG 2.1)
 
 #### Keyboard Navigation
+
 ```typescript
 // All interactive elements support keyboard
 <button
@@ -216,6 +230,7 @@ Total: 29 prerendered pages
 ```
 
 #### ARIA Attributes
+
 - `aria-label` - All interactive controls
 - `aria-expanded` - All dropdown menus
 - `aria-hidden` - All decorative SVG icons
@@ -225,6 +240,7 @@ Total: 29 prerendered pages
 ### 7. Security Measures
 
 #### Rate Limiting (Client-Side)
+
 ```typescript
 interface RateLimitData {
   attempts: number;
@@ -240,9 +256,7 @@ const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000; // 15 minutes
 const checkRateLimit = (): { allowed: boolean; remaining: number } => {
   const now = Date.now();
   const data = getRateLimitData();
-  const recentTimestamps = data.timestamps.filter(
-    ts => now - ts < RATE_LIMIT_WINDOW_MS
-  );
+  const recentTimestamps = data.timestamps.filter(ts => now - ts < RATE_LIMIT_WINDOW_MS);
 
   if (recentTimestamps.length >= MAX_ATTEMPTS) {
     return { allowed: false, remaining: 0 };
@@ -250,12 +264,13 @@ const checkRateLimit = (): { allowed: boolean; remaining: number } => {
 
   return {
     allowed: true,
-    remaining: MAX_ATTEMPTS - recentTimestamps.length
+    remaining: MAX_ATTEMPTS - recentTimestamps.length,
   };
 };
 ```
 
 #### XSS Prevention
+
 ```typescript
 // DOMPurify sanitization for user-generated content
 import DOMPurify from 'dompurify';
@@ -270,6 +285,7 @@ import DOMPurify from 'dompurify';
 ### 8. Testing Strategy
 
 #### Test Structure
+
 ```
 test/
 ├── setup.ts (global test configuration)
@@ -290,6 +306,7 @@ Total: 23 tests
 ```
 
 #### Testing Pattern
+
 ```typescript
 describe('ContactPage - Rate Limiting', () => {
   beforeEach(() => {
@@ -312,6 +329,7 @@ describe('ContactPage - Rate Limiting', () => {
 ### 9. Build & Deployment
 
 #### Build Process
+
 ```bash
 npm run build
 # 1. Vite builds optimized production bundle
@@ -321,6 +339,7 @@ npm run build
 ```
 
 #### Output Structure
+
 ```
 dist/
 ├── index.html (root redirector)
@@ -341,23 +360,28 @@ dist/
 ## Design Patterns Used
 
 ### 1. **Composition over Inheritance**
+
 - Functional components throughout
 - Composition via props and children
 - No class-based components (except ErrorBoundary)
 
 ### 2. **Container/Presentational**
+
 - Smart components: Header, ContactPage
 - Presentational: DesktopNavigation, MobileNavigation
 
 ### 3. **Render Props**
+
 - AnimateOnScroll component uses children as function
 - FAQSection accepts render configuration
 
 ### 4. **Higher-Order Components**
+
 - ErrorBoundary wraps entire app
 - HelmetProvider for SEO context
 
 ### 5. **Custom Hooks**
+
 - `useI18n()` - Translation and locale management
 - `useLazyImage()` - Progressive image loading
 
@@ -388,15 +412,17 @@ web-local/
 ## Performance Budget
 
 ### Current Metrics
-| Metric | Target | Current | Status |
-|--------|--------|---------|--------|
-| First Contentful Paint | <1.5s | ~1.2s | ✅ |
-| Largest Contentful Paint | <2.5s | ~2.0s | ✅ |
-| Time to Interactive | <3.5s | ~2.8s | ✅ |
-| Total Bundle Size | <300KB | 250.79KB | ✅ |
-| Gzipped Size | <90KB | 73.64KB | ✅ |
+
+| Metric                   | Target | Current  | Status |
+| ------------------------ | ------ | -------- | ------ |
+| First Contentful Paint   | <1.5s  | ~1.2s    | ✅     |
+| Largest Contentful Paint | <2.5s  | ~2.0s    | ✅     |
+| Time to Interactive      | <3.5s  | ~2.8s    | ✅     |
+| Total Bundle Size        | <300KB | 250.79KB | ✅     |
+| Gzipped Size             | <90KB  | 73.64KB  | ✅     |
 
 ### Optimization Techniques
+
 1. **Code splitting** - 45.79 kB lazy loaded
 2. **Debouncing** - Scroll events optimized
 3. **Image optimization** - WebP with PNG fallback
@@ -407,30 +433,35 @@ web-local/
 ## Best Practices Followed
 
 ### ✅ Code Quality
+
 - TypeScript strict mode enabled
 - ESLint + Prettier configured
 - Consistent naming conventions
 - Comprehensive comments for complex logic
 
 ### ✅ Performance
+
 - Lazy loading for below-the-fold content
 - Debounced scroll listeners
 - Optimized re-renders
 - Code splitting by route and feature
 
 ### ✅ Accessibility
+
 - WCAG 2.1 Level AA compliant
 - Keyboard navigation complete
 - Screen reader friendly
 - Semantic HTML structure
 
 ### ✅ Security
+
 - XSS prevention with DOMPurify
 - Rate limiting on forms
 - Input validation
 - Secure routing
 
 ### ✅ SEO
+
 - Server-side rendering (prerendering)
 - Meta tags complete
 - Schema.org markup
@@ -440,18 +471,21 @@ web-local/
 ## Future Architecture Considerations
 
 ### Scalability
+
 - Consider state management library if app grows (Redux/Zustand)
 - Split i18n files by namespace if translations grow beyond 15k lines
 - Implement virtual scrolling for long lists
 - Add service worker for offline support
 
 ### Monitoring
+
 - Integrate Web Vitals tracking
 - Add error tracking (Sentry)
 - Implement analytics (GA4)
 - Performance monitoring dashboard
 
 ### Testing
+
 - Increase unit test coverage to 80%
 - Add E2E tests with Playwright
 - Visual regression testing

@@ -48,9 +48,7 @@ const DanceHeroSection: React.FC<DanceHeroSectionProps> = ({
           <p className="max-w-4xl mx-auto text-xl md:text-2xl text-neutral/90 mt-8 mb-6 leading-relaxed">
             {t(keys.heroDesc)}
           </p>
-          <p className="text-lg md:text-xl text-neutral/90 italic mb-12">
-            {t(keys.heroLocation)}
-          </p>
+          <p className="text-lg md:text-xl text-neutral/90 italic mb-12">{t(keys.heroLocation)}</p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">

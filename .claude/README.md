@@ -7,6 +7,7 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 ## 🎯 Objetivo del Sistema
 
 **Crear y mantener páginas de clases de baile de forma eficiente:**
+
 1. ✅ **Sin romper producción** → Trabajo aislado en ramas
 2. ✅ **Con preview antes de deploy** → Vercel genera URLs temporales
 3. ✅ **Usando plantillas** → Generar páginas automáticamente
@@ -17,9 +18,11 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 ## 📂 Estructura de la Documentación
 
 ### **1. [WORKFLOW_GUIDE.md](./WORKFLOW_GUIDE.md)** - Guía Completa de Flujo de Trabajo
+
 **¿Para qué?** Aprender el flujo de trabajo Git + Vercel desde cero.
 
 **Contenido:**
+
 - Cómo crear ramas de trabajo
 - Cómo hacer commits y push
 - Cómo abrir Pull Requests (PRs)
@@ -29,6 +32,7 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 - Troubleshooting de problemas comunes
 
 **Cuándo usarlo:**
+
 - 📖 Primera vez trabajando con este sistema
 - 🔄 Cuando olvidas cómo se hace algo
 - 🆘 Cuando algo sale mal y no sabes qué hacer
@@ -36,9 +40,11 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 ---
 
 ### **2. [PROMPT_TEMPLATES.md](./PROMPT_TEMPLATES.md)** - Plantillas de Instrucciones para Claude
+
 **¿Para qué?** Instrucciones listas para copiar y pegar cuando trabajas con Claude Code.
 
 **Contenido:**
+
 - 🆕 Crear nueva página de clase
 - 🎨 Personalizar contenido (textos, imágenes, FAQs)
 - 🐛 Corregir errores (TypeScript, SEO, responsive)
@@ -50,6 +56,7 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 - 🆘 Troubleshooting
 
 **Cuándo usarlo:**
+
 - 🤖 Cada vez que necesites pedirle algo a Claude Code
 - ✍️ Para que Claude sepa exactamente qué hacer y qué NO tocar
 - 📋 Para mantener consistencia en todas las páginas
@@ -57,9 +64,11 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 ---
 
 ### **3. [QA_CHECKLIST.md](./QA_CHECKLIST.md)** - Checklist de Calidad Pre-Deploy
+
 **¿Para qué?** Asegurar que cada cambio cumple con todos los estándares antes de mergear a producción.
 
 **Contenido:**
+
 - ✅ Funcionalidad básica
 - 📱 Responsive design (Mobile/Tablet/Desktop)
 - 🔍 SEO completo (meta tags, Open Graph, hreflang)
@@ -73,6 +82,7 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 - 🔧 Git y PRs
 
 **Cuándo usarlo:**
+
 - 🚀 Antes de mergear CADA PR
 - 🧪 Después de hacer cambios significativos
 - 📊 Para verificar que todo está 10/10
@@ -80,9 +90,11 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 ---
 
 ### **4. [../EJEMPLO_USO_IMAGENES.md](../EJEMPLO_USO_IMAGENES.md)** - Guía de Imágenes
+
 **¿Para qué?** Aprender a usar el sistema de imágenes optimizadas.
 
 **Contenido:**
+
 - Cómo usar ResponsiveImage component
 - Cómo usar SmartVideo component
 - Flujo completo para añadir nuevas imágenes
@@ -90,6 +102,7 @@ Bienvenido a la documentación completa del sistema de desarrollo para el sitio 
 - Troubleshooting de imágenes
 
 **Cuándo usarlo:**
+
 - 🖼️ Cuando añadas nuevas imágenes a una página
 - 📐 Cuando necesites entender los tamaños y aspect ratios
 - 🔧 Cuando las imágenes no se vean correctamente
@@ -123,6 +136,7 @@ git push -u origin feat/bachata-page
 ```
 
 **Documentación detallada:**
+
 - Script generador: [PROMPT_TEMPLATES.md - Sección 8.2](./PROMPT_TEMPLATES.md#82-añadir-nueva-clase-rápido)
 - Workflow completo: [WORKFLOW_GUIDE.md](./WORKFLOW_GUIDE.md)
 
@@ -149,6 +163,7 @@ git push -u origin content/dancehall-update
 ```
 
 **Documentación detallada:**
+
 - Plantillas de instrucciones: [PROMPT_TEMPLATES.md - Sección 2](./PROMPT_TEMPLATES.md#-2-personalizar-contenido-de-una-página-existente)
 - Workflow: [WORKFLOW_GUIDE.md - Sección 2-8](./WORKFLOW_GUIDE.md)
 
@@ -157,6 +172,7 @@ git push -u origin content/dancehall-update
 ## 📖 Comandos Útiles
 
 ### **Desarrollo:**
+
 ```bash
 npm run dev              # Servidor de desarrollo (http://localhost:5173)
 npm run build            # Build de producción
@@ -167,17 +183,20 @@ npm run format           # Formatear código con Prettier
 ```
 
 ### **Imágenes:**
+
 ```bash
 npm run build:images     # Optimizar todas las imágenes (WebP + JPG)
 ```
 
 ### **Generación de páginas:**
+
 ```bash
 npm run create:class     # Modo interactivo
 npm run create:class -- --name=salsa --instructor="Ana" --specialty="Salsa Cubana"
 ```
 
 ### **Git:**
+
 ```bash
 git status                                    # Ver archivos modificados
 git diff                                      # Ver cambios línea por línea
@@ -246,17 +265,20 @@ web/
 ## 🎓 Cómo Aprender el Sistema (Por Nivel)
 
 ### **Nivel 1: Principiante (nunca has usado Git/Vercel)**
+
 1. Lee: [WORKFLOW_GUIDE.md](./WORKFLOW_GUIDE.md) → Secciones 1-8
 2. Practica: Crea una rama de prueba y haz un cambio pequeño (ej: typo en un texto)
 3. Objetivo: Entender el flujo completo (rama → commit → push → PR → preview → merge)
 
 ### **Nivel 2: Intermedio (sabes Git básico, quieres trabajar más rápido)**
+
 1. Usa: `npm run create:class` para generar una página nueva
 2. Copia/pega instrucciones de: [PROMPT_TEMPLATES.md](./PROMPT_TEMPLATES.md)
 3. Revisa con: [QA_CHECKLIST.md](./QA_CHECKLIST.md) antes de mergear
 4. Objetivo: Crear una página completa en < 2 horas
 
 ### **Nivel 3: Avanzado (quieres dominar el sistema al 100%)**
+
 1. Personaliza el script generador: [scripts/create-class-page.mjs](../scripts/create-class-page.mjs)
 2. Crea tus propias plantillas de instrucciones para casos específicos
 3. Configura protecciones de rama en GitHub (ver WORKFLOW_GUIDE.md - Sección "Protecciones")
@@ -267,27 +289,34 @@ web/
 ## 🆘 Troubleshooting Rápido
 
 ### **❌ "Build falla"**
+
 ```bash
 npm run typecheck  # Ver errores de TypeScript
 npm run lint       # Ver errores de ESLint
 ```
+
 → Solución: Corregir los errores indicados
 
 ### **❌ "Imágenes no se ven"**
+
 ```bash
 npm run build:images  # Regenerar imágenes
 ls public/images/classes/{clase}/img  # Verificar que existen
 ```
+
 → Ver: [EJEMPLO_USO_IMAGENES.md - Troubleshooting](../EJEMPLO_USO_IMAGENES.md#troubleshooting)
 
 ### **❌ "Claude cambió archivos que no debía"**
+
 ```bash
 git diff  # Ver qué cambió
 git checkout -- archivo-no-deseado.ts  # Revertir archivo
 ```
+
 → Ver: [PROMPT_TEMPLATES.md - Troubleshooting 9.1](./PROMPT_TEMPLATES.md#91-claude-cambió-archivos-que-no-debía)
 
 ### **❌ "Preview de Vercel no funciona"**
+
 1. Verificar que build local funciona: `npm run build`
 2. Ver logs en el PR de GitHub → "Details" del check de Vercel
 3. Corregir el error indicado en los logs
@@ -295,6 +324,7 @@ git checkout -- archivo-no-deseado.ts  # Revertir archivo
 → Ver: [PROMPT_TEMPLATES.md - Troubleshooting 9.2](./PROMPT_TEMPLATES.md#92-preview-de-vercel-no-funciona)
 
 ### **❌ "No sé qué hacer ahora"**
+
 → Vuelve a [WORKFLOW_GUIDE.md](./WORKFLOW_GUIDE.md) y sigue los pasos del flujo
 
 ---
@@ -313,12 +343,14 @@ git checkout -- archivo-no-deseado.ts  # Revertir archivo
 ## 📚 Recursos Externos
 
 ### **Validadores:**
+
 - Google Rich Results Test: https://search.google.com/test/rich-results
 - PageSpeed Insights: https://pagespeed.web.dev/
 - W3C HTML Validator: https://validator.w3.org/
 - WebAIM Contrast Checker: https://webaim.org/resources/contrastchecker/
 
 ### **Documentación de herramientas:**
+
 - React: https://react.dev/
 - Vite: https://vitejs.dev/
 - TailwindCSS: https://tailwindcss.com/docs
@@ -326,6 +358,7 @@ git checkout -- archivo-no-deseado.ts  # Revertir archivo
 - Git: https://git-scm.com/doc
 
 ### **Tutoriales:**
+
 - Git Basics: https://www.atlassian.com/git/tutorials
 - Vercel: https://vercel.com/docs
 
@@ -334,6 +367,7 @@ git checkout -- archivo-no-deseado.ts  # Revertir archivo
 ## 🎉 ¡Todo Listo!
 
 Ahora tienes:
+
 - ✅ **Sistema automatizado** para crear páginas (script generador)
 - ✅ **Workflow seguro** (ramas + PRs + Vercel previews)
 - ✅ **Plantillas de instrucciones** para Claude Code
@@ -345,6 +379,7 @@ Ahora tienes:
 ## 📞 Soporte
 
 Si tienes dudas:
+
 1. 🔍 Busca en esta documentación (usa Ctrl+F)
 2. 📖 Lee la sección relevante en detalle
 3. 🧪 Prueba en una rama de prueba primero

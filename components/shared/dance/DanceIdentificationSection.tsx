@@ -44,7 +44,9 @@ const DanceIdentificationSection: React.FC<DanceIdentificationSectionProps> = ({
                       />
                     </svg>
                   </div>
-                  <p className="text-neutral/90 leading-relaxed">{t(keys[`identify${num}` as keyof typeof keys] as string)}</p>
+                  <p className="text-neutral/90 leading-relaxed">
+                    {t(keys[`identify${num}` as keyof typeof keys] as string)}
+                  </p>
                 </div>
               </AnimateOnScroll>
             ))}

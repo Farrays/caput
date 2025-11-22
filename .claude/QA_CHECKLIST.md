@@ -7,6 +7,7 @@ Esta checklist garantiza que cada página nueva o cambio cumple con todos los es
 ## 📋 Checklist General (Para TODA nueva página o cambio)
 
 ### 1. **Funcionalidad Básica**
+
 - [ ] La página carga sin errores (revisar consola del navegador)
 - [ ] Todos los textos se muestran correctamente
 - [ ] Las imágenes cargan correctamente
@@ -20,6 +21,7 @@ Esta checklist garantiza que cada página nueva o cambio cumple con todos los es
 ### 2. **Responsive Design**
 
 #### **Mobile (375px - iPhone SE)**
+
 - [ ] Sin scroll horizontal
 - [ ] Textos legibles (mínimo 16px)
 - [ ] Imágenes adaptadas (no se cortan)
@@ -29,12 +31,14 @@ Esta checklist garantiza que cada página nueva o cambio cumple con todos los es
 - [ ] Espaciado adecuado (no apiñado)
 
 #### **Tablet (768px - iPad)**
+
 - [ ] Layout adaptado (no es solo mobile agrandado)
 - [ ] Imágenes en tamaño correcto
 - [ ] Textos legibles
 - [ ] Navegación funcional
 
 #### **Desktop (1440px)**
+
 - [ ] Layout se expande correctamente
 - [ ] Imágenes en alta resolución
 - [ ] Contenido centrado (max-width)
@@ -46,12 +50,14 @@ Esta checklist garantiza que cada página nueva o cambio cumple con todos los es
 ### 3. **SEO (Search Engine Optimization)**
 
 #### **Meta Tags Básicos**
+
 - [ ] `<title>` único y descriptivo (50-60 caracteres)
 - [ ] `<meta name="description">` relevante (140-160 caracteres)
 - [ ] `<link rel="canonical">` correcto
 - [ ] `<meta name="robots" content="index, follow">` (si aplica)
 
 #### **Open Graph (Facebook/LinkedIn)**
+
 - [ ] `og:type` = "website"
 - [ ] `og:url` correcto
 - [ ] `og:title` presente
@@ -59,12 +65,14 @@ Esta checklist garantiza que cada página nueva o cambio cumple con todos los es
 - [ ] `og:image` existe (1200x630 mínimo)
 
 #### **Twitter Cards**
+
 - [ ] `twitter:card` = "summary_large_image"
 - [ ] `twitter:title` presente
 - [ ] `twitter:description` presente
 - [ ] `twitter:image` existe
 
 #### **Hreflang (Multiidioma)**
+
 - [ ] `<link rel="alternate" hreflang="es">` → `/es/pagina`
 - [ ] `<link rel="alternate" hreflang="en">` → `/en/pagina`
 - [ ] `<link rel="alternate" hreflang="ca">` → `/ca/pagina`
@@ -78,6 +86,7 @@ Esta checklist garantiza que cada página nueva o cambio cumple con todos los es
 Verificar con: https://search.google.com/test/rich-results
 
 #### **WebPage Schema**
+
 - [ ] `@type: "WebPage"` presente
 - [ ] `name` correcto
 - [ ] `description` correcta
@@ -86,6 +95,7 @@ Verificar con: https://search.google.com/test/rich-results
 - [ ] Sin errores de validación
 
 #### **Course Schema (Páginas de clases)**
+
 - [ ] `@type: "Course"` presente
 - [ ] `name` descriptivo
 - [ ] `provider` con información de la organización
@@ -93,12 +103,14 @@ Verificar con: https://search.google.com/test/rich-results
 - [ ] Sin errores de validación
 
 #### **FAQPage Schema**
+
 - [ ] `@type: "FAQPage"` presente (generado automáticamente por FAQSection)
 - [ ] Mínimo 4 preguntas
 - [ ] Respuestas completas y útiles
 - [ ] Sin errores de validación
 
 #### **Person Schema (Si hay instructor destacado)**
+
 - [ ] `@type: "Person"` presente
 - [ ] `name` correcto
 - [ ] `jobTitle` correcto
@@ -112,6 +124,7 @@ Verificar con: https://search.google.com/test/rich-results
 Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 
 #### **Performance**
+
 - [ ] Score > 90 (Desktop)
 - [ ] Score > 80 (Mobile)
 - [ ] First Contentful Paint < 1.8s
@@ -120,6 +133,7 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 - [ ] Cumulative Layout Shift < 0.1
 
 #### **Accesibilidad**
+
 - [ ] Score > 95
 - [ ] Contraste suficiente (mínimo 4.5:1 para texto normal)
 - [ ] ARIA labels en elementos interactivos
@@ -128,6 +142,7 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 - [ ] Focus visible en elementos interactivos
 
 #### **Best Practices**
+
 - [ ] Score > 90
 - [ ] HTTPS en producción
 - [ ] Sin errores en la consola
@@ -135,6 +150,7 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 - [ ] Sin mixed content (HTTP/HTTPS)
 
 #### **SEO (Lighthouse)**
+
 - [ ] Score > 95
 - [ ] Meta description presente
 - [ ] Documento tiene `<title>`
@@ -147,6 +163,7 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 ### 6. **Imágenes Optimizadas**
 
 #### **Formato y Tamaño**
+
 - [ ] Formato WebP principal (con fallback JPG)
 - [ ] Imágenes responsive (múltiples tamaños: 640, 960, 1440)
 - [ ] `<picture>` tag con `srcset`
@@ -154,11 +171,13 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 - [ ] `loading="lazy"` en imágenes below-the-fold
 
 #### **Accesibilidad**
+
 - [ ] Todas las imágenes tienen `alt` text descriptivo
 - [ ] `alt` text es útil (no "imagen", "foto", etc.)
 - [ ] Imágenes decorativas tienen `alt=""` (vacío)
 
 #### **Aspect Ratio**
+
 - [ ] CSS `aspect-ratio` definido (evita CLS)
 - [ ] Aspect ratio coincide con la imagen real
 
@@ -167,30 +186,35 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 ### 7. **Internacionalización (i18n)**
 
 #### **Español (es)**
+
 - [ ] Todos los textos en español
 - [ ] Sin claves de traducción visibles (ej: `{homeTitle}`)
 - [ ] Tono y estilo coherente
 - [ ] URLs: `/es/pagina`
 
 #### **Inglés (en)**
+
 - [ ] Todos los textos en inglés
 - [ ] Traducción natural (no literal)
 - [ ] Tono adaptado culturalmente
 - [ ] URLs: `/en/pagina`
 
 #### **Catalán (ca)**
+
 - [ ] Todos los textos en catalán
 - [ ] Traducción natural
 - [ ] Tono cercano y local
 - [ ] URLs: `/ca/pagina`
 
 #### **Francés (fr)**
+
 - [ ] Todos los textos en francés
 - [ ] Traducción natural
 - [ ] Tono elegante
 - [ ] URLs: `/fr/pagina`
 
 #### **Selector de idioma**
+
 - [ ] Cambia correctamente entre idiomas
 - [ ] URL se actualiza con el prefijo correcto
 - [ ] Mantiene la misma página (no redirige a home)
@@ -209,6 +233,7 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 ### 9. **Contenido**
 
 #### **Textos**
+
 - [ ] Sin typos o errores gramaticales
 - [ ] Tono consistente con la marca
 - [ ] Jerarquía clara (H1 → H2 → H3)
@@ -217,12 +242,14 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 - [ ] CTA claro y persuasivo
 
 #### **FAQs**
+
 - [ ] Mínimo 4 preguntas relevantes
 - [ ] Respuestas completas (2-4 líneas)
 - [ ] Preguntas que los usuarios realmente hacen
 - [ ] Sin duplicados entre diferentes páginas
 
 #### **Testimonios**
+
 - [ ] Auténticos (nombre real, ciudad)
 - [ ] Específicos (no genéricos como "¡Genial!")
 - [ ] Variados (diferentes perfiles de alumnos)
@@ -233,18 +260,22 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 ### 10. **Código**
 
 #### **TypeScript**
+
 - [ ] Sin errores de TypeScript (`npm run typecheck`)
 - [ ] Tipos correctos (no `any` innecesarios)
 - [ ] Imports correctos
 
 #### **ESLint**
+
 - [ ] Sin errores de ESLint (`npm run lint`)
 - [ ] Sin warnings (o justificados con comentarios)
 
 #### **Prettier**
+
 - [ ] Código formateado correctamente (`npm run format:check`)
 
 #### **Build**
+
 - [ ] Build local funciona sin errores (`npm run build`)
 - [ ] Prerender completa correctamente
 - [ ] Output en `dist/` se genera correctamente
@@ -254,16 +285,19 @@ Ejecutar en Chrome DevTools > Lighthouse (modo incógnito)
 ### 11. **Git**
 
 #### **Commits**
+
 - [ ] Mensajes descriptivos (ej: `feat: Add Bachata page`, `fix: Correct meta tags`)
 - [ ] Commits atómicos (un cambio lógico por commit)
 - [ ] No hay archivos innecesarios (node_modules, .env, etc.)
 
 #### **Rama**
+
 - [ ] Nombre descriptivo (ej: `feat/bachata-page`, `fix/dancehall-seo`)
 - [ ] Basada en `main` actualizado
 - [ ] Sin conflictos con `main`
 
 #### **PR (Pull Request)**
+
 - [ ] Título descriptivo
 - [ ] Descripción completa (qué, por qué, cómo)
 - [ ] Checklist de cambios incluida
@@ -375,27 +409,32 @@ Si tienes prisa, al menos verifica estos puntos críticos:
 ### **Herramientas en Terminal**
 
 1. **Build de producción:**
+
    ```bash
    npm run build
    ```
 
 2. **Preview local:**
+
    ```bash
    npm run preview
    # Abrir: http://localhost:4173
    ```
 
 3. **TypeScript check:**
+
    ```bash
    npm run typecheck
    ```
 
 4. **ESLint:**
+
    ```bash
    npm run lint
    ```
 
 5. **Prettier:**
+
    ```bash
    npm run format:check
    ```
@@ -443,33 +482,39 @@ Copia esto en tu PR cuando hayas completado la QA:
 ## ✅ QA Completed
 
 ### Funcionalidad
+
 - ✅ Página carga sin errores
 - ✅ Imágenes optimizadas (WebP + JPG)
 - ✅ Enlaces funcionan correctamente
 - ✅ CTA lleva al destino correcto
 
 ### Responsive
+
 - ✅ Mobile (375px): perfecto
 - ✅ Tablet (768px): perfecto
 - ✅ Desktop (1440px): perfecto
 
 ### SEO
+
 - ✅ Meta tags completos
 - ✅ Google Rich Results Test: sin errores
 - ✅ Hreflang tags correctos (es, en, ca, fr)
 
 ### Performance
+
 - ✅ Lighthouse Desktop: 92/100
 - ✅ Lighthouse Mobile: 87/100
 - ✅ Core Web Vitals: OK
 
 ### i18n
+
 - ✅ Español: OK
 - ✅ Inglés: OK
 - ✅ Catalán: OK
 - ✅ Francés: OK
 
 ### Código
+
 - ✅ TypeScript: sin errores
 - ✅ ESLint: sin warnings
 - ✅ Build: OK

@@ -29,6 +29,7 @@ This directory contains self-hosted Roboto font files to eliminate external depe
 ## Implementation
 
 Fonts are loaded via:
+
 1. `fonts.css` - @font-face declarations with `font-display: swap`
 2. `index.html` - Preload hints for regular (400) and bold (700) weights
 3. Lazy load for 300, 500, and 900 weights on-demand
@@ -36,6 +37,7 @@ Fonts are loaded via:
 ## Source
 
 Downloaded from Google Fonts CDN (v30):
+
 - https://fonts.gstatic.com/s/roboto/v30/
 
 Font subset: **Latin** (most common characters, smaller file size)
@@ -43,6 +45,7 @@ Font subset: **Latin** (most common characters, smaller file size)
 ## Maintenance
 
 To update fonts in the future:
+
 1. Visit https://google-webfonts-helper.herokuapp.com/fonts/roboto
 2. Select Latin charset
 3. Select weights: 300, 400, 500, 700, 900

@@ -136,11 +136,13 @@ describe('ComponentName', () => {
 ### Problema 1: Tests Fallando en components/shared/dance/
 
 **Error:**
+
 ```
 TypeError: t is not a function
 ```
 
 **Solución:**
+
 ```typescript
 // En cada test de componentes dance/, añadir:
 vi.mock('../../../hooks/useI18n', () => ({
@@ -157,16 +159,22 @@ vi.mock('../../../hooks/useI18n', () => ({
 
 **Solución:**
 Ya está mockeado en `test/setup.ts`:
+
 ```typescript
-global.IntersectionObserver = class IntersectionObserver { /*...*/ };
+global.IntersectionObserver = class IntersectionObserver {
+  /*...*/
+};
 ```
 
 ### Problema 3: window.matchMedia not defined
 
 **Solución:**
 Ya está mockeado en `test/setup.ts`:
+
 ```typescript
-Object.defineProperty(window, 'matchMedia', { /*...*/ });
+Object.defineProperty(window, 'matchMedia', {
+  /*...*/
+});
 ```
 
 ---
@@ -185,11 +193,13 @@ Fase 4 (2-3 meses):      85% → 90% (excelencia)
 ## ✅ Checklist de Implementación
 
 ### Fase 1: Completada ✅
+
 - [x] Actualizar thresholds a 70%
 - [x] Verificar que tests existentes pasan
 - [x] Documentar plan de mejora
 
 ### Fase 2: En Progreso 🚧
+
 - [ ] Arreglar tests fallando en components/shared/dance/
 - [ ] Crear tests para ClassPageHead.tsx
 - [ ] Crear tests extendidos para I18nProvider
@@ -199,6 +209,7 @@ Fase 4 (2-3 meses):      85% → 90% (excelencia)
 - [ ] Actualizar thresholds a 80%
 
 ### Fase 3: Futuro 📅
+
 - [ ] Implementar tests E2E con Playwright
 - [ ] Añadir tests de accesibilidad avanzados
 - [ ] Implementar snapshot testing

@@ -36,7 +36,7 @@ const DancePageTemplate: React.FC<DancePageTemplateProps> = ({ config }) => {
   // Schedule data - translate keys dynamically
   const schedules = useMemo(
     () =>
-      config.schedules.map((schedule) => ({
+      config.schedules.map(schedule => ({
         id: schedule.id,
         day: t(schedule.dayKey),
         className: schedule.className,
@@ -50,7 +50,7 @@ const DancePageTemplate: React.FC<DancePageTemplateProps> = ({ config }) => {
   // FAQs - translate keys dynamically
   const faqs = useMemo(
     () =>
-      config.faqs.map((faq) => ({
+      config.faqs.map(faq => ({
         id: faq.id.toString(),
         question: t(faq.questionKey),
         answer: t(faq.answerKey),
@@ -64,7 +64,7 @@ const DancePageTemplate: React.FC<DancePageTemplateProps> = ({ config }) => {
   // Schema Markup data for reviews
   const reviewsSchemaData = useMemo(
     () =>
-      testimonials.map((testimonial) => ({
+      testimonials.map(testimonial => ({
         itemReviewed: { name: `Clases de ${config.type} - Farray's Center`, type: 'Course' },
         author: testimonial.name,
         reviewRating: { ratingValue: testimonial.rating.toString(), bestRating: '5' },
@@ -88,7 +88,12 @@ const DancePageTemplate: React.FC<DancePageTemplateProps> = ({ config }) => {
 
   // BreadcrumbList Schema (JSON-LD)
   const breadcrumbSchema = useMemo(() => {
-    const items: any[] = [
+    const items: Array<{
+      '@type': string;
+      position: number;
+      name: string;
+      item: string;
+    }> = [
       {
         '@type': 'ListItem',
         position: 1,
@@ -154,15 +159,10 @@ const DancePageTemplate: React.FC<DancePageTemplateProps> = ({ config }) => {
   return (
     <>
       <Helmet>
-        <title>
-          {t(config.keys.pageTitle)} | Farray&apos;s Center
-        </title>
+        <title>{t(config.keys.pageTitle)} | Farray&apos;s Center</title>
         <meta name="description" content={t(config.keys.metaDescription)} />
         <link rel="canonical" href={pageUrl} />
-        <meta
-          property="og:title"
-          content={`${t(config.keys.pageTitle)} | Farray&apos;s Center`}
-        />
+        <meta property="og:title" content={`${t(config.keys.pageTitle)} | Farray&apos;s Center`} />
         <meta property="og:description" content={t(config.keys.metaDescription)} />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
@@ -170,10 +170,7 @@ const DancePageTemplate: React.FC<DancePageTemplateProps> = ({ config }) => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content={`${t(config.keys.pageTitle)} | Farray's Center`}
-        />
+        <meta name="twitter:title" content={`${t(config.keys.pageTitle)} | Farray's Center`} />
         <meta name="twitter:description" content={t(config.keys.metaDescription)} />
         <meta name="twitter:image" content={`${baseUrl}/images/${config.ogImage}`} />
       </Helmet>
@@ -297,10 +294,8 @@ const DancePageTemplate: React.FC<DancePageTemplateProps> = ({ config }) => {
             whyToday1: config.whyTodayKeys?.why1 || `${config.type}WhyToday1`,
             whyToday2: config.whyTodayKeys?.why2 || `${config.type}WhyToday2`,
             whyToday3: config.whyTodayKeys?.why3 || `${config.type}WhyToday3`,
-            whyTodayClosing1:
-              config.whyTodayKeys?.closing1 || `${config.type}WhyTodayClosing1`,
-            whyTodayClosing2:
-              config.whyTodayKeys?.closing2 || `${config.type}WhyTodayClosing2`,
+            whyTodayClosing1: config.whyTodayKeys?.closing1 || `${config.type}WhyTodayClosing1`,
+            whyTodayClosing2: config.whyTodayKeys?.closing2 || `${config.type}WhyTodayClosing2`,
             finalCTATitle: config.finalCTAKeys?.title || `${config.type}FinalCTATitle`,
             finalCTASubtitle: config.finalCTAKeys?.subtitle || `${config.type}FinalCTASubtitle`,
             finalCTADesc: config.finalCTAKeys?.desc || `${config.type}FinalCTADesc`,
