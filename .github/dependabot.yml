@@ -23,6 +23,17 @@ updates:
     milestone: 1
     # Group dependencies by type
     groups:
+      # Keep React and its renderer together across production/dev dependencies.
+      # First match wins: this must precede the dependency-type groups.
+      react-ecosystem:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+        update-types:
+          - "minor"
+          - "patch"
       development-dependencies:
         dependency-type: "development"
         patterns:
